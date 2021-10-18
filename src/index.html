@@ -1,462 +1,468 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.min.css" />
-		<title>Starter Pack Layout | Gulp + Babel</title>
-	</head>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<link rel='stylesheet' href='css/style.min.css' />
+	<title>Starter Pack Layout | Gulp + Babel</title>
+</head>
 
-	<body>
-		<header class="header">
-			<div class="container">
-				<a href="/" class="logo__link">
-					<img src="img/logo.svg" alt="Логотип" class="logo__img" />
-				</a>
-				<nav class="header__nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="#" class="nav__link">О нас</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">Каталог</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">Доставка</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">Оплата</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">Сборка мебели</a>
-						</li>
-					</ul>
-				</nav>
-				<form action="#" class="header__search">
-					<input type="text" class="search__input" />
-					<input type="submit" class="search__submit" />
-				</form>
-				<div class="header__cart">
-					<img src="img/cart.svg" class="cart__link" />
-					<span class="cart__quantity">0</span>
-				</div>
-				<div class="header__contacnts">
-					<div class="contacnts__icon">
-						<img src="img/phone-icon.svg" class="contacts__icon" />
-						<a href="tel:+79626848676" class="contacts__phone">8 (962) 684 - 8676</a>
-					</div>
-					<div class="contacts__description">Ежедневно с 09:00 до 21:00</div>
-				</div>
+<body>
+<header class='header'>
+	<div class='container'>
+		<a href='/' class='logo__link'>
+			<img src='img/logo.svg' alt='Логотип' class='logo__img' />
+		</a>
+		<nav class='header__nav'>
+			<ul class='nav__list'>
+				<li class='nav__item'>
+					<a href='#' class='nav__link'>О нас</a>
+				</li>
+				<li class='nav__item'>
+					<a href='#' class='nav__link'>Каталог</a>
+				</li>
+				<li class='nav__item'>
+					<a href='#' class='nav__link'>Доставка</a>
+				</li>
+				<li class='nav__item'>
+					<a href='#' class='nav__link'>Оплата</a>
+				</li>
+				<li class='nav__item'>
+					<a href='#' class='nav__link'>Сборка мебели</a>
+				</li>
+			</ul>
+		</nav>
+		<form action='#' class='header__search'>
+			<input type='text' class='search__input' />
+			<input type='submit' class='search__submit' />
+		</form>
+		<div class='header__cart'>
+			<img src='img/cart.svg' class='cart__link' />
+			<span class='cart__quantity'>0</span>
+		</div>
+		<div class='header__contacnts'>
+			<div class='contacnts__icon'>
+				<img src='img/phone-icon.svg' class='contacts__icon' />
+				<a href='tel:+79626848676' class='contacts__phone'>8 (962) 684 - 8676</a>
 			</div>
-		</header>
+			<div class='contacts__description'>Ежедневно с 09:00 до 21:00</div>
+		</div>
+	</div>
+</header>
 
-		<section class="hero__slider swiper">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
+<section class='hero__slider swiper'>
+	<div class='swiper-wrapper'>
+		<div class='swiper-slide'></div>
+		<div class='swiper-slide'></div>
+		<div class='swiper-slide'></div>
+	</div>
+	<div class='hero__slider-prev'></div>
+	<div class='hero__slider-next'></div>
+</section>
+
+<section class='category'>
+	<div class='container'>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-1.jpg' alt='Категория 1' class='category__img' />
+			<span class='category__name'></span>
+		</a>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-2.jpg' alt='Категория 2' class='category__img' />
+			<span class='category__name'></span>
+		</a>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-3.jpg' alt='Категория 3' class='category__img' />
+			<span class='category__name'></span>
+		</a>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-4.jpg' alt='Категория 4' class='category__img' />
+			<span class='category__name'></span>
+		</a>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-5.jpg' alt='Категория 5' class='category__img' />
+			<span class='category__name'></span>
+		</a>
+	</div>
+</section>
+
+<section class='popular__slider'>
+	<div class='swiper-wrapper container'>
+
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
 			</div>
-			<div class="hero__slider-prev"></div>
-			<div class="hero__slider-next"></div>
-		</section>
-
-		<section class="category">
-			<div class="container">
-				<a href="#" class="category__item">
-					<img src="img/categories/category-1.jpg" alt="Категория 1" class="category__img" />
-					<span class="category__name"></span>
-				</a>
-				<a href="#" class="category__item">
-					<img src="img/categories/category-2.jpg" alt="Категория 2" class="category__img" />
-					<span class="category__name"></span>
-				</a>
-				<a href="#" class="category__item">
-					<img src="img/categories/category-3.jpg" alt="Категория 3" class="category__img" />
-					<span class="category__name"></span>
-				</a>
-				<a href="#" class="category__item">
-					<img src="img/categories/category-4.jpg" alt="Категория 4" class="category__img" />
-					<span class="category__name"></span>
-				</a>
-				<a href="#" class="category__item">
-					<img src="img/categories/category-5.jpg" alt="Категория 5" class="category__img" />
-					<span class="category__name"></span>
-				</a>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
 			</div>
-		</section>
-
-		<section class="popular__slider">
-			<div class="swiper-wrapper container">
-
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				
-				<div class="swiper-pagination"></div>
-
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
 			</div>
-		</section>
-		<section class="premium__slider">
-			<div class="swiper-wrapper container">
-
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
 				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/items/bed-2-sonya.jpg" alt="Кровать двуспальная Соня" class="item__image" />
-					<div class="item__pricing">
-						<span class="item__price">24 000 &#x20bd;</span>
-						<span class="item__old-price">29 000 &#x20bd;</span>
-						<span class="article">Артикул 123456789</span>
-					</div>
-					<div class="item__name">Кровать двуспальная</div>
-					<div class="item__series">Соня</div>
-					<div class="item__rating">
-						<div class="stars">
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-							<i class="item__star"></i>
-						</div>
-						<div class="item__reviews">Отзывы: 12</div>
-					</div>
-					<a href="#" class="item__link">Купить</a>
-				</div>
-				
-				<div class="swiper-pagination"></div>
-
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<div class='item__reviews'>Отзывы: 12</div>
 			</div>
-		</section>
-
-		<section class="callback">
-			<div class="container">
-				<h2 class="callback__title">Давайте созвонимся?</h2>
-				<div class="callback__form-wrapper">
-					<p class="callback__desc">Заполните форму ниже и мы свяжемся с вами в ближайшее время!</p>
-					<form action="#" class="callback__form">
-						<div class="form__row"><label for="name" class="form__label">Ваше имя<input type="text" class="form__input" placeholder="Иван Иванов"></label></div>
-						<div class="form__row"><label for="phone" class="form__label">Ваш телефон<input type="tel" class="form__input" placeholder="8 ( - - - ) ___ - __ - __"></label></div>
-						<div class="form__row"><input type="checkbox"><span class="form__police">Соглашаюсь с <a href="#" class="form__police-link">Политикой конфиденциальности</a></span></div>
-						<div class="form__row"><input type="submit" class="form__submit" value="Отправить"></div>
-					</form>
-				</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
 			</div>
-		</section>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
 
-		<script src="js/script.min.js"></script>
-	</body>
+		<div class='swiper-pagination'></div>
+
+		<div class='swiper-button-prev'></div>
+		<div class='swiper-button-next'></div>
+	</div>
+</section>
+<section class='premium__slider'>
+	<div class='swiper-wrapper container'>
+
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+		<div class='swiper-slide'>
+			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
+			<div class='item__pricing'>
+				<span class='item__price'>24 000 &#x20bd;</span>
+				<span class='item__old-price'>29 000 &#x20bd;</span>
+				<span class='article'>Артикул 123456789</span>
+			</div>
+			<div class='item__name'>Кровать двуспальная</div>
+			<div class='item__series'>Соня</div>
+			<div class='item__rating'>
+				<div class='stars'>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+					<i class='item__star'></i>
+				</div>
+				<div class='item__reviews'>Отзывы: 12</div>
+			</div>
+			<a href='#' class='item__link'>Купить</a>
+		</div>
+
+		<div class='swiper-pagination'></div>
+
+		<div class='swiper-button-prev'></div>
+		<div class='swiper-button-next'></div>
+	</div>
+</section>
+
+<section class='callback'>
+	<div class='container'>
+		<h2 class='callback__title'>Давайте созвонимся?</h2>
+		<div class='callback__form-wrapper'>
+			<p class='callback__desc'>Заполните форму ниже и мы свяжемся с вами в ближайшее время!</p>
+			<form action='#' class='callback__form'>
+				<div class='form__row'><label for='name' class='form__label'>Ваше имя<input type='text' class='form__input'
+				                                                                            placeholder='Иван Иванов'></label>
+				</div>
+				<div class='form__row'><label for='phone' class='form__label'>Ваш телефон<input type='tel' class='form__input'
+				                                                                                placeholder='8 ( - - - ) ___ - __ - __'></label>
+				</div>
+				<div class='form__row'><input type='checkbox'><span class='form__police'>Соглашаюсь с <a href='#'
+				                                                                                         class='form__police-link'>Политикой конфиденциальности</a></span>
+				</div>
+				<div class='form__row'><input type='submit' class='form__submit' value='Отправить'></div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<script src='js/script.min.js'></script>
+</body>
 </html>
