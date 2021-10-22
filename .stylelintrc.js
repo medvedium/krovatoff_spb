@@ -5,6 +5,6 @@ module.exports = {
 		'stylelint-prettier/recommended',
 		'stylelint-config-prettier'
 	],
-	plugins: ['stylelint-order', 'stylelint-scss'],
+	plugins: ['stylelint-order', 'stylelint-scss', 'stylelint-prettier'],
 	rules: {}
 }
