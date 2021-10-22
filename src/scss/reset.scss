@@ -12,6 +12,10 @@ html {
 	line-height: 1.15;
 }
 
+body {
+	font: 16px 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
 main {
 	display: block;
 }
@@ -241,10 +245,4 @@ template {
 
 [hidden] {
 	display: none;
-}
-
-.container {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
 }

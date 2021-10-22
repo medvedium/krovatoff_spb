@@ -1,0 +1,22 @@
+@import 'vars';
+
+.contacts__phone-row {
+	display: flex;
+	align-items: center;
+}
+
+.contacts__phone {
+	display: block;
+	margin-left: 10px;
+	color: $text;
+	font-weight: 600;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.contacts__description {
+	margin-top: 10px;
+	color: $text;
+	font-weight: 500;
+	font-size: 18px;
+}

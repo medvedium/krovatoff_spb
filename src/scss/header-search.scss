@@ -1,0 +1,28 @@
+@import 'vars';
+
+.header__search {
+	position: relative;
+	width: 300px;
+}
+
+.search__input {
+	width: 300px;
+	padding: 10px 20px;
+	border: 1px solid $accent;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.search__submit {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	background-color: transparent;
+	background-image: url(../img/search.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	border: 0;
+	transform: translateY(-50%);
+}
