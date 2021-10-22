@@ -4,7 +4,7 @@
 	<meta charset='UTF-8' />
 	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 	<link rel='stylesheet' href='css/style.min.css' />
-	<title>Starter Pack Layout | Gulp + Babel</title>
+	<title>Магазин мебели</title>
 </head>
 
 <body>
@@ -37,12 +37,12 @@
 			<input type='submit' class='search__submit' />
 		</form>
 		<div class='header__cart'>
-			<img src='img/cart.svg' class='cart__link' />
+			<img src='img/cart.svg' class='cart__link' alt='' />
 			<span class='cart__quantity'>0</span>
 		</div>
-		<div class='header__contacnts'>
-			<div class='contacnts__icon'>
-				<img src='img/phone-icon.svg' class='contacts__icon' />
+		<div class='header__contacts'>
+			<div class='contacts__icon'>
+				<img src='img/phone-icon.svg' class='contacts__icon' alt='' />
 				<a href='tel:+79626848676' class='contacts__phone'>8 (962) 684 - 8676</a>
 			</div>
 			<div class='contacts__description'>Ежедневно с 09:00 до 21:00</div>
@@ -87,7 +87,6 @@
 
 <section class='popular__slider'>
 	<div class='swiper-wrapper container'>
-
 		<div class='swiper-slide'>
 			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 			<div class='item__pricing'>
@@ -265,7 +264,6 @@
 </section>
 <section class='premium__slider'>
 	<div class='swiper-wrapper container'>
-
 		<div class='swiper-slide'>
 			<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 			<div class='item__pricing'>
@@ -448,16 +446,28 @@
 		<div class='callback__form-wrapper'>
 			<p class='callback__desc'>Заполните форму ниже и мы свяжемся с вами в ближайшее время!</p>
 			<form action='#' class='callback__form'>
-				<div class='form__row'><label for='name' class='form__label'>Ваше имя<input type='text' class='form__input'
-				                                                                            placeholder='Иван Иванов'></label>
+				<div class='form__row'>
+					<label for='name' class='form__label'>
+						Ваше имя
+						<input type='text' class='form__input' placeholder='Иван Иванов' id='name' />
+					</label>
 				</div>
-				<div class='form__row'><label for='phone' class='form__label'>Ваш телефон<input type='tel' class='form__input'
-				                                                                                placeholder='8 ( - - - ) ___ - __ - __'></label>
+				<div class='form__row'>
+					<label for='phone' class='form__label'>
+						Ваш телефон
+						<input type='tel' class='form__input' placeholder='8 ( - - - ) ___ - __ - __' id='phone' />
+					</label>
 				</div>
-				<div class='form__row'><input type='checkbox'><span class='form__police'>Соглашаюсь с <a href='#'
-				                                                                                         class='form__police-link'>Политикой конфиденциальности</a></span>
+				<div class='form__row'>
+					<label for='police'>
+						<input type='checkbox' id='police' />
+						<span class='form__police'>
+									Соглашаюсь с
+									<a href='#' class='form__police-link'>Политикой конфиденциальности</a>
+								</span>
+					</label>
 				</div>
-				<div class='form__row'><input type='submit' class='form__submit' value='Отправить'></div>
+				<div class='form__row'><input type='submit' class='form__submit' value='Отправить' /></div>
 			</form>
 		</div>
 	</div>
