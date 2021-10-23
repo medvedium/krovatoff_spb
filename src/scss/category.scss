@@ -1,0 +1,27 @@
+@import 'vars';
+
+.category {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $background;
+}
+
+.category .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.category__item {
+	border: 1px solid;
+	position: relative;
+
+	&:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+
+.category__name {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
