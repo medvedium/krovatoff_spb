@@ -1,7 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const burger = document.querySelector('.burger');
+import Swiper from 'swiper/bundle'
+// import 'swiper/css/bundle'
 
-  burger.addEventListener('click', () => {
-    burger-menu.classList.toggle('active')
-  })
+document.addEventListener('DOMContentLoaded', () => {
+	const burger = document.querySelector('.burger')
+
+	burger.addEventListener('click', () => {
+		burger - menu.classList.toggle('active')
+	})
 })

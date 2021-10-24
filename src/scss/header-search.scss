@@ -18,6 +18,8 @@
 	position: absolute;
 	top: 50%;
 	right: 10px;
+	width: 15px;
+	height: 15px;
 	background-color: transparent;
 	background-image: url(../img/search.svg);
 	background-repeat: no-repeat;
@@ -25,4 +27,5 @@
 	background-size: contain;
 	border: 0;
 	transform: translateY(-50%);
+	cursor: pointer;
 }
