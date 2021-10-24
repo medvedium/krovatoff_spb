@@ -1,7 +1,7 @@
 const path = require('path')
 // const HTMLWebpackPlugin = require('html-webpack-plugin')
 // const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { context } = require('./webpack.config')
 // const FileIncludeWebpackPlugin = require('file-include-webpack-plugin')
@@ -21,16 +21,16 @@ module.exports = {
 		// clean: true,
 		publicPath: ''
 	},
-	// devServer: {
-	// 	historyApiFallback: true,
-	// 	open: true,
-	// 	static: {
-	// 		directory: path.join(__dirname, 'app'),
-	// 	},
-	// 	compress: true,
-	// 	hot: true,
-	// 	port: 3000,
-	// },
+	devServer: {
+		historyApiFallback: true,
+		open: true,
+		static: {
+			directory: path.join(__dirname, 'app')
+		},
+		compress: true,
+		hot: true,
+		port: 3000
+	},
 	plugins: [
 		// new HTMLWebpackPlugin({
 		// 	template: path.resolve(__dirname, 'src/index.html'),
@@ -40,9 +40,9 @@ module.exports = {
 		// 	},
 		// 	scriptLoading: "defer"
 		// }),
-		// new MiniCssExtractPlugin({
-		// 	filename: `css/${filename('css')}`
-		// }),
+		new MiniCssExtractPlugin({
+			filename: `css/${filename('css')}`
+		})
 		// new CopyWebpackPlugin({
 		// 	patterns: [
 		// 		{
