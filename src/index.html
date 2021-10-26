@@ -9,8 +9,8 @@
 	<link rel='icon' type='image/png' href='img/favicon.ico' sizes='16x16' />
 
 	<link
-		rel="stylesheet"
-		href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+		rel='stylesheet'
+		href='https://unpkg.com/swiper@7/swiper-bundle.min.css'
 	/>
 
 	<title>Магазин мебели</title>
@@ -46,7 +46,19 @@
 			<input type='submit' class='search__submit' value='' />
 		</form>
 		<div class='header__cart'>
-			<img src='img/cart.svg' class='cart__link' alt='' />
+<!--			<img src='img/cart.svg' class='cart__link' alt='' />-->
+			<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+				<path fill-rule='evenodd' clip-rule='evenodd'
+				      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+				      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+				<path fill-rule='evenodd' clip-rule='evenodd'
+				      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+				      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+				<path
+					d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+					stroke='' stroke-linecap='round' stroke-linejoin='round' />
+				<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+			</svg>
 			<span class='cart__quantity'>0</span>
 		</div>
 		<div class='header__contacts'>
@@ -61,9 +73,9 @@
 
 <section class='hero__slider swiper'>
 	<div class='swiper-wrapper'>
-		<div class='swiper-slide'></div>
-		<div class='swiper-slide'></div>
-		<div class='swiper-slide'></div>
+		<div class='swiper-slide index-slide'></div>
+		<div class='swiper-slide index-slide'></div>
+		<div class='swiper-slide index-slide'></div>
 	</div>
 	<div class='hero__slider-prev'></div>
 	<div class='hero__slider-next'></div>
@@ -97,10 +109,11 @@
 
 <section class='popular'>
 	<div class='container'>
+
 		<h2 class='section__title'>Популярное</h2>
 		<div class='popular__slider swiper'>
 			<div class='swiper-wrapper'>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -119,9 +132,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -140,9 +166,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -161,9 +200,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -182,9 +234,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -203,9 +268,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -224,9 +302,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -245,9 +336,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -266,15 +370,33 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
 
 			</div>
+			<div class='popular_slider-prev'>
+				<img src='img/prev-slide.svg' alt=''>
+			</div>
+			<div class='popular_slider-next'>
+				<img src='img/next-slide.svg' alt=''>
+			</div>
 			<div class='swiper-pagination'></div>
 
-			<div class='swiper-button-prev'></div>
-			<div class='swiper-button-next'></div>
 		</div>
+
 
 	</div>
 </section>
@@ -284,7 +406,7 @@
 		<h2 class='section__title'>Премиум коллекция</h2>
 		<div class='premium__slider swiper'>
 			<div class='swiper-wrapper'>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -303,9 +425,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -324,9 +459,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -345,9 +493,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -366,9 +527,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -387,9 +561,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -408,9 +595,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -429,9 +629,22 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
-				<div class='swiper-slide'>
+				<div class='swiper-slide index-slide'>
 					<img src='img/items/bed-2-sonya.jpg' alt='Кровать двуспальная Соня' class='item__image' />
 					<div class='item__pricing'>
 						<span class='item__price'>24 000 &#x20bd;</span>
@@ -450,14 +663,27 @@
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>Купить</a>
+					<a href='#' class='item__link'>
+						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path fill-rule='evenodd' clip-rule='evenodd'
+							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
+							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path
+								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
+								stroke='' stroke-linecap='round' stroke-linejoin='round' />
+							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
+						</svg>
+						Купить</a>
 				</div>
 
 			</div>
 			<div class='swiper-pagination'></div>
 
-			<div class='swiper-button-prev'></div>
-			<div class='swiper-button-next'></div>
+			<div class='premium_slider-prev'><img src='img/prev-slide.svg' alt=''></div>
+			<div class='premium_slider-next'><img src='img/next-slide.svg' alt=''></div>
 		</div>
 	</div>
 </section>
@@ -495,7 +721,7 @@
 	</div>
 </section>
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src='https://unpkg.com/swiper@7/swiper-bundle.min.js'></script>
 <script src='js/index.js'></script>
 </body>
 </html>

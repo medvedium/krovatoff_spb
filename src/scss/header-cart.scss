@@ -2,6 +2,11 @@
 
 .header__cart {
 	position: relative;
+	cursor: pointer;
+}
+
+.header__cart svg {
+	stroke: $header-cart;
 }
 
 .cart__quantity {

@@ -4,24 +4,29 @@
 const popularSwiper = new Swiper('.popular__slider', {
 	slidesPerView: 4,
 	navigation: {
-		nextEl: '.popular__slider .swiper-button-next',
-		prevEl: '.popular__slider .swiper-button-prev'
+		nextEl: '.popular_slider-next',
+		prevEl: '.popular_slider-prev'
 	},
 	pagination: {
 		el: '.popular__slider .swiper-pagination',
 		type: 'bullets'
 	},
-	spaceBetween: 20
+	spaceBetween: 30
+	// slidesPerColumn: 4
 })
+
+// const popularPrev = document.querySelector('')
+
 const premiumSwiper = new Swiper('.premium__slider', {
 	slidesPerView: 4,
 	navigation: {
-		nextEl: '.premium__slider .swiper-button-next',
-		prevEl: '.premium__slider .swiper-button-prev'
+		nextEl: '.premium_slider-next',
+		prevEl: '.premium_slider-prev'
 	},
 	pagination: {
 		el: '.premium__slider .swiper-pagination',
 		type: 'bullets'
 	},
-	spaceBetween: 20
+	spaceBetween: 30
+	// slidesPerColumn: 4
 })

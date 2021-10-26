@@ -30,7 +30,7 @@
 	}
 
 	&:hover {
-		box-shadow: (1px 3px 11px rgba(70, 70, 70, 0.14));
+		box-shadow: $hover-shadow;
 		transform: translateY(-5px);
 	}
 }

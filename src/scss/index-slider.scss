@@ -5,15 +5,35 @@
 	padding-top: 30px;
 	padding-bottom: 30px;
 
-	.swiper-slide {
+	.container {
+		position: relative;
+		max-width: calc(#{$container} + 50px);
+	}
+
+	.section__title {
+		width: $container;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.index-slide {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 20px;
 		background-color: $white;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+		transition: all 0.2s linear;
 
 		& > * {
 			width: 100%;
+		}
+
+		&:hover {
+			box-shadow: $hover-shadow;
+			transform: translateY(-5px);
 		}
 	}
 
@@ -58,5 +78,83 @@
 		color: $text;
 		font-weight: 600;
 		font-size: 20px;
+	}
+
+	.item__reviews {
+		color: $text-gray;
+		font-weight: 400;
+	}
+
+	.item__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		margin-top: 10px;
+		padding: 10px 35px 10px 40px;
+		color: $main;
+		font-weight: 700;
+		font-size: 18px;
+		text-decoration: none;
+		border: 1px solid $main;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+
+	.item__link svg {
+		margin-right: 15px;
+		stroke: $main;
+	}
+
+	.item__link:hover {
+		color: $white;
+		//background: linear-gradient(180deg, rgba($main, 0.5) 0, $main 100%);
+		background: linear-gradient(180deg, #ffe896 0%, #fecb4d 100%);
+
+		svg {
+			stroke: $white;
+		}
+	}
+
+	.swiper {
+		padding: 10px 30px 40px;
+	}
+}
+
+.popular_slider-prev,
+.popular_slider-next,
+.premium_slider-prev,
+.premium_slider-next {
+	position: absolute;
+	top: 45%;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background-color: $main;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.popular_slider-prev,
+.premium_slider-prev {
+	left: 0;
+
+	&::after {
+		background: url('../img/prev-slide.svg') center no-repeat;
+	}
+}
+
+.popular_slider-next,
+.premium_slider-next {
+	right: 0;
+
+	&::after {
+		background: url('../img/next-slide.svg') center no-repeat;
 	}
 }
