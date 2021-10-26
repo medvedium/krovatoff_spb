@@ -9,3 +9,39 @@
 .section__title {
 	margin-bottom: 40px;
 }
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.btn__buy {
+	width: 200px !important;
+	margin: 10px auto 0;
+	//margin-top: 10px;
+	padding: 10px 35px 10px 40px;
+	color: $main;
+	border: 1px solid $main;
+
+	svg {
+		margin-right: 15px;
+		stroke: $main;
+	}
+
+	&:hover {
+		color: $white;
+		background: linear-gradient(180deg, #ffe896 0%, #fecb4d 100%);
+	}
+
+	&:hover svg {
+		stroke: $white;
+	}
+}

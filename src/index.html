@@ -46,7 +46,7 @@
 			<input type='submit' class='search__submit' value='' />
 		</form>
 		<div class='header__cart'>
-<!--			<img src='img/cart.svg' class='cart__link' alt='' />-->
+			<!--			<img src='img/cart.svg' class='cart__link' alt='' />-->
 			<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
 				<path fill-rule='evenodd' clip-rule='evenodd'
 				      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
@@ -71,14 +71,21 @@
 	</div>
 </header>
 
-<section class='hero__slider swiper'>
-	<div class='swiper-wrapper'>
-		<div class='swiper-slide index-slide'></div>
-		<div class='swiper-slide index-slide'></div>
-		<div class='swiper-slide index-slide'></div>
+<section class='hero'>
+	<div class='container'>
+		<div class='hero__inner'>
+			<h1 class='hero__title'><span class='hero__title--colored'>Кровати</span> <br> по выгодным ценам</h1><a href='/catalog' class='hero__link'>Перейти в каталог</a>
+		</div>
+		<div class='swiper'>
+			<div class='swiper-wrapper'>
+				<div class='swiper-slide index-slide'></div>
+				<div class='swiper-slide index-slide'></div>
+				<div class='swiper-slide index-slide'></div>
+			</div>
+			<div class='hero__slider-prev'></div>
+			<div class='hero__slider-next'></div>
+		</div>
 	</div>
-	<div class='hero__slider-prev'></div>
-	<div class='hero__slider-next'></div>
 </section>
 
 <section class='category'>
@@ -124,27 +131,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -158,27 +154,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -192,27 +177,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -226,27 +200,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -260,27 +223,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -294,27 +246,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -328,27 +269,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -362,27 +292,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 
@@ -417,27 +336,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -451,27 +359,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -485,27 +382,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -519,27 +405,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -553,27 +428,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -587,27 +451,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -621,27 +474,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 				<div class='swiper-slide index-slide'>
@@ -655,27 +497,16 @@
 					<div class='item__series'>Соня</div>
 					<div class='item__rating'>
 						<div class='stars'>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
-							<i class='item__star'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--active'></i>
+							<i class='item__star item__star--unactive'></i>
+							<i class='item__star item__star--unactive'></i>
 						</div>
 						<div class='item__reviews'>Отзывы: 12</div>
 					</div>
-					<a href='#' class='item__link'>
-						<svg width='29' height='26' viewBox='0 0 29 26' fill='none' xmlns='http://www.w3.org/2000/svg'>
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M7.82413 22.9048C8.43954 22.9048 8.93975 23.405 8.93975 24.0204C8.93975 24.6358 8.43954 25.1346 7.82413 25.1346C7.20871 25.1346 6.70996 24.6358 6.70996 24.0204C6.70996 23.405 7.20871 22.9048 7.82413 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path fill-rule='evenodd' clip-rule='evenodd'
-							      d='M13.0556 22.9048C13.671 22.9048 14.1712 23.405 14.1712 24.0204C14.1712 24.6358 13.671 25.1346 13.0556 25.1346C12.4401 25.1346 11.9399 24.6358 11.9399 24.0204C11.9399 23.405 12.4401 22.9048 13.0556 22.9048Z'
-							      stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path
-								d='M1.01025 0.739746L4.04359 1.26475L5.44796 17.9962C5.56171 19.3597 6.70067 20.4068 8.06859 20.4068H23.9819C25.2886 20.4068 26.3969 19.4472 26.585 18.1522L27.969 8.5885C28.1396 7.4087 27.2253 6.35287 26.0338 6.35287H4.53067'
-								stroke='' stroke-linecap='round' stroke-linejoin='round' />
-							<path d='M17.5996 11.7428H21.6436' stroke='' stroke-linecap='round' stroke-linejoin='round' />
-						</svg>
+					<a href='#' class='btn btn__buy'>
+						@@include('_buy-svg.html')
 						Купить</a>
 				</div>
 

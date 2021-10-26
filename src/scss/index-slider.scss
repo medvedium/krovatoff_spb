@@ -16,109 +16,28 @@
 		margin-left: auto;
 	}
 
-	.index-slide {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px;
-		background-color: $white;
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		border-radius: 8px;
-		transition: all 0.2s linear;
-
-		& > * {
-			width: 100%;
-		}
-
-		&:hover {
-			box-shadow: $hover-shadow;
-			transform: translateY(-5px);
-		}
-	}
-
-	.item__pricing {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin-top: 20px;
-	}
-
-	.item__price {
-		color: $text;
-		font-weight: 700;
-		font-size: 22px;
-	}
-
-	.item__old-price {
-		color: $old-price;
-		font-weight: 600;
-		font-size: 16px;
-		text-decoration: line-through;
-	}
-
-	.article {
-		color: $good-article;
-		font-size: 12px;
-	}
-
-	.item__image {
-		display: block;
-		width: 100%;
-	}
-
-	.item__name {
-		color: $item-name;
-		font-weight: 500;
-		font-size: 18px;
-	}
-
-	.item__series {
-		margin-bottom: 30px;
-		color: $text;
-		font-weight: 600;
-		font-size: 20px;
-	}
-
-	.item__reviews {
-		color: $text-gray;
-		font-weight: 400;
-	}
-
-	.item__link {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 200px;
-		margin-top: 10px;
-		padding: 10px 35px 10px 40px;
-		color: $main;
-		font-weight: 700;
-		font-size: 18px;
-		text-decoration: none;
-		border: 1px solid $main;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px;
-	}
-
-	.item__link svg {
-		margin-right: 15px;
-		stroke: $main;
-	}
-
-	.item__link:hover {
-		color: $white;
-		//background: linear-gradient(180deg, rgba($main, 0.5) 0, $main 100%);
-		background: linear-gradient(180deg, #ffe896 0%, #fecb4d 100%);
-
-		svg {
-			stroke: $white;
-		}
-	}
-
 	.swiper {
 		padding: 10px 30px 40px;
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets,
+	.swiper-pagination-bullets.swiper-pagination-horizontal,
+	.swiper-pagination-custom,
+	.swiper-pagination-fraction {
+		bottom: 0;
+	}
+
+	.swiper-pagination-bullet {
+		margin: 0 2px !important;
+		background-color: $pagination-bullet;
+		opacity: 1;
+		transition: all 0.2s linear;
+
+		&-active {
+			width: 35px;
+			margin: 0 2px;
+			border-radius: 11px;
+		}
 	}
 }
 
@@ -139,6 +58,11 @@
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	cursor: pointer;
+
+	&.swiper-button-disabled {
+		cursor: no-drop;
+		opacity: 0.5;
+	}
 }
 
 .popular_slider-prev,
