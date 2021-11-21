@@ -1,0 +1,55 @@
+@import 'vars';
+
+.footer {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	color: $white;
+	background-color: $footer-bg;
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+.footer__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.footer-catalog {
+	margin-right: 100px;
+}
+
+.footer-menu {
+	margin-right: auto;
+}
+
+.footer-contacts {
+	margin-right: 100px;
+}
+
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	&__item {
+		width: 33%;
+
+		&:nth-child(2) {
+			text-align: center;
+		}
+
+		&:nth-child(3) {
+			text-align: right;
+		}
+	}
+}

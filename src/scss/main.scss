@@ -4,6 +4,8 @@
 	width: 100%;
 	max-width: $container;
 	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .section__title {
@@ -30,6 +32,7 @@
 	padding: 10px 35px 10px 40px;
 	color: $main;
 	border: 1px solid $main;
+	transition: all 0.2s linear;
 
 	svg {
 		margin-right: 15px;
