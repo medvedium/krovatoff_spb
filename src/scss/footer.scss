@@ -26,10 +26,18 @@
 
 .footer-catalog {
 	margin-right: 100px;
+
+	&__list {
+		list-style: none;
+	}
 }
 
 .footer-menu {
 	margin-right: auto;
+
+	&__list {
+		list-style: none;
+	}
 }
 
 .footer-contacts {

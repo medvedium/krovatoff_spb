@@ -1,0 +1,26 @@
+@import 'vars';
+
+.callback {
+	padding-top: 60px;
+	padding-bottom: 100px;
+	background-color: $main;
+
+	&__title {
+		text-align: center;
+	}
+
+	&__form {
+		//width: 560px;
+		padding: 40px 70px;
+		background-color: $white;
+
+		&-wrapper {
+			width: 100%;
+			max-width: 560px;
+		}
+	}
+
+	&__desc {
+		text-align: center;
+	}
+}
