@@ -29,6 +29,15 @@
 	}
 }
 
+.header__buy {
+	display: flex;
+	align-items: center;
+}
+
+.header__cart {
+	margin-left: 20px;
+}
+
 .logo__img {
 	height: 50px;
 }

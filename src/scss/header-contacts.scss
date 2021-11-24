@@ -20,3 +20,20 @@
 	font-weight: 500;
 	font-size: 18px;
 }
+
+.contacts__icon--wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background-color: $main;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+	img {
+		width: 19px;
+		height: 19px;
+	}
+}

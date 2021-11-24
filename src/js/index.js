@@ -3,6 +3,7 @@
 
 const popularSwiper = new Swiper('.popular__slider', {
 	slidesPerView: 4,
+	slidesPerGroup: 4,
 	navigation: {
 		nextEl: '.popular_slider-next',
 		prevEl: '.popular_slider-prev'
@@ -19,6 +20,7 @@ const popularSwiper = new Swiper('.popular__slider', {
 
 const premiumSwiper = new Swiper('.premium__slider', {
 	slidesPerView: 4,
+	slidesPerGroup: 4,
 	navigation: {
 		nextEl: '.premium_slider-next',
 		prevEl: '.premium_slider-prev'
