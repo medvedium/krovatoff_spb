@@ -23,4 +23,12 @@
 	height: 76px;
 	color: $white;
 	background: $orange-gradient;
+
+	&:hover {
+		background: $hover-gradient;
+	}
+
+	&:active {
+		background: $main-active;
+	}
 }
