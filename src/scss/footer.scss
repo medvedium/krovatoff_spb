@@ -9,6 +9,7 @@
 	a {
 		color: $white;
 		text-decoration: none;
+		transition: all 0.2s linear;
 
 		&:hover {
 			text-decoration: underline;
@@ -99,7 +100,7 @@
 
 	&__btn {
 
-		button {
+		a {
 			color: $white;
 			background-color: $accent;
 			border: 0;
