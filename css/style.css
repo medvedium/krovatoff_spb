@@ -558,6 +558,10 @@ template {
   stroke: #ffffff;
 }
 
+.header {
+  z-index: 999;
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,6 +723,10 @@ template {
 .contacts__icon--wrap img {
   width: 19px;
   height: 19px;
+}
+
+.hero {
+  background: url("../img/hero-bg.svg") calc(50% + 300px) -810px no-repeat;
 }
 
 .hero__inner {
@@ -1163,7 +1171,24 @@ template {
   position: relative;
   padding-top: 60px;
   padding-bottom: 120px;
+  background: url("../img/section-bg-1.svg") calc(50% - 900px) center, url("../img/section-bg-2.svg") calc(50% + 900px) center;
   background-color: #fecb4d;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+}
+
+.callback .container {
+  position: relative;
+}
+
+.callback .container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 900px;
+  height: 700px;
+  content: "";
 }
 
 .callback__title {
@@ -1192,7 +1217,7 @@ template {
 
 .callback__img-wrap {
   position: absolute;
-  top: -30px;
+  top: -100px;
   right: calc(50% - (1745px/ 2 - 100px));
   width: 377px;
   height: 100%;
@@ -1502,4 +1527,59 @@ template {
 
 .footer-info__item:nth-child(3) {
   text-align: right;
+}
+
+.dropdown-catalog {
+  position: fixed;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(72, 72, 72, 0.65);
+  inset: 110px 0 0 0;
+}
+
+.dropdown-catalog__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1745px;
+  height: 100%;
+  max-height: 80vh;
+  padding-top: 65px;
+  padding-left: 145px;
+  background-color: #ffffff;
+  border-radius: 31px;
+}
+
+.dropdown-catalog__categories {
+  padding-right: 30px;
+}
+
+.dropdown-catalog__categories-item {
+  width: 270px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 8px 10px 8px 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 31px;
+  cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.dropdown-catalog__categories-item:hover {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #fecb4d;
 }
