@@ -14,16 +14,6 @@
 
 	.container {
 		position: relative;
-
-		&::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			display: block;
-			width: 900px;
-			height: 700px;
-			content: '';
-		}
 	}
 
 	.container {
