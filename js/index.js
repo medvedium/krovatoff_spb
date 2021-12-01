@@ -31,3 +31,17 @@ var premiumSwiper = new Swiper('.premium__slider', {
   spaceBetween: 30 // slidesPerColumn: 4
 
 });
+var catalogToggle = document.querySelector('.dropdown-catalog-activate');
+var dropdownCatalog = document.querySelector('.dropdown-catalog');
+
+if (catalogToggle) {
+  catalogToggle.addEventListener('click', function () {
+    dropdownCatalog.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = '14px';
+    dropdownCatalog.querySelector('.dropdown-catalog__close').addEventListener('click', function () {
+      dropdownCatalog.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+  });
+}

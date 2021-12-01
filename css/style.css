@@ -1181,16 +1181,6 @@ template {
   position: relative;
 }
 
-.callback .container::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 900px;
-  height: 700px;
-  content: "";
-}
-
 .callback__title {
   font-weight: 600;
   font-size: 36px;
@@ -1532,12 +1522,10 @@ template {
 .dropdown-catalog {
   position: fixed;
   z-index: 99;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1545,14 +1533,35 @@ template {
   inset: 110px 0 0 0;
 }
 
+.dropdown-catalog.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropdown-catalog__close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/close.svg");
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
 .dropdown-catalog__wrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   max-width: 1745px;
-  height: 100%;
-  max-height: 80vh;
+  height: 90%;
+  max-height: 800px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding-top: 65px;
   padding-left: 145px;
   background-color: #ffffff;
