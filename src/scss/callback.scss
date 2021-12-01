@@ -5,11 +5,12 @@
 .callback {
 	position: relative;
 	padding-top: 60px;
-	padding-bottom: 100px;
-	background: url('../img/section-bg-1.svg') -20% center, url('../img/section-bg-2.svg') 120% center;
+	padding-bottom: 120px;
+	background: url('../img/section-bg-1.svg') calc(50% - 900px) center,
+		url('../img/section-bg-2.svg') calc(50% + 900px) center;
 	background-color: $main;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 1000px;
 
 	.container {
 		position: relative;
@@ -55,7 +56,7 @@
 
 		&-wrap {
 			position: absolute;
-			top: -30px;
+			top: -100px;
 			right: calc(50% - (#{$container}/ 2 - 100px));
 			//max-height: 600px;
 			width: 377px;

@@ -1,5 +1,9 @@
 @import 'vars';
 
+.hero {
+	background: url('../img/hero-bg.svg') calc(50% + 300px) -810px no-repeat;
+}
+
 .hero__inner {
 	display: flex;
 	flex-direction: column;
