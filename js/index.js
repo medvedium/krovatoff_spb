@@ -7,11 +7,12 @@ var heroSlider = new Swiper('.hero-slider', {
   sliderPerGroup: 1,
   spaceBetween: 30,
   pagination: {
-    el: '.hero__slider .swiper-pagination'
+    el: '.hero-slider .swiper-pagination',
+    type: 'bullets'
   },
   loop: true,
   autoplay: {
-    delay: 4000
+    delay: 8000
   }
 });
 var popularSwiper = new Swiper('.popular__slider', {
