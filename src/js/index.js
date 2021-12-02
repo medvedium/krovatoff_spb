@@ -1,6 +1,19 @@
 // import Swiper from 'swiper'
 // import 'swiper/css/bundle'
 
+const heroSlider = new Swiper('.hero-slider', {
+	slidesPerView: 1,
+	sliderPerGroup: 1,
+	spaceBetween: 30,
+	pagination: {
+		el: '.hero__slider .swiper-pagination'
+	},
+	loop: true,
+	autoplay: {
+		delay: 4000
+	}
+})
+
 const popularSwiper = new Swiper('.popular__slider', {
 	slidesPerView: 4,
 	slidesPerGroup: 4,
@@ -13,10 +26,7 @@ const popularSwiper = new Swiper('.popular__slider', {
 		type: 'bullets'
 	},
 	spaceBetween: 30
-	// slidesPerColumn: 4
 })
-
-// const popularPrev = document.querySelector('')
 
 const premiumSwiper = new Swiper('.premium__slider', {
 	slidesPerView: 4,
