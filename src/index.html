@@ -1,8 +1,7 @@
 @@include('partials/_header.html')
 
-<section class="hero">
-	<div class="container swiper hero-slider">
-
+<section class='hero'>
+	<div class='container swiper hero-slider'>
 		<div class='swiper-wrapper'>
 
 			<div class='hero__inner swiper-slide'>
@@ -14,9 +13,9 @@
 				<a href='/catalog' class='hero__link btn'>Перейти в каталог</a>
 				<img src='img/hero-slider-1.png' alt='' class='hero__img' />
 				<div class='hero__slider-text'>
-					<span>Кровать БЕАТРИС</span>
-					<span>160*200, мягкая обивка</span>
-					<span>19 400 &#x20bd</span>
+					<span class='name'>Кровать БЕАТРИС</span>
+					<span class='size'>160*200, мягкая обивка</span>
+					<span class='price'>19 400 &#x20bd</span>
 				</div>
 			</div>
 			<div class='hero__inner swiper-slide'>
@@ -28,9 +27,9 @@
 				<a href='/catalog' class='hero__link btn'>Перейти в каталог</a>
 				<img src='img/hero-slider-1.png' alt='' class='hero__img' />
 				<div class='hero__slider-text'>
-					<span>Кровать БЕАТРИС</span>
-					<span>160*200, мягкая обивка</span>
-					<span>19 400 &#x20bd</span>
+					<span class='name'>Кровать БЕАТРИС</span>
+					<span class='size'>160*200, мягкая обивка</span>
+					<span class='price'>19 400 &#x20bd</span>
 				</div>
 			</div>
 			<div class='hero__inner swiper-slide'>
@@ -42,60 +41,48 @@
 				<a href='/catalog' class='hero__link btn'>Перейти в каталог</a>
 				<img src='img/hero-slider-1.png' alt='' class='hero__img' />
 				<div class='hero__slider-text'>
-					<span>Кровать БЕАТРИС</span>
-					<span>160*200, мягкая обивка</span>
-					<span>19 400 &#x20bd</span>
+					<span class='name'>Кровать БЕАТРИС</span>
+					<span class='size'>160*200, мягкая обивка</span>
+					<span class='price'>19 400 &#x20bd</span>
 				</div>
 			</div>
 
 
 		</div>
-
-
-		<div class="swiper-pagination"></div>
-		<!--		<div class="swiper">-->
-		<!--			<div class="swiper-wrapper">-->
-		<!--				<div class="swiper-slide hero-slide"></div>-->
-		<!--				<div class="swiper-slide hero-slide"></div>-->
-		<!--				<div class="swiper-slide hero-slide"></div>-->
-		<!--			</div>-->
-		<!--			<div class="hero__slider-prev"></div>-->
-		<!--			<div class="hero__slider-next"></div>-->
-		<!--			<div class="swiper-pagination"></div>-->
-		<!--		</div>-->
+		<div class='swiper-pagination'></div>
 	</div>
 </section>
 
-<section class="category">
-	<div class="container">
-		<a href="#" class="category__item">
-			<img src="img/categories/category-1.jpg" alt="Категория 1" class="category__img" />
-			<span class="category__name">Кровати</span>
+<section class='category'>
+	<div class='container'>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-1.jpg' alt='Категория 1' class='category__img' />
+			<span class='category__name'>Кровати</span>
 		</a>
-		<a href="#" class="category__item">
-			<img src="img/categories/category-2.jpg" alt="Категория 2" class="category__img" />
-			<span class="category__name">Матрасы</span>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-2.jpg' alt='Категория 2' class='category__img' />
+			<span class='category__name'>Матрасы</span>
 		</a>
-		<a href="#" class="category__item">
-			<img src="img/categories/category-3.jpg" alt="Категория 3" class="category__img" />
-			<span class="category__name">Шкафы</span>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-3.jpg' alt='Категория 3' class='category__img' />
+			<span class='category__name'>Шкафы</span>
 		</a>
-		<a href="#" class="category__item">
-			<img src="img/categories/category-4.jpg" alt="Категория 4" class="category__img" />
-			<span class="category__name">Диваны</span>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-4.jpg' alt='Категория 4' class='category__img' />
+			<span class='category__name'>Диваны</span>
 		</a>
-		<a href="#" class="category__item">
-			<img src="img/categories/category-5.jpg" alt="Категория 5" class="category__img" />
-			<span class="category__name">Детская мебель</span>
+		<a href='#' class='category__item'>
+			<img src='img/categories/category-5.jpg' alt='Категория 5' class='category__img' />
+			<span class='category__name'>Детская мебель</span>
 		</a>
 	</div>
 </section>
 
-<section class="popular">
-	<div class="container">
-		<h2 class="section__title">Популярное</h2>
-		<div class="popular__slider swiper">
-			<div class="swiper-wrapper">
+<section class='popular'>
+	<div class='container'>
+		<h2 class='section__title'>Популярное</h2>
+		<div class='popular__slider swiper'>
+			<div class='swiper-wrapper'>
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
@@ -103,22 +90,22 @@
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
 			</div>
-			<div class="popular_slider-prev">
-				<img src="img/prev-slide.svg" alt="" />
+			<div class='popular_slider-prev'>
+				<img src='img/prev-slide.svg' alt='' />
 			</div>
-			<div class="popular_slider-next">
-				<img src="img/next-slide.svg" alt="" />
+			<div class='popular_slider-next'>
+				<img src='img/next-slide.svg' alt='' />
 			</div>
-			<div class="swiper-pagination"></div>
+			<div class='swiper-pagination'></div>
 		</div>
 	</div>
 </section>
 
-<section class="premium">
-	<div class="container">
-		<h2 class="section__title">Премиум коллекция</h2>
-		<div class="premium__slider swiper">
-			<div class="swiper-wrapper">
+<section class='premium'>
+	<div class='container'>
+		<h2 class='section__title'>Премиум коллекция</h2>
+		<div class='premium__slider swiper'>
+			<div class='swiper-wrapper'>
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
@@ -126,60 +113,14 @@
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
 				@@include('partials/_slider-item.html') @@include('partials/_slider-item.html')
 			</div>
-			<div class="swiper-pagination"></div>
+			<div class='swiper-pagination'></div>
 
-			<div class="premium_slider-prev"><img src="img/prev-slide.svg" alt="" /></div>
-			<div class="premium_slider-next"><img src="img/next-slide.svg" alt="" /></div>
+			<div class='premium_slider-prev'><img src='img/prev-slide.svg' alt='' /></div>
+			<div class='premium_slider-next'><img src='img/next-slide.svg' alt='' /></div>
 		</div>
 	</div>
 </section>
 
-<section class="callback">
-	<div class="container">
-		<h2 class="callback__title">Давайте созвонимся?</h2>
-		<div class="callback__form-wrapper">
-			<p class="callback__desc">Заполните форму ниже и мы свяжемся с вами в ближайшее время!</p>
-			<form action="#" class="callback__form">
-				<div class="form__row">
-					<label for="name" class="form__label">
-						<span>Ваше имя</span>
-						<input type="text" class="form__input" placeholder="Иван Иванов" id="name" />
-					</label>
-				</div>
-				<div class="form__row">
-					<label for="phone" class="form__label">
-						<span>Ваш телефон</span>
-						<input type="tel" class="form__input" placeholder="8 ( - - - ) ___ - __ - __" id="phone" />
-					</label>
-				</div>
-				<div class="form__row">
-					<label for="policy" class="checkbox-wrap">
-						<input type="checkbox" id="policy" class="checkbox" />
-						<span class="form__policy checkbox-text">
-							Соглашаюсь с
-							<a href="#" class="form__policy-link">Политикой конфиденциальности</a>
-						</span>
-					</label>
-				</div>
-				<div class="form__row">
-					<input type="submit" class="form__submit" value="Отправить" />
-				</div>
-			</form>
-		</div>
-		<div class="callback__img-wrap">
-			<img src="img/callback.png" alt="callback" class="callback__img" />
-
-			<div class="incoming-call">
-				<div class="incoming-call__desc">Входящий вызов</div>
-				<div class="incoming-call__value">8 (962) 684 - 8676</div>
-				<div class="incoming-call__text-wrap">
-					<div class="incoming-call__text">
-						Поможем подобрать лучшую мебель для дома, ответим на вопросы или решим проблемы с заказом!
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+@@include('partials/_callback.html')
 
 @@include('partials/_footer.html')

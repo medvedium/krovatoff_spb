@@ -72,46 +72,46 @@
 
 .footer-contacts {
 	margin-right: 100px;
+}
 
-	&__row {
-		display: flex;
-		align-items: center;
-		margin-bottom: 20px;
+.footer-contacts__text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+}
 
-		a {
-			display: block;
-			margin-left: 10px;
-			color: $white;
-			font-weight: 600;
-			font-size: 20px;
-			text-decoration: none;
+.footer-contacts__btn {
 
-			&:hover {
-				text-decoration: underline;
-			}
-		}
+	a {
+		padding: 16px 28px;
+		color: $white;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 18px;
+		background-color: $accent;
+		border: 0;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		cursor: pointer;
 	}
+}
 
-	&__text {
-		font-weight: 500;
+.footer-contacts__row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	a {
+		display: block;
+		margin-left: 10px;
+		color: $white;
+		font-weight: 600;
 		font-size: 20px;
-		line-height: 24px;
-	}
+		text-decoration: none;
 
-	&__btn {
-
-		a {
-			color: $white;
-			background-color: $accent;
-			border: 0;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
-			font-weight: bold;
-			font-size: 15px;
-			line-height: 18px;
-			padding: 16px 28px;
-			cursor: pointer;
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
@@ -119,10 +119,10 @@
 .footer-social {
 
 	&__title {
+		margin-bottom: 25px;
 		font-weight: 600;
 		font-size: 20px;
 		line-height: 24px;
-		margin-bottom: 25px;
 	}
 
 	&__row {
@@ -132,16 +132,14 @@
 	}
 
 	&__link {
-		background-color: $accent;
-		cursor: pointer;
-		width: 53px;
-		height: 53px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
+		width: 53px;
+		height: 53px;
+		background-color: $accent;
 		border-radius: 5px;
+		cursor: pointer;
 
 		svg {
 			width: 30px;
@@ -158,16 +156,16 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+}
 
-	&__item {
-		width: 33%;
+.footer-info__item {
+	width: 33%;
 
-		&:nth-child(2) {
-			text-align: center;
-		}
+	&:nth-child(2) {
+		text-align: center;
+	}
 
-		&:nth-child(3) {
-			text-align: right;
-		}
+	&:nth-child(3) {
+		text-align: right;
 	}
 }
