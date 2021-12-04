@@ -56,3 +56,63 @@ if (catalogToggle) {
     });
   });
 }
+
+var deliveryMenu = document.querySelector('.delivery__menu');
+var deliveryTabContent = document.querySelectorAll('.delivery__tab-content');
+var deliveryDescriptionItems = document.querySelectorAll('.delivery__description-content');
+
+if (deliveryMenu) {
+  deliveryMenu.addEventListener('click', function (e) {
+    var target = e.target;
+
+    if (target.dataset.tab === 'delivery') {
+      document.querySelectorAll('.delivery__tab').forEach(function (item) {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+        }
+
+        if (item.dataset.tab === 'delivery') {
+          item.classList.add('active');
+        }
+      });
+      deliveryTabContent.forEach(function (item) {
+        if (item.dataset.content !== 'delivery' && item.classList.contains('active')) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+      deliveryDescriptionItems.forEach(function (item) {
+        if (item.dataset.content !== 'delivery' && item.classList.contains('active')) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+    } else if (target.dataset.tab === 'refund') {
+      document.querySelectorAll('.delivery__tab').forEach(function (item) {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+        }
+
+        if (item.dataset.tab === 'refund') {
+          item.classList.add('active');
+        }
+      });
+      deliveryTabContent.forEach(function (item) {
+        if (item.dataset.content !== 'refund' && item.classList.contains('active')) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+      deliveryDescriptionItems.forEach(function (item) {
+        if (item.dataset.content !== 'refund' && item.classList.contains('active')) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+    }
+  });
+}
