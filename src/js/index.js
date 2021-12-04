@@ -118,3 +118,47 @@ if (deliveryMenu) {
 		}
 	})
 }
+
+const paymentMenu = document.querySelector('.payment__menu')
+const paymentTabContent = document.querySelectorAll('.payment__tab-content')
+
+if (paymentMenu) {
+	paymentMenu.addEventListener('click', (e) => {
+		const { target } = e
+
+		if (target.dataset.tab === 'cash') {
+			document.querySelectorAll('.payment__tab').forEach((item) => {
+				if (item.classList.contains('active')) {
+					item.classList.remove('active')
+				}
+				if (item.dataset.tab === 'cash') {
+					item.classList.add('active')
+				}
+			})
+
+			paymentTabContent.forEach((item) => {
+				if (item.dataset.content !== 'cash' && item.classList.contains('active')) {
+					item.classList.remove('active')
+				} else {
+					item.classList.add('active')
+				}
+			})
+		} else if (target.dataset.tab === 'company') {
+			document.querySelectorAll('.payment__tab').forEach((item) => {
+				if (item.classList.contains('active')) {
+					item.classList.remove('active')
+				}
+				if (item.dataset.tab === 'company') {
+					item.classList.add('active')
+				}
+			})
+			paymentTabContent.forEach((item) => {
+				if (item.dataset.content !== 'company' && item.classList.contains('active')) {
+					item.classList.remove('active')
+				} else {
+					item.classList.add('active')
+				}
+			})
+		}
+	})
+}
