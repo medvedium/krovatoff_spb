@@ -12,31 +12,103 @@
 
 		<div class='delivery__wrap'>
 			<aside class='delivery__menu'>
-				<div class='delivery__tab'>Доставка</div>
-				<div class='delivery__tab'>Самовывоз</div>
-				<div class='delivery__tab'>Возврат и замена</div>
+				<div class='delivery__tab active' data-tab='delivery'>Доставка</div>
+				<div class='delivery__tab' data-tab='self-take'>Самовывоз</div>
+				<div class='delivery__tab' data-tab='refund'>Возврат и замена</div>
 			</aside>
 			<div class='delivery__inner'>
-				<div class='delivery__tab-content'>
-					Доставка осуществляется с 10 до 21 ч
+				<div class='delivery__tab-content active' data-content='delivery'>
+					<b>Доставка осуществляется с 10 до 21 ч</b>
+					<br />
 					По СПб ( внутри КАД + 5 км ) — бесплатно*
+					<br />
 					при заказе от 7000 руб.
-					при заказе до  7000 руб. — 500 руб.
-
+					<br />
+					при заказе до 7000 руб. — 500 руб.
+					<br />
+					<br />
 					По Ленинградской области — 30 руб./ км
+					<br />
 					( считается в 1 сторону )
-
-					Подъем мебели
+					<br />
+					<br />
+					<b>Подъем мебели</b>
+					<br />
 					На лифте ( до 200 кг ) — 200 руб.
+					<br />
 					Без лифта ( до 200 кг ) — 150 руб. / этаж
+					<br />
+					<br />
+					<b>Обращаем ваше внимание!</b>
+					<br />
+					Подъезд грузового транспорта к вашему дому должен быть свободным. Если подъезд к дому невозможен - ручной
+					пронос мебели (более 20 метров) нужно будет оплатить из расчета 100 рублей за каждые дополнительные 20 метров
+					за каждую единицу товара.
+				</div>
+				<div class='delivery__tab-content' data-content='refund'>
+					Прием рекламаций, для качественной работы по скорейшему устранению претензий, производится исключительно по	электронной почте в письменном виде, адрес электронной почты:
+					<b>bersen1982@mail.ru</b><br>
+					<br>
+					<b>Образец заявления <a href='#'>здесь</a></b><br>
+					<br>
+					<br>
+					<b>Обращаем ваше внимание!</b><br>
+					Обязательно в теме письма указывать номер заказа или договора и ФИО. В течение 10 рабочих дней с момента
+					получения письма с Вами свяжется менеджер по работе с претензиями.<br>
+					Ниже перечень необходимых документов для правильного оформления рекламации и условия возврата и замены товара.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='delivery__description'>
+		<div class='container'>
+			<div class='delivery__description-content active' data-content='delivery'>
+				<div class='delivery__description-title'>Покупатель в течение назначенного интервала доставки обязан</div>
+				<div class='delivery__description-inner'>
+					<div class='delivery__description-item'>Находиться по указанному в заказе адресу</div>
+					<div class='delivery__description-item'>Занос в квартиру осуществляется до указанного места в квартире.</div>
+					<div class='delivery__description-item'>
+						Доставленная мебель подлежит осмотру и проверке на наличие возможных дефектов, которые могли возникнуть во
+						время транспортировки
+					</div>
+					<div class='delivery__description-item'>
+						Получатель обязан проверить комплектацию и целостность стеклянных и зеркальных элементов, до подписания
+						сопроводительных документов
+					</div>
+					<div class='delivery__description-item'>
+						При доставке мебели через транспортные компании мебель по умолчанию дополнительно упаковывается в жесткую
+						упаковку (обрешетку), которую делают на транспортной компании за дополнительную плату
+					</div>
+				</div>
+			</div>
 
-					Обращаем ваше внимание!
-					Подъезд грузового транспорта к вашему дому должен быть свободным. Если подъезд к дому невозможен - ручной пронос мебели (более 20 метров) нужно будет оплатить из расчета 100 рублей за каждые дополнительные 20 метров за каждую единицу товара.
+			<div class='delivery__description-content refund' data-content='refund'>
+				<div class='delivery__description-title'>Документы для оформления рекламации</div>
+				<div class='delivery__description-inner'>
+					<div class='delivery__description-item'>
+						<div class='delivery__description-case'>Товар поврежден</div>
+						<div>Фото маркировки, которые находятся на упаковке товара</div>
+						<div>Фото поврежденной детали</div>
+						<div>Копию чека</div>
+						<div>Копию товарной накладной</div>
+					</div>
+					<div class='delivery__description-item'>
+						<div class='delivery__description-case'>Некомплектность товара или нехватка деталей и фурнитуры</div>
+						<div>Копию схемы сборки с обозначением недостающей части товара в схеме сборки</div>
+						<div>Фото маркировки, которые находятся на упаковке товара</div>
+						<div>Копию чека</div>
+						<div>Копию товарной накладной</div>
+					</div>
+					<div class='delivery__description-item'>
+						<div class='delivery__description-case'>Не мой товар</div>
+						<div>Фото привезенного товара и фото маркировки на коробке</div>
+						<div>Копию чека</div>
+						<div>Копию товарной накладной</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-@@include('partials/_callback.html')
-@@include('partials/_footer.html')
+@@include('partials/_callback.html') @@include('partials/_footer.html')
