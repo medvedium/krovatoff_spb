@@ -116,3 +116,48 @@ if (deliveryMenu) {
     }
   });
 }
+
+var paymentMenu = document.querySelector('.payment__menu');
+var paymentTabContent = document.querySelectorAll('.payment__tab-content');
+
+if (paymentMenu) {
+  paymentMenu.addEventListener('click', function (e) {
+    var target = e.target;
+
+    if (target.dataset.tab === 'cash') {
+      document.querySelectorAll('.payment__tab').forEach(function (item) {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+        }
+
+        if (item.dataset.tab === 'cash') {
+          item.classList.add('active');
+        }
+      });
+      paymentTabContent.forEach(function (item) {
+        if (item.dataset.content !== 'cash' && item.classList.contains('active')) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+    } else if (target.dataset.tab === 'company') {
+      document.querySelectorAll('.payment__tab').forEach(function (item) {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+        }
+
+        if (item.dataset.tab === 'company') {
+          item.classList.add('active');
+        }
+      });
+      paymentTabContent.forEach(function (item) {
+        if (item.dataset.content !== 'company' && item.classList.contains('active')) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+    }
+  });
+}
