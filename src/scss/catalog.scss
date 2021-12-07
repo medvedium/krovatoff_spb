@@ -1,0 +1,53 @@
+@import 'vars';
+
+.catalog {
+	background-color: $background;
+
+	.breadcrumbs {
+		width: 25%;
+	}
+
+	.section__title {
+		margin-left: 20px;
+	}
+}
+
+.catalog__wrap {
+	display: flex;
+}
+
+.catalog__filter {
+	width: 25%;
+	background-color: $white;
+}
+
+.catalog__inner {
+	padding-left: 20px;
+}
+
+.filter__tags {
+	display: flex;
+
+	.tags__item {
+		position: relative;
+		margin-right: 10px;
+		padding: 9px 45px 9px 18px;
+		background-color: $white;
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+
+		.tags__remove {
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			display: block;
+			width: 11px;
+			height: 11px;
+			background-image: url('../img/icons/remove.svg');
+			transform: translateY(-50%);
+			cursor: pointer;
+			content: '';
+		}
+	}
+}
