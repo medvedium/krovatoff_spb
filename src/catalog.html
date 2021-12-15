@@ -17,7 +17,7 @@
 					Материал
 					каркаса ЛДСП Металл Кованные 58 20 6 Материал изголовья ЛДСП Металл Кованные 58 20 6 Тип обивочного материала
 					Ткань Экокожа 152 40 Цвет Белый Крем Шоколад Показать все Подъемный механизм да нет Выдвижной ящик да нет
-					</form>
+					<button class="filter__reset" type='reset' form='catalog-form'>Сбросить фильтр</button></form>
 			</div>
 			<div class="catalog__inner">
 				<div class="filter__tags">
@@ -44,23 +44,25 @@
 				</div>
 				<div class="filter__controls">
 					<div class="filter__total"><span class='filter__value'>1583</span> товаров</div>
-					<button class="filter__reset" type='reset' form='catalog-form'>Сбросить фильтр</button>
+
 					<div class="filter__shows">Показывать по 12 24 36</div>
-					<div class="filter__sort">Сортировать по популярности</div>
+					<div class="filter__sort">Сортировать по попклярности</div>
 				</div>
 				<div class="catalog__list">
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
-					<div class='catalog__item'>Элемент каталога</div>
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
+					@@include('partials/_catalog-item.html')
 				</div>
 				<div class="catalog__pagination">1 2 3 4 5 6</div>
 			</div>
