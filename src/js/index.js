@@ -1,48 +1,4 @@
-// import Swiper from 'swiper'
-// import 'swiper/css/bundle'
-
-const heroSlider = new Swiper('.hero-slider', {
-	slidesPerView: 1,
-	sliderPerGroup: 1,
-	spaceBetween: 30,
-	pagination: {
-		el: '.hero-slider .swiper-pagination',
-		type: 'bullets'
-	},
-	loop: true,
-	autoplay: {
-		delay: 8000
-	}
-})
-
-const popularSwiper = new Swiper('.popular__slider', {
-	slidesPerView: 4,
-	slidesPerGroup: 4,
-	navigation: {
-		nextEl: '.popular_slider-next',
-		prevEl: '.popular_slider-prev'
-	},
-	pagination: {
-		el: '.popular__slider .swiper-pagination',
-		type: 'bullets'
-	},
-	spaceBetween: 30
-})
-
-const premiumSwiper = new Swiper('.premium__slider', {
-	slidesPerView: 4,
-	slidesPerGroup: 4,
-	navigation: {
-		nextEl: '.premium_slider-next',
-		prevEl: '.premium_slider-prev'
-	},
-	pagination: {
-		el: '.premium__slider .swiper-pagination',
-		type: 'bullets'
-	},
-	spaceBetween: 30
-	// slidesPerColumn: 4
-})
+import './sliders'
 
 const catalogToggle = document.querySelector('.dropdown-catalog-activate')
 const dropdownCatalog = document.querySelector('.dropdown-catalog')
@@ -66,7 +22,7 @@ const deliveryDescriptionItems = document.querySelectorAll('.delivery__descripti
 
 if (deliveryMenu) {
 	deliveryMenu.addEventListener('click', (e) => {
-		const { target } = e
+		const {target} = e
 
 		if (target.dataset.tab === 'delivery') {
 			document.querySelectorAll('.delivery__tab').forEach((item) => {
@@ -124,7 +80,7 @@ const paymentTabContent = document.querySelectorAll('.payment__tab-content')
 
 if (paymentMenu) {
 	paymentMenu.addEventListener('click', (e) => {
-		const { target } = e
+		const {target} = e
 
 		if (target.dataset.tab === 'cash') {
 			document.querySelectorAll('.payment__tab').forEach((item) => {

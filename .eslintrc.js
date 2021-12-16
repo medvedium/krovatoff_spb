@@ -1,17 +1,19 @@
 module.exports = {
-	env: {
-		browser: true,
-		es6: true,
-		node: true
-	},
-	extends: ['eslint:recommended']
-	// globals: {
-	//   Atomics: 'readonly',
-	//   SharedArrayBuffer: 'readonly',
-	// },
-	// parserOptions: {
-	// 	ecmaVersion: 11,
-	// 	sourceType: 'module'
-	// },
-	// rules: {}
-}
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: [
+    'airbnb-base',
+    'prettier'
+  ],
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  rules: {
+  },
+  plugins: [
+    'prettier'
+  ]
+};
