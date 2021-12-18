@@ -1,52 +1,132 @@
 <div class='catalog__filter'>
 	<form action='#' id='catalog-form'>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--range'>
 			<div class='filter-item__title jsCloseCategory'>Цена</div>
-			<div class='filter-item__inner'>от
-				50 000
-				до
-				350 000
-				<div class="double-slider" id="slider"></div>
+			<div class='filter-item__inner'>
+				<div class='filter-item__row'>
+					<div class='filter-item__from'>
+						<label for='price-from'>
+							от
+							<input id='price-from' type='text' value='50 000'>
+						</label>
+					</div>
+					<div class='filter-item__to'>
+						<label for='price-to'>
+							до
+							<input id='price-to' type='text' value='350 000'>
+						</label>
+					</div>
+				</div>
+				<div class='double-slider' id='slider'></div>
 			</div>
 		</div>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--range'>
 			<div class='filter-item__title jsCloseCategory'>Длина</div>
 			<div class='filter-item__inner'>от
 				100 см
 				до
 				220 см
 			</div>
+			<div class='double-slider' id='slider-2'></div>
 		</div>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--range'>
 			<div class='filter-item__title jsCloseCategory'>Высота</div>
 			<div class='filter-item__inner'>от
 				50
 				до
 				100
 			</div>
+			<div class='double-slider' id='slider-3'></div>
 		</div>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--select'>
 			<div class='filter-item__title jsCloseCategory'>Размер спального места</div>
 			<div class='filter-item__inner'>90 200</div>
 		</div>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--checkbox'>
 			<div class='filter-item__title jsCloseCategory'>Материал каркаса</div>
-			<div class='filter-item__inner'>ЛДСП
-				Металл
-				Кованные
+			<div class='filter-item__inner'>
+				<div class='filter-item__row'>
+					<label for='material-1' class='checkbox-wrap'>
+						<input type='checkbox' id='material-1' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							ЛДСП
+						</span>
+					</label>
+					<span class='filter-item__quantity'>50</span>
+				</div>
+				<div class='filter-item__row'>
+					<label for='material-2' class='checkbox-wrap'>
+						<input type='checkbox' id='material-2' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Металл
+						</span>
+					</label>
+					<span class='filter-item__quantity'>50</span>
+				</div>
+				<div class='filter-item__row'>
+					<label for='material-3' class='checkbox-wrap'>
+						<input type='checkbox' id='material-3' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Кованные
+						</span>
+					</label>
+					<span class='filter-item__quantity'>50</span>
+				</div>
 			</div>
 		</div>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--checkbox'>
 			<div class='filter-item__title jsCloseCategory'>Материал изголовья</div>
-			<div class='filter-item__inner'>ЛДСП
-				Металл
-				Кованные
+			<div class='filter-item__inner'>
+				<div class='filter-item__row'>
+					<label for='material-4' class='checkbox-wrap'>
+						<input type='checkbox' id='material-4' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							ЛДСП
+						</span>
+					</label>
+					<span class='filter-item__quantity'>50</span>
+				</div>
+				<div class='filter-item__row'>
+					<label for='material-5' class='checkbox-wrap'>
+						<input type='checkbox' id='material-5' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Металл
+						</span>
+					</label>
+					<span class='filter-item__quantity'>50</span>
+				</div>
+				<div class='filter-item__row'>
+					<label for='material-6' class='checkbox-wrap'>
+						<input type='checkbox' id='material-6' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Кованные
+						</span>
+					</label>
+					<span class='filter-item__quantity'>50</span>
+				</div>
 			</div>
 		</div>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--checkbox'>
 			<div class='filter-item__title jsCloseCategory'>Тип обивочного материала</div>
-			<div class='filter-item__inner'>Ткань
-				Экокожа
+			<div class='filter-item__inner'>
+				<div class='filter-item__row'>
+					<label for='inner-type-1' class='checkbox-wrap'>
+						<input type='checkbox' id='inner-type-1' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Ткань
+						</span>
+					</label>
+					<span class='filter-item__quantity'>50</span>
+				</div>
+				<div class='filter-item__row'>
+					<label for='inner-type-2' class='checkbox-wrap'>
+						<input type='checkbox' id='inner-type-2' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Экокожа
+						</span>
+					</label>
+					<span class='filter-item__quantity'>50</span>
+				</div>
 			</div>
 		</div>
 		<div class='filter-item__wrap'>
@@ -56,15 +136,47 @@
 				Шоколад
 			</div>
 		</div>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--checkbox'>
 			<div class='filter-item__title jsCloseCategory'>Подъемный механизм</div>
-			<div class='filter-item__inner'>да
-				нет</div>
+			<div class='filter-item__inner'>
+				<div class='filter-item__row'>
+					<label for='lift-mech--yes' class='checkbox-wrap'>
+						<input type='checkbox' id='lift-mech--yes' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Да
+						</span>
+					</label>
+				</div>
+				<div class='filter-item__row'>
+					<label for='lift-mech-no' class='checkbox-wrap'>
+						<input type='checkbox' id='lift-mech-no' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Нет
+						</span>
+					</label>
+				</div>
+			</div>
 		</div>
-		<div class='filter-item__wrap'>
+		<div class='filter-item__wrap filter-item__wrap--checkbox'>
 			<div class='filter-item__title jsCloseCategory'>Выдвижной ящик</div>
-			<div class='filter-item__inner'>да
-				нет</div>
+			<div class='filter-item__inner'>
+				<div class='filter-item__row'>
+					<label for='roll-mech--yes' class='checkbox-wrap'>
+						<input type='checkbox' id='roll-mech--yes' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Да
+						</span>
+					</label>
+				</div>
+				<div class='filter-item__row'>
+					<label for='roll-mech-no' class='checkbox-wrap'>
+						<input type='checkbox' id='roll-mech-no' class='checkbox' />
+						<span class='checkbox-text checkbox-text--filter'>
+							Нет
+						</span>
+					</label>
+				</div>
+			</div>
 		</div>
 	</form>
 </div>
