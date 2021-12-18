@@ -1,7 +1,7 @@
 {
     "name": "project",
     "description": "Some text",
-    "author": "Paliy Stepan",
+    "author": "Alexey Andreev",
     "license": "MIT",
     "scripts": {
         "dev": "gulp",
@@ -62,7 +62,9 @@
         "yargs": "^15.4.1"
     },
     "dependencies": {
+        "bootstrap": "^5.1.3",
         "imask": "^6.2.2",
+        "nouislider": "^15.5.0",
         "swiper": "^7.0.6"
     }
 }

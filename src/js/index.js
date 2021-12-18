@@ -1,4 +1,5 @@
 import './sliders'
+import './catalog-filter'
 
 const catalogToggle = document.querySelector('.dropdown-catalog-activate')
 const dropdownCatalog = document.querySelector('.dropdown-catalog')
