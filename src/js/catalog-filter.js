@@ -35,3 +35,13 @@ if (document.querySelector('#slider-3')) {
 		step: 5
 	})
 }
+
+const catalogForm = document.querySelector('#catalog-form')
+if(catalogForm) {
+	catalogForm.addEventListener('click', (event) => {
+		const {target} = event
+		if(target.classList.contains('jsCloseCategory')) {
+			target.parentNode.classList.toggle('is-open')
+		}
+	})
+}
