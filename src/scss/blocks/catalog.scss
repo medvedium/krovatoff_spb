@@ -28,18 +28,6 @@
 }
 
 
-
-.filter__controls {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 25px;
-
-	.filter__shows {
-		margin-right: 20px;
-		margin-left: auto;
-	}
-}
-
 .catalog__list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

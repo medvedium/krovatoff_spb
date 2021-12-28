@@ -48,7 +48,7 @@
 		background: linear-gradient(180deg, #ffe896 0%, #fecb4d 100%);
 	}
 
-	&:hover svg {
+	&:hover svg path {
 		stroke: $white;
 	}
 }
