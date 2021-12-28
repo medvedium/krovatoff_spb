@@ -1,4 +1,4 @@
-import noUiSlider from '../../node_modules/nouislider'
+import noUiSlider from 'nouislider'
 
 if (document.querySelector('#slider')) {
 	noUiSlider.create(document.querySelector('#slider'), {

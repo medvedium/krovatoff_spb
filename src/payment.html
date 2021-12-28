@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<link rel='icon' type='image/png' href='img/favicon-32x32.png' sizes='32x32' />
+	<link rel='icon' type='image/png' href='img/favicon-16x16.png' sizes='16x16' />
+	<link rel='icon' type='image/png' href='img/favicon.ico' sizes='16x16' />
+
+	<title>Магазин мебели</title>
+	<!--		<link rel='stylesheet' href='https://unpkg.com/swiper@7/swiper-bundle.min.css' />-->
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+@@include('blocks/_header.html')
+
+<section class="payment">
+	<div class="container">
+		<div class="top-row">
+			<div class="breadcrumbs">
+				<a href="/" class="breadcrumbs__item">Главная</a>
+				<a href="#" class="breadcrumbs__item">Оплата</a>
+			</div>
+			<div class="section__title">Оплата</div>
+		</div>
+
+		<div class="payment__wrap">
+			<aside class="payment__menu">
+				<div class="payment__tab active" data-tab="cash">Доставка</div>
+				<div class="payment__tab" data-tab="company">Возврат и замена</div>
+			</aside>
+			<div class="payment__inner">
+				<div class="payment__tab-content active" data-content="cash">
+					Оплата заказа производится, водителю службы доставки ( после проверки вами комплектности товара).
+					<br />
+					<br />
+					Убедившись в соответствующем качестве, вам будет предложено расписаться в накладной за прием товара и
+					расплатиться.
+					<br />
+					<br />
+					Вместе c заказанными товарами вы получите товарный чек
+					<br />
+					<br />
+					Для заказов на сумму более 50 000 рублей оплата наличными при получении товара невозможна. Такие заказы
+					доставляются только после внесения клиентом предоплаты.
+					<br />
+				</div>
+				<div class="payment__tab-content" data-content="company">
+					<b>Безналичный расчет для юридических лиц</b>
+					<br />
+					<br />
+					После того как вы осуществили заказ, вам будет выставлен счет. Вы оплачиваете его, и после поступления
+					денежных средств на наш расчетный счет, мы, в согласованный менеджером день, доставим ваш заказ.
+					<br />
+					<br />
+					Вместе с заказом вы получите комплект документов.
+					<br />
+					<br />
+					При получении товара, оплаченного по безналичному расчету, сотруднику, принимающему товар, обязательно
+					понадобится круглая печать, либо доверенность на получение материальных ценностей от организации, которая
+					производила оплату
+					<br />
+				</div>
+				<div class="payment__inner-img">
+					<img src="img/payment-bg.png" alt="" />
+					<div class='payment__inner-bubble-wrap'>
+						<div class='payment__inner-bubble'>Выберите удобный для вас способ оплаты!</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/_callback.html') @@include('blocks/_footer.html')

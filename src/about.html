@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<link rel='icon' type='image/png' href='img/favicon-32x32.png' sizes='32x32' />
+	<link rel='icon' type='image/png' href='img/favicon-16x16.png' sizes='16x16' />
+	<link rel='icon' type='image/png' href='img/favicon.ico' sizes='16x16' />
+
+	<title>Магазин мебели</title>
+	<!--		<link rel='stylesheet' href='https://unpkg.com/swiper@7/swiper-bundle.min.css' />-->
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+@@include('blocks/_header.html')
+
+<section class="about__main">
+	<div class="container">
+		<div class="breadcrumbs">
+			<a href="/" class="breadcrumbs__item">Главная</a>
+			<a href="#" class="breadcrumbs__item">О нас</a>
+		</div>
+		<div class="about__inner">
+			<div class="about__text">
+				<h1 class="about__title">О нас</h1>
+				<div class="about__desc">
+					<p>
+						Мы молодой, но активно развивающийся интернет магазин! Приоритетом компании КроватоффСПб.ру является
+						эстетическая красота, высочайшее качество, надежность и экологическая безопасность продукции.
+					</p>
+					<p>Мы сотрудничаем с лучшими российскими фабриками, которые смогли зарекомендовать себя на рынке.</p>
+					<p>У нас собственная служба доставки и квалифицированные сборщики мебели.</p>
+					<p>
+						Мы собрали в себе профессионализм, коммуникативные навыки и желание дарить только позитив всем нашим
+						клиентам!
+					</p>
+				</div>
+			</div>
+			<img src="img/about/about-1.jpg" alt="О нас" class="about__img" />
+		</div>
+	</div>
+</section>
+
+<div class="about__advantages">
+	<div class="container">
+		<div class="about__advantages-item">
+			Более
+			<span class="about__advantages-accent">1000 товаров</span>
+			доступных к заказу
+		</div>
+		<div class="about__advantages-item">
+			<span class="about__advantages-accent">5 лет</span>
+			опыта в сборке мебели
+		</div>
+		<div class="about__advantages-item">
+			Около
+			<span class="about__advantages-accent">500</span>
+			довольных клиентов
+		</div>
+	</div>
+</div>
+
+<section class="about__cta">
+	<div class="container">
+		<img src="img/about/about-2.jpg" alt="Мама с дочкой у компьютера" class="about__cta-img" />
+		<div class="about__cta-inner">
+			<h2 class="about__cta-text">Начни создавать свой уют дома вместе с нами!</h2>
+			<a href="" class="hero__link btn">Перейти в каталог</a>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/_callback.html') @@include('blocks/_footer.html')

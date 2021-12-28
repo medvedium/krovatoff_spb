@@ -1,0 +1,58 @@
+@import 'vars';
+
+.incoming-call {
+	position: absolute;
+	top: 450px;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+	transform: translateX(-50%);
+
+	&__desc {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	&__value {
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 37px;
+	}
+
+	&__text {
+		position: relative;
+		padding: 25px 15px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 28px;
+
+		&::after {
+			position: absolute;
+			top: 40px;
+			right: 6px;
+			display: block;
+			width: 25px;
+			height: 23px;
+			background-image: url(../../img/callback-triangle.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			transform: translate(100%, -50%);
+			content: '';
+		}
+
+		&-wrap {
+			position: absolute;
+			top: -250px;
+			left: -50px;
+			background-color: $white;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			transform: translateX(-100%);
+		}
+	}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8' />
+	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+	<link rel='icon' type='image/png' href='img/favicon-32x32.png' sizes='32x32' />
+	<link rel='icon' type='image/png' href='img/favicon-16x16.png' sizes='16x16' />
+	<link rel='icon' type='image/png' href='img/favicon.ico' sizes='16x16' />
+
+	<title>Магазин мебели</title>
+	<!--		<link rel='stylesheet' href='https://unpkg.com/swiper@7/swiper-bundle.min.css' />-->
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+@@include('blocks/_header.html')
+
+<section class="catalog">
+	<div class="container">
+		<div class="top-row">
+			<div class="breadcrumbs">
+				<a href="/" class="breadcrumbs__item">Главная</a>
+				<a href="#" class="breadcrumbs__item">Каталог</a>
+			</div>
+			<div class="section__title">Каталог</div>
+		</div>
+		<div class="catalog__wrap">
+			@@include('blocks/_catalog-filter.html')
+			<div class="catalog__inner">
+				<div class="filter__tags">
+					<div class="tags__item">
+						90x200
+						<div class="tags__remove"></div>
+					</div>
+					<div class="tags__item">
+						ЛДСП
+						<div class="tags__remove"></div>
+					</div>
+					<div class="tags__item">
+						Металл
+						<div class="tags__remove"></div>
+					</div>
+					<div class="tags__item">
+						Подъемный механизм
+						<div class="tags__remove"></div>
+					</div>
+					<div class="tags__item">
+						Выдвижной ящик
+						<div class="tags__remove"></div>
+					</div>
+
+				</div>
+				<div class="filter__controls">
+					<div class="filter__total"><span class='filter__value'>1583</span> товаров</div>
+					<button class="filter__reset" type='reset' form='catalog-form'>Сбросить фильтры</button>
+					<div class="filter__shows">Показывать по 12 24 36</div>
+					<div class="filter__sort">Сортировать по популярности</div>
+				</div>
+				<div class="catalog__list">
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+					@@include('blocks/_catalog-item.html')
+				</div>
+				<div class="catalog__pagination">1 2 3 4 5 6</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/_callback.html') @@include('blocks/_footer.html')

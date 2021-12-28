@@ -1,4 +1,4 @@
-import Swiper from '../../node_modules/swiper/swiper-bundle.esm.browser';
+import Swiper from 'swiper';
 
 if (document.querySelector('.hero-slider')) {
 	let heroSlider = new Swiper('.hero-slider', {

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/krovatoff_spb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svgicons/buy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.browserlistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/clean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/favicons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/fonts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/gzip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/images.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/serve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/sprites.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/views.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp-tasks/webp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.babel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/_catalog-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/_catalog-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/_dropdown-catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/_dropdown-catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/_slider-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/_slider-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/remove.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svgicons/remove.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/select.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svgicons/select.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/catalog-filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/catalog-filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/about.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/assembly.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/breadcrumbs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/burger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/callback.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/catalog-filter.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/catalog-item.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/catalog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/category.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/checkbox.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/delivery.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/dropdown-catalog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/general.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header-cart.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header-contacts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header-search.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/hero.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/incoming-call.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index-slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/nouislider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/payment.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/popular.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/premium.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/slider-item.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/swiper.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/vars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/vendor/swiper.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/assembly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/catalog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/delivery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/payment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22u0Ut4QX06VGMk5FTXLAhmWJR7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$USER_HOME$/AppData/Roaming/npm/node_modules/gulp" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\www\krovatoff_spb\src\svgicons" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="" />
+      <created>1640672184238</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640672184238</updated>
+      <workItem from="1640672185609" duration="3403000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
