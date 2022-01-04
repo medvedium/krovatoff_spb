@@ -1,4 +1,8 @@
-import Swiper from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+Swiper.use([Navigation, Pagination]);
 
 if (document.querySelector('.hero-slider')) {
 	let heroSlider = new Swiper('.hero-slider', {
