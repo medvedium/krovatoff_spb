@@ -1,7 +1,7 @@
 @import 'vars';
 
 .catalog__filter {
-	width: 25%;
+	//width: 25%;
 	height: max-content;
 	padding: 45px 30px;
 	background-color: $white;
@@ -15,7 +15,7 @@
 			padding-bottom: 20px;
 			transition: height .4s linear;
 			overflow: hidden;
-			height: 40px;
+			//height: 40px;
 
 			&.is-open {
 				height: auto;
@@ -64,6 +64,10 @@
 
 		&__inner {
 			//overflow: auto;
+			display: none;
+			opacity: 0;
+			visibility: hidden;
+			transition: all .2s linear;
 		}
 
 		&__row {
@@ -182,4 +186,10 @@
 	font-size: 15px;
 	line-height: 18px;
 	margin-left: 50px;
+}
+
+.catalog__filter .filter-item__wrap.is-open .filter-item__inner {
+	display: block;
+	opacity: 1;
+	visibility: visible;
 }
