@@ -71,7 +71,7 @@
 		}
 
 		&__row {
-			margin-top: 10px;
+			margin-bottom: 10px;
 		}
 
 		&__quantity {
@@ -150,9 +150,10 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 25px;
+	margin-bottom: 17px;
 
 	.filter__shows {
-		margin-right: 20px;
+		margin-right: 60px;
 		margin-left: auto;
 		font-weight: 500;
 		font-size: 15px;
@@ -186,10 +187,43 @@
 	font-size: 15px;
 	line-height: 18px;
 	margin-left: 50px;
+	background: rgba(196, 196, 196, 0.22);;
 }
 
 .catalog__filter .filter-item__wrap.is-open .filter-item__inner {
 	display: block;
 	opacity: 1;
 	visibility: visible;
+}
+
+.filter__sort  {
+	display: flex;
+	align-items: center;
+}
+
+.filter__total {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+
+	color: rgba(0, 0, 0, 0.5);
+}
+.filter-color {
+	margin-right: 12px;
+}
+
+.filter-colors {
+	position: relative;
+	padding-bottom: 30px;
+	&__more {
+		//background: none;
+		color: $accent;
+		background-color: transparent;
+		border: none;
+		margin-left: auto;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
 }

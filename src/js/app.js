@@ -39,7 +39,7 @@ flsFunctions.isWebp();
 Документация:
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -53,7 +53,7 @@ flsFunctions.isWebp();
 Документация по работе в шаблоне:
 Сниппет (HTML): showmore
 */
-// flsFunctions.showMore();
+flsFunctions.showMore();
 
 /*
 Попапы
