@@ -146,9 +146,6 @@ export let formValidate = {
 }
 /* Отправка форм */
 export function formSubmit(validate) {
-	if (flsModules.popup) {
-		flsModules.popup.open('some');
-	}
 	const forms = document.forms;
 	if (forms.length) {
 		for (const form of forms) {

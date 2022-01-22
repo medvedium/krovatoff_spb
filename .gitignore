@@ -9,3 +9,4 @@ version.json
 **/*.zip
 undefined
 .gitignore
+.idea

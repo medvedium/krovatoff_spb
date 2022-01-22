@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Swiper navigation and pagination fix">
-      <change afterPath="$PROJECT_DIR$/src/img/icons/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/blocks/pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/svgicons/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/gulp-tasks/js-dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2022__21_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2022__21_26__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/sprite.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/gulp-tasks/sprite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_catalog-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_catalog-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/catalog-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/catalog-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svgicons/select.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svgicons/select.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/forms/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/forms/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/libs/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/libs/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/libs/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/libs/select.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

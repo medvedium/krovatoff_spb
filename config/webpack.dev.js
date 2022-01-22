@@ -20,14 +20,13 @@ if (!pugPages.length) {
 			'indent_size': 3
 		},
 		replace: [
-			{ regex: '<link rel="stylesheet" href="css/style.min.css">', to: '' },
+			{ regex: '<link rel="stylesheet" href="css/style.min.css" />', to: '' },
 			{ regex: '../img', to: 'img' },
 			{ regex: '@img', to: 'img' },
 			{ regex: 'NEW_PROJECT_NAME', to: rootFolder }
 		],
 	})];
 }
-
 
 const paths = {
 	src: path.resolve(srcFolder),
@@ -52,8 +51,9 @@ const config = {
 		static: paths.build,
 		open: true,
 		compress: true,
-		port: 8080,
+		port: 'auto',
 		hot: true,
+		host: 'local-ip',
 		watchFiles: [
 			`${paths.src}/**/*.html`,
 			`${paths.src}/**/*.pug`,
