@@ -4,31 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="idk">
-      <change afterPath="$PROJECT_DIR$/src/img/colors/chocolate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/colors/cream.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/colors/maseratti.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/colors/white.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/dropdown.svg" afterDir="false" />
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Swiper navigation and pagination fix">
+      <change afterPath="$PROJECT_DIR$/src/img/icons/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svgicons/star.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snnipets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/snnipets.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/_buy-svg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/_callback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/_catalog-filter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/_catalog-item.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/_dropdown-catalog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/_footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/_header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/_slider-item.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/gulp-tasks/sprite.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/gulp-tasks/sprite.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_catalog-filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_catalog-filter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/.idea/scss.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/base/forms/select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base/forms/select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/catalog-filter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/catalog-filter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/general.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_catalog-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_catalog-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/catalog-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/catalog-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svgicons/select.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/svgicons/select.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="extract.css.actions.ExtractCSSConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -96,6 +82,7 @@
       <workItem from="1642352620748" duration="29000" />
       <workItem from="1642364804289" duration="416000" />
       <workItem from="1642622964090" duration="5868000" />
+      <workItem from="1642847606614" duration="1797000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>

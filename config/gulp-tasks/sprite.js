@@ -17,7 +17,7 @@ export const sprite = () => {
 			shape: {
 				id: {
 					separator: '',
-					generator: 'svg-'
+					generator: ''
 				},
 				transform: [
 					{

@@ -1,0 +1,571 @@
+Index: src/scss/.idea/scss.iml
+===================================================================
+diff --git a/src/scss/.idea/scss.iml b/src/scss/.idea/scss.iml
+deleted file mode 100644
+--- a/src/scss/.idea/scss.iml	
++++ /dev/null	
+@@ -1,12 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="WEB_MODULE" version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/temp" />
+-      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+-      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: src/scss/.idea/modules.xml
+===================================================================
+diff --git a/src/scss/.idea/modules.xml b/src/scss/.idea/modules.xml
+deleted file mode 100644
+--- a/src/scss/.idea/modules.xml	
++++ /dev/null	
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/scss.iml" filepath="$PROJECT_DIR$/.idea/scss.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: src/html/_catalog-filter.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div class=\"catalog__filter\">\n\t<form action=\"#\" id=\"catalog-form\">\n\n\t\t<div class=\"filter-item__wrap filter-item__wrap--range\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Цена</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<div class=\"filter-item__from\">\n\t\t\t\t\t\t<label for=\"price-from\">\n\t\t\t\t\t\t\tот\n\t\t\t\t\t\t\t<input id=\"price-from\" type=\"text\" value=\"50 000\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"filter-item__to\">\n\t\t\t\t\t\t<label for=\"price-to\">\n\t\t\t\t\t\t\tдо\n\t\t\t\t\t\t\t<input id=\"price-to\" type=\"text\" value=\"350 000\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"double-slider\" id=\"slider\"></div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"filter-item__wrap filter-item__wrap--range\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Длина</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<div class=\"filter-item__from\">\n\t\t\t\t\t\t<label for=\"length-from\">\n\t\t\t\t\t\t\tот\n\t\t\t\t\t\t\t<input id=\"length-from\" type=\"text\" value=\"100\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"filter-item__to\">\n\t\t\t\t\t\t<label for=\"length-to\">\n\t\t\t\t\t\t\tдо\n\t\t\t\t\t\t\t<input id=\"length-to\" type=\"text\" value=\"220\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"double-slider\" id=\"slider-2\"></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--range\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Высота</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<div class=\"filter-item__from\">\n\t\t\t\t\t\t<label for=\"height-from\">\n\t\t\t\t\t\t\tот\n\t\t\t\t\t\t\t<input id=\"height-from\" type=\"text\" value=\"50\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"filter-item__to\">\n\t\t\t\t\t\t<label for=\"height-to\">\n\t\t\t\t\t\t\tдо\n\t\t\t\t\t\t\t<input id=\"height-to\" type=\"text\" value=\"100\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"double-slider\" id=\"slider-3\"></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--select\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Размер спального места</div>\n\t\t\t<div class=\"filter-item__inner\">\n<!--\t\t\t\t<div class=\"dropdown\">-->\n<!--\t\t\t\t\t<input type=\"text\" placeholder=\"Выберите размер\" readonly />-->\n<!--\t\t\t\t\t<div class=\"dropdown__options\">-->\n<!--\t\t\t\t\t\t<div>90 x 200</div>-->\n<!--\t\t\t\t\t\t<div>120 x 200</div>-->\n<!--\t\t\t\t\t\t<div>140 x 200</div>-->\n<!--\t\t\t\t\t\t<div>160 x 200</div>-->\n<!--\t\t\t\t\t\t<div>180 x 200</div>-->\n<!--\t\t\t\t\t\t<div>200 x 200</div>-->\n<!--\t\t\t\t\t</div>-->\n<!--\t\t\t\t</div>-->\n\t\t\t\t<select name=\"form\" class=\"form\">\n\t\t\t\t\t<option value=\"1\" selected>90 &times; 200</option>\n\t\t\t\t\t<option value=\"2\">120 &times; 200</option>\n\t\t\t\t\t<option value=\"3\">140 &times; 200</option>\n\t\t\t\t\t<option value=\"4\">160 &times; 200</option>\n\t\t\t\t\t<option value=\"5\">180 &times; 200</option>\n\t\t\t\t\t<option value=\"6\">200 &times; 200</option>\n\t\t\t\t</select>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Материал каркаса</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-1\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-1\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">ЛДСП</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-2\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-2\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Металл</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-3\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-3\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Кованные</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Материал изголовья</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-4\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-4\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">ЛДСП</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-5\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-5\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Металл</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-6\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-6\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Кованные</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Тип обивочного материала</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"inner-type-1\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"inner-type-1\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Ткань</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"inner-type-2\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"inner-type-2\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Экокожа</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Цвет</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\tБелый Крем Шоколад\n\n\t\t\t\t<button class=\"form-item__show-more\">Показать все</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Подъемный механизм</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"lift-mech--yes\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"lift-mech--yes\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Да</span>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"lift-mech-no\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"lift-mech-no\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Нет</span>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Выдвижной ящик</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"roll-mech--yes\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"roll-mech--yes\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Да</span>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"roll-mech-no\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"roll-mech-no\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Нет</span>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</form>\n</div>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/html/_catalog-filter.html b/src/html/_catalog-filter.html
+--- a/src/html/_catalog-filter.html	
++++ b/src/html/_catalog-filter.html	
+@@ -1,203 +1,250 @@
+-<div class="catalog__filter">
+-	<form action="#" id="catalog-form">
++<!--<div class="catalog__filter">-->
++<!--	<form action="#" id="catalog-form">-->
+ 
+-		<div class="filter-item__wrap filter-item__wrap--range">
+-			<div class="filter-item__title jsCloseCategory">Цена</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<div class="filter-item__from">
+-						<label for="price-from">
+-							от
+-							<input id="price-from" type="text" value="50 000" />
+-						</label>
+-					</div>
+-					<div class="filter-item__to">
+-						<label for="price-to">
+-							до
+-							<input id="price-to" type="text" value="350 000" />
+-						</label>
+-					</div>
+-				</div>
+-				<div class="double-slider" id="slider"></div>
+-			</div>
+-		</div>
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;range">-->
++<!--			<div class="filter-item__title jsCloseCategory">Цена</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<div class="filter-item__from">-->
++<!--						<label for="price-from">-->
++<!--							от-->
++<!--							<input id="price-from" type="text" value="50 000" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--					<div class="filter-item__to">-->
++<!--						<label for="price-to">-->
++<!--							до-->
++<!--							<input id="price-to" type="text" value="350 000" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--				</div>-->
++<!--				<div class="double-slider" id="slider"></div>-->
++<!--			</div>-->
++<!--		</div>-->
+ 
+-		<div class="filter-item__wrap filter-item__wrap--range">
+-			<div class="filter-item__title jsCloseCategory">Длина</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<div class="filter-item__from">
+-						<label for="length-from">
+-							от
+-							<input id="length-from" type="text" value="100" />
+-						</label>
+-					</div>
+-					<div class="filter-item__to">
+-						<label for="length-to">
+-							до
+-							<input id="length-to" type="text" value="220" />
+-						</label>
+-					</div>
+-				</div>
+-				<div class="double-slider" id="slider-2"></div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--range">
+-			<div class="filter-item__title jsCloseCategory">Высота</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<div class="filter-item__from">
+-						<label for="height-from">
+-							от
+-							<input id="height-from" type="text" value="50" />
+-						</label>
+-					</div>
+-					<div class="filter-item__to">
+-						<label for="height-to">
+-							до
+-							<input id="height-to" type="text" value="100" />
+-						</label>
+-					</div>
+-				</div>
+-				<div class="double-slider" id="slider-3"></div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--select">
+-			<div class="filter-item__title jsCloseCategory">Размер спального места</div>
+-			<div class="filter-item__inner">
+-<!--				<div class="dropdown">-->
+-<!--					<input type="text" placeholder="Выберите размер" readonly />-->
+-<!--					<div class="dropdown__options">-->
+-<!--						<div>90 x 200</div>-->
+-<!--						<div>120 x 200</div>-->
+-<!--						<div>140 x 200</div>-->
+-<!--						<div>160 x 200</div>-->
+-<!--						<div>180 x 200</div>-->
+-<!--						<div>200 x 200</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;range">-->
++<!--			<div class="filter-item__title jsCloseCategory">Длина</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<div class="filter-item__from">-->
++<!--						<label for="length-from">-->
++<!--							от-->
++<!--							<input id="length-from" type="text" value="100" />-->
++<!--						</label>-->
+ <!--					</div>-->
+-<!--				</div>-->
+-				<select name="form" class="form">
+-					<option value="1" selected>90 &times; 200</option>
+-					<option value="2">120 &times; 200</option>
+-					<option value="3">140 &times; 200</option>
+-					<option value="4">160 &times; 200</option>
+-					<option value="5">180 &times; 200</option>
+-					<option value="6">200 &times; 200</option>
+-				</select>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Материал каркаса</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="material-1" class="checkbox-wrap">
+-						<input type="checkbox" id="material-1" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">ЛДСП</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="material-2" class="checkbox-wrap">
+-						<input type="checkbox" id="material-2" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Металл</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="material-3" class="checkbox-wrap">
+-						<input type="checkbox" id="material-3" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Кованные</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Материал изголовья</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="material-4" class="checkbox-wrap">
+-						<input type="checkbox" id="material-4" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">ЛДСП</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="material-5" class="checkbox-wrap">
+-						<input type="checkbox" id="material-5" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Металл</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="material-6" class="checkbox-wrap">
+-						<input type="checkbox" id="material-6" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Кованные</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Тип обивочного материала</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="inner-type-1" class="checkbox-wrap">
+-						<input type="checkbox" id="inner-type-1" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Ткань</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="inner-type-2" class="checkbox-wrap">
+-						<input type="checkbox" id="inner-type-2" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Экокожа</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap">
+-			<div class="filter-item__title jsCloseCategory">Цвет</div>
+-			<div class="filter-item__inner">
+-				Белый Крем Шоколад
+-
+-				<button class="form-item__show-more">Показать все</button>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Подъемный механизм</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="lift-mech--yes" class="checkbox-wrap">
+-						<input type="checkbox" id="lift-mech--yes" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Да</span>
+-					</label>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="lift-mech-no" class="checkbox-wrap">
+-						<input type="checkbox" id="lift-mech-no" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Нет</span>
+-					</label>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Выдвижной ящик</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="roll-mech--yes" class="checkbox-wrap">
+-						<input type="checkbox" id="roll-mech--yes" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Да</span>
+-					</label>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="roll-mech-no" class="checkbox-wrap">
+-						<input type="checkbox" id="roll-mech-no" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Нет</span>
+-					</label>
+-				</div>
+-			</div>
+-		</div>
+-	</form>
+-</div>
++<!--					<div class="filter-item__to">-->
++<!--						<label for="length-to">-->
++<!--							до-->
++<!--							<input id="length-to" type="text" value="220" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--				</div>-->
++<!--				<div class="double-slider" id="slider-2"></div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;range">-->
++<!--			<div class="filter-item__title jsCloseCategory">Высота</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<div class="filter-item__from">-->
++<!--						<label for="height-from">-->
++<!--							от-->
++<!--							<input id="height-from" type="text" value="50" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--					<div class="filter-item__to">-->
++<!--						<label for="height-to">-->
++<!--							до-->
++<!--							<input id="height-to" type="text" value="100" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--				</div>-->
++<!--				<div class="double-slider" id="slider-3"></div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;select">-->
++<!--			<div class="filter-item__title jsCloseCategory">Размер спального места</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--&lt;!&ndash;				<div class="dropdown">&ndash;&gt;-->
++<!--&lt;!&ndash;					<input type="text" placeholder="Выберите размер" readonly />&ndash;&gt;-->
++<!--&lt;!&ndash;					<div class="dropdown__options">&ndash;&gt;-->
++<!--&lt;!&ndash;						<div>90 x 200</div>&ndash;&gt;-->
++<!--&lt;!&ndash;						<div>120 x 200</div>&ndash;&gt;-->
++<!--&lt;!&ndash;						<div>140 x 200</div>&ndash;&gt;-->
++<!--&lt;!&ndash;						<div>160 x 200</div>&ndash;&gt;-->
++<!--&lt;!&ndash;						<div>180 x 200</div>&ndash;&gt;-->
++<!--&lt;!&ndash;						<div>200 x 200</div>&ndash;&gt;-->
++<!--&lt;!&ndash;					</div>&ndash;&gt;-->
++<!--&lt;!&ndash;				</div>&ndash;&gt;-->
++<!--				<select name="form" class="form">-->
++<!--					<option value="1" selected>90 &times; 200</option>-->
++<!--					<option value="2">120 &times; 200</option>-->
++<!--					<option value="3">140 &times; 200</option>-->
++<!--					<option value="4">160 &times; 200</option>-->
++<!--					<option value="5">180 &times; 200</option>-->
++<!--					<option value="6">200 &times; 200</option>-->
++<!--				</select>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Материал каркаса</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-1" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-1" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">ЛДСП</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-2" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-2" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Металл</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-3" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-3" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Кованные</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Материал изголовья</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-4" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-4" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">ЛДСП</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-5" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-5" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Металл</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-6" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-6" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Кованные</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Тип обивочного материала</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="inner-type-1" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="inner-type-1" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Ткань</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="inner-type-2" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="inner-type-2" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Экокожа</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap">-->
++<!--			<div class="filter-item__title jsCloseCategory">Цвет</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				Белый Крем Шоколад-->
++
++<!--				<button class="form-item__show-more">Показать все</button>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Подъемный механизм</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="lift-mech&#45;&#45;yes" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="lift-mech&#45;&#45;yes" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Да</span>-->
++<!--					</label>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="lift-mech-no" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="lift-mech-no" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Нет</span>-->
++<!--					</label>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Выдвижной ящик</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="roll-mech&#45;&#45;yes" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="roll-mech&#45;&#45;yes" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Да</span>-->
++<!--					</label>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="roll-mech-no" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="roll-mech-no" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Нет</span>-->
++<!--					</label>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--	</form>-->
++<!--</div>-->
++
++<div class="spollers" data-spollers="">
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++	<div class="spollers__item">
++		<button type="button" data-spoller class="spollers__title">Заголовок спойлера</button>
++		<div class="spollers__body">Контент спойлера</div>
++	</div>
++</div>
+\ No newline at end of file
+Index: src/catalog.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@@include('html/_header.html')\n\n<section class=\"catalog\">\n\t<div class=\"container\">\n\t\t<div class=\"top-row\">\n\t\t\t<div class=\"breadcrumbs\">\n\t\t\t\t<a href=\"/\" class=\"breadcrumbs__item\">Главная</a>\n\t\t\t\t<a href=\"#\" class=\"breadcrumbs__item\">Каталог</a>\n\t\t\t</div>\n\t\t\t<div class=\"section__title\">Каталог</div>\n\t\t</div>\n\t\t<div class=\"catalog__wrap\">\n\t\t\t@@include('html/_catalog-filter.html')\n\t\t\t<div class=\"catalog__inner\">\n\t\t\t\t<div class=\"filter__tags\">\n\t\t\t\t\t<div class=\"tags__item\">\n\t\t\t\t\t\t90x200\n\t\t\t\t\t\t<div class=\"tags__remove\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"tags__item\">\n\t\t\t\t\t\tЛДСП\n\t\t\t\t\t\t<div class=\"tags__remove\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"tags__item\">\n\t\t\t\t\t\tМеталл\n\t\t\t\t\t\t<div class=\"tags__remove\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"tags__item\">\n\t\t\t\t\t\tПодъемный механизм\n\t\t\t\t\t\t<div class=\"tags__remove\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"tags__item\">\n\t\t\t\t\t\tВыдвижной ящик\n\t\t\t\t\t\t<div class=\"tags__remove\"></div>\n\t\t\t\t\t</div>\n\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter__controls\">\n\t\t\t\t\t<div class=\"filter__total\"><span class='filter__value'>1583</span> товаров</div>\n\t\t\t\t\t<button class=\"filter__reset\" type='reset' form='catalog-form'>Сбросить фильтры</button>\n\t\t\t\t\t<div class=\"filter__shows\">Показать по: <span >12</span> <span class=\"active\">24</span> <span >36</span></div>\n\t\t\t\t\t<div class=\"filter__sort\">\n\t\t\t\t\t\tСортировать\n\t\t\t\t\t\t<div class=\"dropdown\">по популярности</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"catalog__list\">\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t\t@@include('html/_catalog-item.html')\n\t\t\t\t</div>\n\t\t\t\t<div class=\"catalog__pagination\">1 2 3 4 5 6</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>\n\n@@include('html/_callback.html') @@include('html/_footer.html')\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/catalog.html b/src/catalog.html
+--- a/src/catalog.html	
++++ b/src/catalog.html	
+@@ -42,6 +42,12 @@
+ 					<div class="filter__sort">
+ 						Сортировать
+ 						<div class="dropdown">по популярности</div>
++						<select name="form" class="form">
++							<option value="1" selected>Пункт №1</option>
++							<option value="2">Пункт №2</option>
++							<option value="3">Пункт №3</option>
++							<option value="4">Пункт №4</option>
++						</select>
+ 					</div>
+ 				</div>
+ 				<div class="catalog__list">
+Index: src/scss/base.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Общий файл элементов форм\n// Для подключения/отключения стилей конкретного єлемента формы смотри base/forms/forms.scss\n@import \"base/forms/forms\";\n\n// Стили попапов\n// @import \"base/popup\";\n\n// Стили спойлеров\n// @import \"base/spollers\";\n\n// Стили табов\n// @import \"base/tabs\";\n\n// Стили карт\n// @import \"base/maps\";\n\n// Стили блока \"показать еще\"\n// @import \"base/showmore\";\n\n// Стили для полноэкранного блока\n// @import \"base/fullscreen\";\n\n// Стили для липкого блока\n// @import \"base/sticky\";\n\n// Стили для отзывчивых картинок (IBG)\n// Сниппет (HTML): ibg (div c картинкой и классами)\n// Сниппет (HTML): ibga (a c картинкой и классами)\n[class*=\"-ibg\"] {\n\tposition: relative;\n\timg {\n\t\tposition: absolute;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\tobject-fit: cover;\n\t}\n}\n[class*=\"-ibg_contain\"] {\n\timg {\n\t\tobject-fit: contain;\n\t}\n}\n\n// Шаблоны (заготовки)\n// @extend %имя шаблона;\n// Сниппет (SCSS): ex\n\n// Счетчик для списка\n%listCounter {\n\tlist-style-type: none;\n\tcounter-reset: item;\n\tli {\n\t\tposition: relative;\n\t\t&:before {\n\t\t\tcounter-increment: item;\n\t\t\tcontent: counter(item);\n\t\t\tposition: absolute;\n\t\t\tleft: 0;\n\t\t\ttop: 0;\n\t\t}\n\t}\n}\n// Адаптивное видео\n%responsiveVideo {\n\tposition: relative;\n\toverflow: hidden;\n\theight: 0;\n\tpadding-bottom: 56.25%;\n\tvideo,\n\tiframe,\n\tobject,\n\tembed {\n\t\tposition: absolute;\n\t\ttop: 0;\n\t\tleft: 0;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t}\n}\n// Видео в качестве фона\n%videoBackground {\n\tvideo,\n\tiframe,\n\tobject,\n\tembed {\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\tleft: 50%;\n\t\tmin-width: 100%;\n\t\tmin-height: 100%;\n\t\twidth: auto;\n\t\theight: auto;\n\t\tz-index: -100;\n\t\ttransform: translateX(-50%) translateY(-50%);\n\t\tbackground-size: cover;\n\t}\n}\n// Серый фильтр\n%grayfilter {\n\ttransition: all 0.3s ease 0s;\n\tfilter: grayscale(1);\n\t@media (any-hover: hover) {\n\t\t&:hover {\n\t\t\tfilter: grayscale(0);\n\t\t}\n\t}\n}\n// Отменить выделение\n%noselect {\n\tuser-select: none;\n}\n// Зеркальное отображение\n%mirror {\n\ttransform: scale(-1, 1);\n}\n// Плавный скролл\n%smoothscroll {\n\t-webkit-overflow-scrolling: touch;\n}\n// Скрыть скролл\n%hidescroll {\n\t&::-webkit-scrollbar {\n\t\tdisplay: none;\n\t}\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/scss/base.scss b/src/scss/base.scss
+--- a/src/scss/base.scss	
++++ b/src/scss/base.scss	
+@@ -6,7 +6,7 @@
+ // @import "base/popup";
+ 
+ // Стили спойлеров
+-// @import "base/spollers";
++ @import "base/spollers";
+ 
+ // Стили табов
+ // @import "base/tabs";
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"32ec2a23-a32f-4ecb-a546-17316a6041ee\" name=\"Changes\" comment=\"idk\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2022_14_56_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2022_14_56__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/fonts/Montserrat-Bold.ttf\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/fonts/Montserrat-Medium.ttf\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/fonts/Montserrat-Regular.ttf\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/fonts/Montserrat-SemiBold.ttf\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/js/app.js\" beforeDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"22u0Ut4QX06VGMk5FTXLAhmWJR7\" />\n  <component name=\"ProjectLevelVcsManager\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"js.buildTools.gulp.gulp_package_dir\" value=\"$USER_HOME$/AppData/Roaming/npm/node_modules/gulp\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"editing.templates\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/svgicons\" />\n      <recent name=\"C:\\www\\krovatoff_spb\\src\\svgicons\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration default=\"true\" type=\"js.build_tools.gulp\">\n      <node-interpreter>project</node-interpreter>\n      <node-options />\n      <gulpfile />\n      <tasks />\n      <arguments />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"32ec2a23-a32f-4ecb-a546-17316a6041ee\" name=\"Changes\" comment=\"\" />\n      <created>1640672184238</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1640672184238</updated>\n      <workItem from=\"1640672185609\" duration=\"3403000\" />\n      <workItem from=\"1640715766079\" duration=\"4151000\" />\n      <workItem from=\"1641311173516\" duration=\"627000\" />\n      <workItem from=\"1642352620748\" duration=\"29000\" />\n      <workItem from=\"1642364804289\" duration=\"416000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"idk\">\n      <created>1640718680990</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1640718680990</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"idk\">\n      <created>1641311196689</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1641311196689</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"idk\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"idk\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,14 +5,13 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="idk">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2022_14_56_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2022_14_56__Changes_.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat-Bold.ttf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat-Medium.ttf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat-Regular.ttf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat-SemiBold.ttf" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/blocks/_catalog-filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/_catalog-filter.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalog.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/html/_catalog-filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_catalog-filter.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/scss/.idea/modules.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/scss/.idea/scss.iml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/scss/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/base.scss" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />

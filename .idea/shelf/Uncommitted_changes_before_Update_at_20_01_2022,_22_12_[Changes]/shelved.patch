@@ -1,0 +1,395 @@
+Index: src/blocks/_catalog-filter.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div class=\"catalog__filter\">\n\t<form action=\"#\" id=\"catalog-form\">\n\t\t<div class=\"filter-item__wrap filter-item__wrap--range\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Цена</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<div class=\"filter-item__from\">\n\t\t\t\t\t\t<label for=\"price-from\">\n\t\t\t\t\t\t\tот\n\t\t\t\t\t\t\t<input id=\"price-from\" type=\"text\" value=\"50 000\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"filter-item__to\">\n\t\t\t\t\t\t<label for=\"price-to\">\n\t\t\t\t\t\t\tдо\n\t\t\t\t\t\t\t<input id=\"price-to\" type=\"text\" value=\"350 000\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"double-slider\" id=\"slider\"></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--range\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Длина</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<div class=\"filter-item__from\">\n\t\t\t\t\t\t<label for=\"length-from\">\n\t\t\t\t\t\t\tот\n\t\t\t\t\t\t\t<input id=\"length-from\" type=\"text\" value=\"100\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"filter-item__to\">\n\t\t\t\t\t\t<label for=\"length-to\">\n\t\t\t\t\t\t\tдо\n\t\t\t\t\t\t\t<input id=\"length-to\" type=\"text\" value=\"220\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"double-slider\" id=\"slider-2\"></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--range\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Высота</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<div class=\"filter-item__from\">\n\t\t\t\t\t\t<label for=\"height-from\">\n\t\t\t\t\t\t\tот\n\t\t\t\t\t\t\t<input id=\"height-from\" type=\"text\" value=\"50\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"filter-item__to\">\n\t\t\t\t\t\t<label for=\"height-to\">\n\t\t\t\t\t\t\tдо\n\t\t\t\t\t\t\t<input id=\"height-to\" type=\"text\" value=\"100\" />\n\t\t\t\t\t\t</label>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"double-slider\" id=\"slider-3\"></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--select\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Размер спального места</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"dropdown\">\n\t\t\t\t\t<input type=\"text\" placeholder=\"Выберите размер\" readonly />\n\t\t\t\t\t<div class=\"dropdown__options\">\n\t\t\t\t\t\t<div>90 x 200</div>\n\t\t\t\t\t\t<div>120 x 200</div>\n\t\t\t\t\t\t<div>140 x 200</div>\n\t\t\t\t\t\t<div>160 x 200</div>\n\t\t\t\t\t\t<div>180 x 200</div>\n\t\t\t\t\t\t<div>200 x 200</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Материал каркаса</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-1\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-1\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">ЛДСП</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-2\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-2\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Металл</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-3\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-3\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Кованные</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Материал изголовья</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-4\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-4\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">ЛДСП</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-5\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-5\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Металл</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"material-6\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"material-6\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Кованные</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Тип обивочного материала</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"inner-type-1\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"inner-type-1\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Ткань</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"inner-type-2\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"inner-type-2\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Экокожа</span>\n\t\t\t\t\t</label>\n\t\t\t\t\t<span class=\"filter-item__quantity\">50</span>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Цвет</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\tБелый Крем Шоколад\n\n\t\t\t\t<button class=\"form-item__show-more\">Показать все</button>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Подъемный механизм</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"lift-mech--yes\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"lift-mech--yes\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Да</span>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"lift-mech-no\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"lift-mech-no\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Нет</span>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"filter-item__wrap filter-item__wrap--checkbox\">\n\t\t\t<div class=\"filter-item__title jsCloseCategory\">Выдвижной ящик</div>\n\t\t\t<div class=\"filter-item__inner\">\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"roll-mech--yes\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"roll-mech--yes\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Да</span>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"filter-item__row\">\n\t\t\t\t\t<label for=\"roll-mech-no\" class=\"checkbox-wrap\">\n\t\t\t\t\t\t<input type=\"checkbox\" id=\"roll-mech-no\" class=\"checkbox\" />\n\t\t\t\t\t\t<span class=\"checkbox-text checkbox-text--filter\">Нет</span>\n\t\t\t\t\t</label>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</form>\n</div>\n
+===================================================================
+diff --git a/src/blocks/_catalog-filter.html b/src/blocks/_catalog-filter.html
+--- a/src/blocks/_catalog-filter.html	
++++ b/src/blocks/_catalog-filter.html	
+@@ -1,193 +1,194 @@
+-<div class="catalog__filter">
+-	<form action="#" id="catalog-form">
+-		<div class="filter-item__wrap filter-item__wrap--range">
+-			<div class="filter-item__title jsCloseCategory">Цена</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<div class="filter-item__from">
+-						<label for="price-from">
+-							от
+-							<input id="price-from" type="text" value="50 000" />
+-						</label>
+-					</div>
+-					<div class="filter-item__to">
+-						<label for="price-to">
+-							до
+-							<input id="price-to" type="text" value="350 000" />
+-						</label>
+-					</div>
+-				</div>
+-				<div class="double-slider" id="slider"></div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--range">
+-			<div class="filter-item__title jsCloseCategory">Длина</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<div class="filter-item__from">
+-						<label for="length-from">
+-							от
+-							<input id="length-from" type="text" value="100" />
+-						</label>
+-					</div>
+-					<div class="filter-item__to">
+-						<label for="length-to">
+-							до
+-							<input id="length-to" type="text" value="220" />
+-						</label>
+-					</div>
+-				</div>
+-				<div class="double-slider" id="slider-2"></div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--range">
+-			<div class="filter-item__title jsCloseCategory">Высота</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<div class="filter-item__from">
+-						<label for="height-from">
+-							от
+-							<input id="height-from" type="text" value="50" />
+-						</label>
+-					</div>
+-					<div class="filter-item__to">
+-						<label for="height-to">
+-							до
+-							<input id="height-to" type="text" value="100" />
+-						</label>
+-					</div>
+-				</div>
+-				<div class="double-slider" id="slider-3"></div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--select">
+-			<div class="filter-item__title jsCloseCategory">Размер спального места</div>
+-			<div class="filter-item__inner">
+-				<div class="dropdown">
+-					<input type="text" placeholder="Выберите размер" readonly />
+-					<div class="dropdown__options">
+-						<div>90 x 200</div>
+-						<div>120 x 200</div>
+-						<div>140 x 200</div>
+-						<div>160 x 200</div>
+-						<div>180 x 200</div>
+-						<div>200 x 200</div>
+-					</div>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Материал каркаса</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="material-1" class="checkbox-wrap">
+-						<input type="checkbox" id="material-1" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">ЛДСП</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="material-2" class="checkbox-wrap">
+-						<input type="checkbox" id="material-2" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Металл</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="material-3" class="checkbox-wrap">
+-						<input type="checkbox" id="material-3" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Кованные</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Материал изголовья</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="material-4" class="checkbox-wrap">
+-						<input type="checkbox" id="material-4" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">ЛДСП</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="material-5" class="checkbox-wrap">
+-						<input type="checkbox" id="material-5" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Металл</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="material-6" class="checkbox-wrap">
+-						<input type="checkbox" id="material-6" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Кованные</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Тип обивочного материала</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="inner-type-1" class="checkbox-wrap">
+-						<input type="checkbox" id="inner-type-1" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Ткань</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="inner-type-2" class="checkbox-wrap">
+-						<input type="checkbox" id="inner-type-2" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Экокожа</span>
+-					</label>
+-					<span class="filter-item__quantity">50</span>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap">
+-			<div class="filter-item__title jsCloseCategory">Цвет</div>
+-			<div class="filter-item__inner">
+-				Белый Крем Шоколад
++<!--<div class="catalog__filter">-->
++<!--	<form action="#" id="catalog-form">-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;range">-->
++<!--			<div class="filter-item__title jsCloseCategory">Цена</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<div class="filter-item__from">-->
++<!--						<label for="price-from">-->
++<!--							от-->
++<!--							<input id="price-from" type="text" value="50 000" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--					<div class="filter-item__to">-->
++<!--						<label for="price-to">-->
++<!--							до-->
++<!--							<input id="price-to" type="text" value="350 000" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--				</div>-->
++<!--				<div class="double-slider" id="slider"></div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;range">-->
++<!--			<div class="filter-item__title jsCloseCategory">Длина</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<div class="filter-item__from">-->
++<!--						<label for="length-from">-->
++<!--							от-->
++<!--							<input id="length-from" type="text" value="100" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--					<div class="filter-item__to">-->
++<!--						<label for="length-to">-->
++<!--							до-->
++<!--							<input id="length-to" type="text" value="220" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--				</div>-->
++<!--				<div class="double-slider" id="slider-2"></div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;range">-->
++<!--			<div class="filter-item__title jsCloseCategory">Высота</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<div class="filter-item__from">-->
++<!--						<label for="height-from">-->
++<!--							от-->
++<!--							<input id="height-from" type="text" value="50" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--					<div class="filter-item__to">-->
++<!--						<label for="height-to">-->
++<!--							до-->
++<!--							<input id="height-to" type="text" value="100" />-->
++<!--						</label>-->
++<!--					</div>-->
++<!--				</div>-->
++<!--				<div class="double-slider" id="slider-3"></div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;select">-->
++<!--			<div class="filter-item__title jsCloseCategory">Размер спального места</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="dropdown">-->
++<!--					<input type="text" placeholder="Выберите размер" readonly />-->
++<!--					<div class="dropdown__options">-->
++<!--						<div>90 x 200</div>-->
++<!--						<div>120 x 200</div>-->
++<!--						<div>140 x 200</div>-->
++<!--						<div>160 x 200</div>-->
++<!--						<div>180 x 200</div>-->
++<!--						<div>200 x 200</div>-->
++<!--					</div>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Материал каркаса</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-1" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-1" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">ЛДСП</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-2" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-2" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Металл</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-3" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-3" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Кованные</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Материал изголовья</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-4" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-4" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">ЛДСП</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-5" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-5" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Металл</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="material-6" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="material-6" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Кованные</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Тип обивочного материала</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="inner-type-1" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="inner-type-1" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Ткань</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="inner-type-2" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="inner-type-2" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Экокожа</span>-->
++<!--					</label>-->
++<!--					<span class="filter-item__quantity">50</span>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap">-->
++<!--			<div class="filter-item__title jsCloseCategory">Цвет</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				Белый Крем Шоколад-->
+ 
+-				<button class="form-item__show-more">Показать все</button>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Подъемный механизм</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="lift-mech--yes" class="checkbox-wrap">
+-						<input type="checkbox" id="lift-mech--yes" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Да</span>
+-					</label>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="lift-mech-no" class="checkbox-wrap">
+-						<input type="checkbox" id="lift-mech-no" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Нет</span>
+-					</label>
+-				</div>
+-			</div>
+-		</div>
+-		<div class="filter-item__wrap filter-item__wrap--checkbox">
+-			<div class="filter-item__title jsCloseCategory">Выдвижной ящик</div>
+-			<div class="filter-item__inner">
+-				<div class="filter-item__row">
+-					<label for="roll-mech--yes" class="checkbox-wrap">
+-						<input type="checkbox" id="roll-mech--yes" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Да</span>
+-					</label>
+-				</div>
+-				<div class="filter-item__row">
+-					<label for="roll-mech-no" class="checkbox-wrap">
+-						<input type="checkbox" id="roll-mech-no" class="checkbox" />
+-						<span class="checkbox-text checkbox-text--filter">Нет</span>
+-					</label>
+-				</div>
+-			</div>
+-		</div>
+-	</form>
+-</div>
++<!--				<button class="form-item__show-more">Показать все</button>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Подъемный механизм</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="lift-mech&#45;&#45;yes" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="lift-mech&#45;&#45;yes" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Да</span>-->
++<!--					</label>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="lift-mech-no" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="lift-mech-no" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Нет</span>-->
++<!--					</label>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--		<div class="filter-item__wrap filter-item__wrap&#45;&#45;checkbox">-->
++<!--			<div class="filter-item__title jsCloseCategory">Выдвижной ящик</div>-->
++<!--			<div class="filter-item__inner">-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="roll-mech&#45;&#45;yes" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="roll-mech&#45;&#45;yes" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Да</span>-->
++<!--					</label>-->
++<!--				</div>-->
++<!--				<div class="filter-item__row">-->
++<!--					<label for="roll-mech-no" class="checkbox-wrap">-->
++<!--						<input type="checkbox" id="roll-mech-no" class="checkbox" />-->
++<!--						<span class="checkbox-text checkbox-text&#45;&#45;filter">Нет</span>-->
++<!--					</label>-->
++<!--				</div>-->
++<!--			</div>-->
++<!--		</div>-->
++<!--	</form>-->
++<!--</div>-->
++

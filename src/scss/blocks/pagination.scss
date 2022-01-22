@@ -1,0 +1,61 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__prev, &__next {
+		width: 31px;
+		height: 31px;
+		border-radius: 50%;
+		background-color: $main;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 10px;
+		margin-right: 10px;
+		svg {
+			width: 15px;
+			height: 15px;
+			stroke: $white;
+			path {
+
+			}
+		}
+	}
+	// .pagination__prev
+	&__prev {
+		svg {
+			transform: rotate(-90deg);
+		}
+	}
+
+	// .pagination__next
+	&__next {
+		svg {
+			transform: rotate(90deg);
+		}
+	}
+
+	// .pagination__list
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+
+	// .pagination__item
+	&__item {
+		margin-left: 10px;
+		margin-right: 10px;
+		&.active .pagination__link {
+			color: $accent;
+		}
+	}
+
+	// .pagination__link
+	&__link {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+}
