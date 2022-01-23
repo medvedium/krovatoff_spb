@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Swiper navigation and pagination fix">
-      <change afterPath="$PROJECT_DIR$/config/gulp-tasks/js-dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2022__21_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2022__21_26__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_1.xml" afterDir="false" />
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Config updatep">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/forms/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/forms/forms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/libs/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/libs/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/libs/select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/libs/select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/callback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/callback.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/incoming-call.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/incoming-call.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641311196689</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Config updatep">
+      <created>1642866237189</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642866237189</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +120,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="idk" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk" />
+    <MESSAGE value="Config update" />
+    <MESSAGE value="Config updatep" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config updatep" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -51,6 +51,11 @@
 			//max-height: 600px;
 			width: 377px;
 			height: 100%;
+			@include adaptiveValue("width", 377, 275, 1920, 1290, 1);
+
+			@media (max-width: 1620px) {
+				right: 10px;
+			}
 		}
 	}
 

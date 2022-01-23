@@ -2,7 +2,8 @@
 
 .incoming-call {
 	position: absolute;
-	top: 450px;
+	//top: 450px;
+	@include adaptiveValue("top", 450, 310, 1920, 1290, 1);
 	left: 50%;
 	display: flex;
 	flex-direction: column;
@@ -11,15 +12,21 @@
 	text-align: center;
 	transform: translateX(-50%);
 
+	//@media (max-width: 1290px) {
+	//	display: none;
+	//}
+
 	&__desc {
 		font-weight: 500;
-		font-size: 24px;
+		//font-size: 24px;
+		@include adaptiveValue("font-size", 24, 20, 1920, 1290, 1);
 		line-height: 29px;
 	}
 
 	&__value {
 		font-weight: 600;
-		font-size: 30px;
+		//font-size: 30px;
+		@include adaptiveValue("font-size", 30, 20, 1920, 1290, 1);
 		line-height: 37px;
 	}
 
@@ -46,13 +53,24 @@
 
 		&-wrap {
 			position: absolute;
-			top: -250px;
-			left: -50px;
+			//top: -250px;
+			//@include adaptiveValue("top", -250, -310, 1920, 1290, 1);
+			//left: -50px;
+			//@include adaptiveValue("left", -50, 100, 1920, 1290, 1);
 			background-color: $white;
 			-webkit-border-radius: 10px;
 			-moz-border-radius: 10px;
 			border-radius: 10px;
-			transform: translateX(-100%);
+			transform: translate(-110%, -100%);
+			width: 350px;
+
+			//@media (max-width: 1620px) {
+			//	left: 100px;
+			//}
+			
+			@media (max-width: 1490px) {
+				transform: translate(-80%, -70%);
+			}
 		}
 	}
 }
