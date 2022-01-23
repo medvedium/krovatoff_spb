@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress">
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Callback block adaptive done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/callback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/callback.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/incoming-call.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/incoming-call.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +41,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="extract.css.actions.ExtractCSSConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -78,7 +77,7 @@
       <workItem from="1642622964090" duration="5868000" />
       <workItem from="1642847606614" duration="1797000" />
       <workItem from="1642935221598" duration="37000" />
-      <workItem from="1642946318174" duration="1037000" />
+      <workItem from="1642946318174" duration="1911000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -108,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642935251721</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Callback block adaptive done">
+      <created>1642947628291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642947628291</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +137,8 @@
     <MESSAGE value="Config update" />
     <MESSAGE value="Config updatep" />
     <MESSAGE value="Adaptive in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaptive in progress" />
+    <MESSAGE value="Callback block adaptive done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Callback block adaptive done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
