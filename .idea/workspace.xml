@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Config updatep">
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/callback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/callback.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/incoming-call.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/incoming-call.scss" afterDir="false" />
     </list>
@@ -18,6 +16,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,6 +77,8 @@
       <workItem from="1642364804289" duration="416000" />
       <workItem from="1642622964090" duration="5868000" />
       <workItem from="1642847606614" duration="1797000" />
+      <workItem from="1642935221598" duration="37000" />
+      <workItem from="1642946318174" duration="1037000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -100,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642866237189</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adaptive in progress">
+      <created>1642935251721</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642935251721</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +130,8 @@
     <MESSAGE value="idk" />
     <MESSAGE value="Config update" />
     <MESSAGE value="Config updatep" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config updatep" />
+    <MESSAGE value="Adaptive in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptive in progress" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

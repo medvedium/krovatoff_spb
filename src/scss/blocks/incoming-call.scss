@@ -53,10 +53,6 @@
 
 		&-wrap {
 			position: absolute;
-			//top: -250px;
-			//@include adaptiveValue("top", -250, -310, 1920, 1290, 1);
-			//left: -50px;
-			//@include adaptiveValue("left", -50, 100, 1920, 1290, 1);
 			background-color: $white;
 			-webkit-border-radius: 10px;
 			-moz-border-radius: 10px;
@@ -64,12 +60,13 @@
 			transform: translate(-110%, -100%);
 			width: 350px;
 
-			//@media (max-width: 1620px) {
-			//	left: 100px;
-			//}
-			
 			@media (max-width: 1490px) {
 				transform: translate(-80%, -70%);
+			}
+
+			@media (max-width: 1290px) {
+				width: 250px;
+				transform: translate(-65%, -60%);
 			}
 		}
 	}
