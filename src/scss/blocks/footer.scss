@@ -27,6 +27,10 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
+
+	@media (max-width: 1240px) {
+		margin-bottom: 50px;
+	}
 }
 
 .footer-catalog {
@@ -52,6 +56,10 @@
 		font-size: 18px;
 		line-height: 22px;
 	}
+
+	@media (max-width: 1240px) {
+		display: none;
+	}
 }
 
 .footer-menu {
@@ -60,6 +68,10 @@
 	&__list {
 		margin-top: 50px;
 		list-style: none;
+
+		@media (max-width: 1240px) {
+			margin-top: 0;
+		}
 	}
 
 	&__item {
@@ -72,6 +84,15 @@
 
 .footer-contacts {
 	margin-right: 100px;
+
+	@media (max-width: 1240px) {
+		margin-right: 50px;
+	}
+
+	@media (max-width: 555px) {
+		width: 100%;
+		margin-top: 40px;
+	}
 }
 
 .footer-contacts__text {
@@ -86,7 +107,7 @@
 		padding: 16px 28px;
 		color: $white;
 		font-weight: bold;
-		font-size: 15px;
+		font-size: 15px !important;
 		line-height: 18px;
 		background-color: $accent;
 		border: 0;
@@ -123,6 +144,11 @@
 		font-weight: 600;
 		font-size: 20px;
 		line-height: 24px;
+
+		@media (max-width: 768px) {
+			margin-bottom: 0;
+			margin-right: 25px;
+		}
 	}
 
 	&__row {
@@ -150,22 +176,49 @@
 			margin-right: 25px;
 		}
 	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
 }
 
 .footer-info {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+
+	@media (max-width: 1240px) {
+		margin-top: 80px;
+	}
+	@media (max-width: 850px) {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+	}
 }
 
 .footer-info__item {
 	width: 33%;
+	text-align: center;
+
+	@media (max-width: 850px) {
+		margin-top: 10px;
+		width: 100%;
+	}
 
 	&:nth-child(2) {
 		text-align: center;
+		@media (max-width: 850px) {
+			text-align: center;
+		}
 	}
 
 	&:nth-child(3) {
 		text-align: right;
+		@media (max-width: 850px) {
+			text-align: center;
+		}
 	}
 }
