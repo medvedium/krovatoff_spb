@@ -39,7 +39,11 @@
 	grid-template-columns: repeat(auto-#{$type}, minmax($min, $max));
 }
 
+// Адаптивное свойство (clamp)
 @mixin adaptiveValue($property, $startSize, $minSize, $widthFrom: $containerWidth, $widthTo: $minWidth, $keepSize: 0) {
+	// Для calc();
+	$addSize: math.div($startSize - $minSize, 16);
+
 	@if ($widthFrom == $containerWidth and $maxWidthContainer == 0) {
 		$widthFrom: $maxWidth;
 	}
@@ -73,7 +77,14 @@
 		}
 	}
 	@media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
-		#{$property}: $propertyValue;
+		// Если поддерживается clamp();
+		@supports (#{$property}: $propertyValue) {
+			#{$property}: $propertyValue;
+		}
+		// Если не поддерживается clamp();
+		@supports not (#{$property}: $propertyValue) {
+			#{$property}: calc(#{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div($widthFrom, 16) - math.div($widthTo, 16)});
+		}
 	}
 	@if $widthTo == $minWidth or $keepSize == 1 or $keepSize == 3 {
 		@media (max-width: $widthToMedia) {
