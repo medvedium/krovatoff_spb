@@ -17,17 +17,19 @@ EffectFade, Lazy, Manipulation
 
 // Стили Swiper
 // Базовые стили
-import "../../scss/base/swiper.scss";
+// import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
 import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
-// import 'swiper/css';
+import 'swiper/css';
 
 // Инициализация слайдеров
 function initSliders() {
 	// Перечень слайдеров
-	if (document.querySelector('.hero-slider')) {
-		new Swiper('.hero-slider', {
+	// Проверяем, есть ли слайдер на стронице
+	if (document.querySelector('.hero-slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.hero-slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Pagination],
@@ -41,22 +43,50 @@ function initSliders() {
 			slidesPerView: 1,
 			spaceBetween: 30,
 			autoHeight: true,
-			speed: 800,
+			speed: 800, 
+			pagination: {
+				el: '.hero-slider .swiper-pagination',
+				type: 'bullets'
+			},
 			//touchRatio: 0,
 			//simulateTouch: false,
 			loop: true,
 			//preloadImages: false,
 			//lazy: true,
-			// Dotts
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			/*
 			pagination: {
+				pagination: {
 				el: '.hero-slider .swiper-pagination',
 				type: 'bullets'
 			},
-			// Arrows
-			// navigation: {
-			// 	nextEl: '.about__more .more__item_next',
-			// 	prevEl: '.about__more .more__item_prev',
-			// },
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
+			},
+
+			// Брейкпоинты
 			/*
 			breakpoints: {
 				320: {
@@ -78,6 +108,7 @@ function initSliders() {
 				},
 			},
 			*/
+			// События
 			on: {
 
 			}

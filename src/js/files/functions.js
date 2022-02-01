@@ -184,7 +184,10 @@ export let bodyLock = (delay = 500) => {
 data-spollers="992,max" - спойлеры будут работать только на экранах меньше или равно 992px
 data-spollers="768,min" - спойлеры будут работать только на экранах больше или равно 768px
 
+data-spollers-speed - скорость открытия
+
 Если нужно что бы в блоке открывался болько один слойлер добавляем атрибут data-one-spoller
+
 */
 export function spollers() {
 	const spollersArray = document.querySelectorAll('[data-spollers]');
@@ -208,7 +211,6 @@ export function spollers() {
 				initSpollers(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
 			});
 		}
-
 		// Инициализация
 		function initSpollers(spollersArray, matchMedia = false) {
 			spollersArray.forEach(spollersBlock => {
@@ -247,23 +249,41 @@ export function spollers() {
 			if (el.closest('[data-spoller]')) {
 				const spollerTitle = el.closest('[data-spoller]');
 				const spollersBlock = spollerTitle.closest('[data-spollers]');
-				const oneSpoller = spollersBlock.hasAttribute('data-one-spoller') ? true : false;
+				const oneSpoller = spollersBlock.hasAttribute('data-one-spoller');
+				const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
 				if (!spollersBlock.querySelectorAll('._slide').length) {
 					if (oneSpoller && !spollerTitle.classList.contains('_spoller-active')) {
 						hideSpollersBody(spollersBlock);
 					}
 					spollerTitle.classList.toggle('_spoller-active');
-					_slideToggle(spollerTitle.nextElementSibling, 500);
+					_slideToggle(spollerTitle.nextElementSibling, spollerSpeed);
 				}
 				e.preventDefault();
 			}
 		}
 		function hideSpollersBody(spollersBlock) {
 			const spollerActiveTitle = spollersBlock.querySelector('[data-spoller]._spoller-active');
-			if (spollerActiveTitle) {
+			const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
+			if (spollerActiveTitle && !spollersBlock.querySelectorAll('._slide').length) {
 				spollerActiveTitle.classList.remove('_spoller-active');
-				_slideUp(spollerActiveTitle.nextElementSibling, 500);
+				_slideUp(spollerActiveTitle.nextElementSibling, spollerSpeed);
 			}
+		}
+		const spollersClose = document.querySelectorAll('[data-spoller-close]');
+		if (spollersClose.length) {
+			document.addEventListener("click", function (e) {
+				const el = e.target;
+				if (!el.closest('[data-spollers]')) {
+					spollersClose.forEach(spollerClose => {
+						const spollersBlock = spollerClose.closest('[data-spollers]');
+						const spollerSpeed = spollersBlock.dataset.spollersSpeed ? parseInt(spollersBlock.dataset.spollersSpeed) : 500;
+						if (!spollersBlock.querySelectorAll('._slide').length) {
+							spollerClose.classList.remove('_spoller-active');
+							_slideUp(spollerClose.nextElementSibling, spollerSpeed);
+						}
+					});
+				}
+			});
 		}
 	}
 }
@@ -409,10 +429,9 @@ export function tabs() {
 }
 // Модуль работы с меню (бургер) =======================================================================================================================================================================================================================
 export function menuInit() {
-	let iconMenu = document.querySelector(".icon-menu");
-	if (iconMenu) {
-		iconMenu.addEventListener("click", function (e) {
-			if (bodyLockStatus) {
+	if (document.querySelector(".icon-menu")) {
+		document.addEventListener("click", function (e) {
+			if (bodyLockStatus && e.target.closest('.icon-menu')) {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
 			}
@@ -512,9 +531,15 @@ export function showMore() {
 			return hiddenHeight;
 		}
 		function getOriginalHeight(showMoreContent) {
+			let parentHidden;
 			let hiddenHeight = showMoreContent.offsetHeight;
 			showMoreContent.style.removeProperty('height');
+			if (showMoreContent.closest(`[hidden]`)) {
+				parentHidden = showMoreContent.closest(`[hidden]`);
+				parentHidden.hidden = false;
+			}
 			let originalHeight = showMoreContent.offsetHeight;
+			parentHidden ? parentHidden.hidden = true : null;
 			showMoreContent.style.height = `${hiddenHeight}px`;
 			return originalHeight;
 		}

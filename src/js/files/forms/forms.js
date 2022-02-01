@@ -24,11 +24,14 @@ data-goto-error - прокрутить страницу к ошибке
 */
 
 // Работа с полями формы. Добавление классов, работа с placeholder
-export function formFieldsInit() {
+export function formFieldsInit(options = { viewPass: false }) {
+	// Если включено, добавляем функционал "скрыть плейсходлер при фокусе"
 	const formFields = document.querySelectorAll('input[placeholder],textarea[placeholder]');
 	if (formFields.length) {
 		formFields.forEach(formField => {
-			formField.dataset.placeholder = formField.placeholder;
+			if (!formField.hasAttribute('data-placeholder-nohide')) {
+				formField.dataset.placeholder = formField.placeholder;
+			}
 		});
 	}
 	document.body.addEventListener("focusin", function (e) {
@@ -37,9 +40,10 @@ export function formFieldsInit() {
 			if (targetElement.dataset.placeholder) {
 				targetElement.placeholder = '';
 			}
-			targetElement.classList.add('_form-focus');
-			targetElement.parentElement.classList.add('_form-focus');
-
+			if (!targetElement.hasAttribute('data-no-focus-classes')) {
+				targetElement.classList.add('_form-focus');
+				targetElement.parentElement.classList.add('_form-focus');
+			}
 			formValidate.removeError(targetElement);
 		}
 	});
@@ -49,15 +53,28 @@ export function formFieldsInit() {
 			if (targetElement.dataset.placeholder) {
 				targetElement.placeholder = targetElement.dataset.placeholder;
 			}
-			targetElement.classList.remove('_form-focus');
-			targetElement.parentElement.classList.remove('_form-focus');
-
+			if (!targetElement.hasAttribute('data-no-focus-classes')) {
+				targetElement.classList.remove('_form-focus');
+				targetElement.parentElement.classList.remove('_form-focus');
+			}
 			// Моментальная валидация
 			if (targetElement.hasAttribute('data-validate')) {
 				formValidate.validateInput(targetElement);
 			}
 		}
 	});
+
+	// Если включено, добавляем функционал "Показать пароль"
+	if (options.viewPass) {
+		document.addEventListener("click", function (e) {
+			let targetElement = e.target;
+			if (targetElement.closest('[class*="__viewpass"]')) {
+				let inputType = targetElement.classList.contains('_viewpass-active') ? "password" : "text";
+				targetElement.parentElement.querySelector('input').setAttribute("type", inputType);
+				targetElement.classList.toggle('_viewpass-active');
+			}
+		});
+	}
 }
 // Валидация форм
 export let formValidate = {
@@ -145,7 +162,7 @@ export let formValidate = {
 	}
 }
 /* Отправка форм */
-export function formSubmit(validate) {
+export function formSubmit(options = { validate: true }) {
 	const forms = document.forms;
 	if (forms.length) {
 		for (const form of forms) {
@@ -160,7 +177,7 @@ export function formSubmit(validate) {
 		}
 	}
 	async function formSubmitAction(form, e) {
-		const error = validate ? formValidate.getErrors(form) : 0;
+		const error = !form.hasAttribute('data-no-validate') ? formValidate.getErrors(form) : 0;
 		if (error === 0) {
 			const ajax = form.hasAttribute('data-ajax');
 			if (ajax) { // Если режим ajax
@@ -218,17 +235,6 @@ export function formSubmit(validate) {
 	function formLogging(message) {
 		FLS(`[Формы]: ${message}`);
 	}
-}
-/* Модуь формы "показать пароль" */
-export function formViewpass() {
-	document.addEventListener("click", function (e) {
-		let targetElement = e.target;
-		if (targetElement.closest('[class*="__viewpass"]')) {
-			let inputType = targetElement.classList.contains('active') ? "password" : "text";
-			targetElement.parentElement.querySelector('input').setAttribute("type", inputType);
-			targetElement.classList.toggle('active');
-		}
-	});
 }
 /* Модуь формы "колличество" */
 export function formQuantity() {
