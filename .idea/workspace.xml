@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress&#10;Added favicons">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_slider-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_slider-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/sliders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/index-slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/index-slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/slider-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/slider-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress">
+      <change beforePath="$PROJECT_DIR$/config/gulp-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/gulp-settings.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +83,7 @@
       <workItem from="1642946318174" duration="4900000" />
       <workItem from="1642961750861" duration="128000" />
       <workItem from="1643811436787" duration="7048000" />
-      <workItem from="1643830892826" duration="1945000" />
+      <workItem from="1643830892826" duration="2042000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -140,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643825197160</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adaptive in progress">
+      <created>1643833795016</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643833795016</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,9 +164,9 @@
     <MESSAGE value="Config update" />
     <MESSAGE value="Config updatep" />
     <MESSAGE value="Callback block adaptive done" />
-    <MESSAGE value="Adaptive in progress" />
     <MESSAGE value="Adaptive in progress&#10;Added favicons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaptive in progress&#10;Added favicons" />
+    <MESSAGE value="Adaptive in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptive in progress" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
