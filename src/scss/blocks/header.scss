@@ -3,28 +3,37 @@
 .header {
 	z-index: 999;
 
-	.container {
+	&__container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding-top: 20px;
 		padding-bottom: 20px;
+
+		@media (max-width: 650px) {
+			display: grid;
+			grid-template-columns: 60px 1fr;
+			column-gap: 25px;
+			row-gap: 15px;
+			padding: 15px;
+		}
 	}
 
 	// .header__menu
 	&__menu {
 		flex-shrink: 1;
 
-		@media (max-width: 1120px) {
-			flex-grow: 1;
-			flex-shrink: 0;
+		@media (max-width: 650px) {
+			grid-column: 1/2;
+			grid-row: 2/3;
+			margin-left: 18px;
 		}
 	}
 
 	// .header__nav
 	&__nav {
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1150px) {
 			position: absolute;
 			top: 110px;
 			left: 0;
@@ -39,6 +48,9 @@
 				transform: translateX(0);
 			}
 		}
+		@media (max-width: 650px) {
+			top: 159px;
+		}
 	}
 
 	// .header__buy
@@ -46,6 +58,17 @@
 		display: flex;
 		align-items: center;
 		flex-shrink: 0;
+
+		@media (max-width: 1150px) {
+			flex-grow: 1;
+			justify-content: center;
+		}
+
+		@media (max-width: 650px) {
+			grid-column: 2/3;
+			grid-row: 2/3;
+			justify-content: flex-end;
+		}
 	}
 
 	// .header__search
@@ -60,6 +83,10 @@
 
 	// .header__contacts
 	&__contacts {
+		@media (max-width: 650px) {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
 	}
 
 	.dropdown-catalog-activate {
@@ -84,6 +111,9 @@
 	.contacts {
 		// .contacts__phone-row
 		&__phone-row {
+			@media (max-width: 650px) {
+				justify-content: flex-end;
+			}
 		}
 
 		// .contacts__icon
@@ -109,6 +139,9 @@
 			@media (max-width: 1190px) {
 				font-size: 16px;
 			}
+			@media (max-width: 650px) {
+				display: none;
+			}
 		}
 	}
 
@@ -116,6 +149,11 @@
 
 
 .logo {
+
+	@media (max-width: 650px) {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
 	// .logo__link
 	&__link {
 	}
@@ -136,7 +174,7 @@
 	&__list {
 		display: flex;
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1150px) {
 			background-color: $white;
 			width: 90%;
 			margin: 30px auto;
@@ -161,7 +199,7 @@
 			color: $main;
 		}
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1150px) {
 			margin-bottom: 20px;
 		}
 	}
@@ -180,7 +218,7 @@
 			color: $main;
 		}
 
-		@media (max-width: 1120px) {
+		@media (max-width: 1150px) {
 			font-size: 18px;
 			font-weight: 500;
 		}
@@ -193,7 +231,10 @@
 
 .icon-menu {
 	display: none;
-	@media (max-width: 1120px) {
+	//margin-left: 45px;
+	@include adaptiveValue("margin-left", 45, 30, 1150, 651);
+	margin-right: 30px;
+	@media (max-width: 1150px) {
 		display: block;
 		position: relative;
 		width: 30px;

@@ -20,6 +20,7 @@
 
 .item__pricing {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 20px;
@@ -64,6 +65,7 @@
 .item__reviews {
 	color: $text-gray;
 	font-weight: 400;
+	font-size: 14px;
 }
 
 .item__rating {

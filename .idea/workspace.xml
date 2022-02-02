@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress">
-      <change beforePath="$PROJECT_DIR$/.idea/extract-css.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/extract-css.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2022,_21_26_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2022__21_26__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022,_22_12_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_1.xml" beforeDir="false" />
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022,_22_12_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/dropdown-catalog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/dropdown-catalog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/_slider-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_slider-item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/header-search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header-search.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/slider-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/slider-item.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
