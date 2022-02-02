@@ -22,6 +22,10 @@
 			border-radius: 11px;
 		}
 	}
+
+	.swiper-wrapper {
+		padding-top: 100px;
+	}
 }
 
 .hero__inner {
@@ -67,6 +71,7 @@
 .hero-slider {
 	position: relative;
 	overflow: hidden;
+	padding-top: 100px;
 }
 
 .hero__slider-text {

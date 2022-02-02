@@ -2,11 +2,11 @@
 
 .header__search {
 	position: relative;
-	width: 300px;
+	max-width: 300px;
 }
 
 .search__input {
-	width: 300px;
+	max-width: 300px;
 	padding: 10px 20px;
 	border: 1px solid $accent;
 	-webkit-border-radius: 20px;

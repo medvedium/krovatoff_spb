@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress">
+      <change beforePath="$PROJECT_DIR$/.idea/extract-css.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/extract-css.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2022,_21_26_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_01_2022__21_26__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022,_22_12_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/dropdown-catalog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/dropdown-catalog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header-search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header-search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +49,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$USER_HOME$/AppData/Roaming/npm/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ohrgmk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="extract.css.actions.ExtractCSSConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -83,6 +96,7 @@
       <workItem from="1642935221598" duration="37000" />
       <workItem from="1642946318174" duration="4900000" />
       <workItem from="1642961750861" duration="128000" />
+      <workItem from="1643811436787" duration="6890000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
