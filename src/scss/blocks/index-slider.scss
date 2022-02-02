@@ -18,7 +18,11 @@
 	}
 
 	.swiper {
+		padding-bottom: 40px;
+		@media (min-width: 1104px) {
 		padding: 10px 30px 40px;
+
+		}
 	}
 
 	.swiper-horizontal > .swiper-pagination-bullets,
@@ -47,7 +51,7 @@
 .premium_slider-prev,
 .premium_slider-next {
 	position: absolute;
-	top: 45%;
+	top: 35%;
 	z-index: 2;
 	display: flex;
 	align-items: center;
@@ -63,6 +67,10 @@
 	&.swiper-button-disabled {
 		cursor: no-drop;
 		opacity: 0.5;
+	}
+
+	@media (max-width: 1103px) {
+		display: none;
 	}
 }
 

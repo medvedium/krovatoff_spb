@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022,_22_12_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2022__22_12__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress&#10;Added favicons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/_slider-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_slider-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header-search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header-search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/index-slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/index-slider.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/slider-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/slider-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -89,7 +88,8 @@
       <workItem from="1642935221598" duration="37000" />
       <workItem from="1642946318174" duration="4900000" />
       <workItem from="1642961750861" duration="128000" />
-      <workItem from="1643811436787" duration="6890000" />
+      <workItem from="1643811436787" duration="7048000" />
+      <workItem from="1643830892826" duration="1945000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642949593489</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adaptive in progress&#10;Added favicons">
+      <created>1643825197159</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643825197160</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +164,8 @@
     <MESSAGE value="Config updatep" />
     <MESSAGE value="Callback block adaptive done" />
     <MESSAGE value="Adaptive in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaptive in progress" />
+    <MESSAGE value="Adaptive in progress&#10;Added favicons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptive in progress&#10;Added favicons" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

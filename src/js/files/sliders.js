@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, {Navigation, Pagination} from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -43,7 +43,7 @@ function initSliders() {
 			slidesPerView: 1,
 			spaceBetween: 30,
 			autoHeight: true,
-			speed: 800, 
+			speed: 800,
 			pagination: {
 				el: '.hero-slider .swiper-pagination',
 				type: 'bullets'
@@ -109,47 +109,76 @@ function initSliders() {
 			},
 			*/
 			// События
-			on: {
-
-			}
+			on: {}
 		});
 	}
+
 
 	if (document.querySelector('.popular__slider')) {
 		let popularSlider = new Swiper('.popular__slider', {
 			modules: [Pagination, Navigation],
-			slidesPerView: 4,
-			slidesPerGroup: 4,
-			navigation: {
-				nextEl: '.popular_slider-next',
-				prevEl: '.popular_slider-prev'
-			},
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+
 			pagination: {
 				el: '.popular__slider .swiper-pagination',
 				type: 'bullets'
 			},
-			spaceBetween: 30
+			spaceBetween: 30,
+			breakpoints: {
+				560: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				1104: {
+					slidesPerView: 4,
+					slidesPerGroup: 4,
+					spaceBetween: 30,
+					navigation: {
+						nextEl: '.popular_slider-next',
+						prevEl: '.popular_slider-prev'
+					},
+				},
+			},
 		})
 	}
-
 	if (document.querySelector('.premium__slider')) {
 		let premiumSlider = new Swiper('.premium__slider', {
 			modules: [Pagination, Navigation],
-			slidesPerView: 4,
-			slidesPerGroup: 4,
-			navigation: {
-				nextEl: '.premium_slider-next',
-				prevEl: '.premium_slider-prev'
-			},
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+
 			pagination: {
 				el: '.premium__slider .swiper-pagination',
 				type: 'bullets'
 			},
-			spaceBetween: 30
-			// slidesPerColumn: 4
+			spaceBetween: 30,
+			breakpoints: {
+				560: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				1104: {
+					slidesPerView: 4,
+					slidesPerGroup: 4,
+					spaceBetween: 30,
+					navigation: {
+						nextEl: '.premium_slider-next',
+						prevEl: '.premium_slider-prev'
+					},
+				},
+			},
 		})
 	}
+
 }
+
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
 	// Добавление классов слайдера

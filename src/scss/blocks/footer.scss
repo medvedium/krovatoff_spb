@@ -173,7 +173,8 @@
 		}
 
 		&:first-child {
-			margin-right: 25px;
+			//margin-right: 25px;
+			@include adaptiveValue("margin-right", 25, 10, 350, 320);
 		}
 	}
 

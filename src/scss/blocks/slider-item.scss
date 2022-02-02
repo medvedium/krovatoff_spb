@@ -68,6 +68,12 @@
 	font-size: 14px;
 }
 
+.item__reviews-title {
+	@media (max-width: 600px) {
+		display: none;
+	}
+}
+
 .item__rating {
 	display: flex;
 	align-items: center;
