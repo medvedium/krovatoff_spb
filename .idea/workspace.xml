@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress">
-      <change beforePath="$PROJECT_DIR$/config/gulp-settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/gulp-settings.js" afterDir="false" />
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Config update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/hero.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +18,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,7 +86,9 @@
       <workItem from="1642946318174" duration="4900000" />
       <workItem from="1642961750861" duration="128000" />
       <workItem from="1643811436787" duration="7048000" />
-      <workItem from="1643830892826" duration="2042000" />
+      <workItem from="1643830892826" duration="2131000" />
+      <workItem from="1643870826336" duration="42000" />
+      <workItem from="1644077870715" duration="2361000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -141,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643833795016</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Config update">
+      <created>1643833958577</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643833958577</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,12 +173,12 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="idk" />
-    <MESSAGE value="Config update" />
     <MESSAGE value="Config updatep" />
     <MESSAGE value="Callback block adaptive done" />
     <MESSAGE value="Adaptive in progress&#10;Added favicons" />
     <MESSAGE value="Adaptive in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaptive in progress" />
+    <MESSAGE value="Config update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
