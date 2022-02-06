@@ -179,3 +179,12 @@ if (paymentMenu) {
 		}
 	})
 }
+
+const openCategory = document.querySelector('.jsOpenCategory')
+const catalogCategory = document.querySelector('.jsCatalogCategory')
+
+if (openCategory) {
+	openCategory.addEventListener('click', () => {
+		catalogCategory.classList.toggle('active')
+	})
+}
