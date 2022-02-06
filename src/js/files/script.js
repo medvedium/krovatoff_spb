@@ -4,7 +4,10 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 
+
 import noUiSlider from 'nouislider'
+import * as flsFunctions from "./functions.js";
+// flsFunctions.menuInit();
 
 if (document.querySelector('#slider')) {
 	noUiSlider.create(document.querySelector('#slider'), {
@@ -61,6 +64,7 @@ if (catalogToggle) {
 		dropdownCatalog.classList.add('active')
 		document.body.style.overflow = 'hidden'
 		document.body.style.paddingRight = '14px'
+		flsFunctions.menuClose()
 
 		dropdownCatalog.querySelector('.dropdown-catalog__close').addEventListener('click', () => {
 			dropdownCatalog.classList.remove('active')

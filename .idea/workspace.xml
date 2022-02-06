@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Config update">
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="hero adaptive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/sliders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/files/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/hero.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +86,8 @@
       <workItem from="1643811436787" duration="7048000" />
       <workItem from="1643830892826" duration="2131000" />
       <workItem from="1643870826336" duration="42000" />
-      <workItem from="1644077870715" duration="2361000" />
+      <workItem from="1644077870715" duration="3031000" />
+      <workItem from="1644134901292" duration="4175000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -153,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643833958577</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="hero adaptive">
+      <created>1644083486889</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1644083486889</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +184,8 @@
     <MESSAGE value="Adaptive in progress&#10;Added favicons" />
     <MESSAGE value="Adaptive in progress" />
     <MESSAGE value="Config update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Config update" />
+    <MESSAGE value="hero adaptive" />
+    <option name="LAST_COMMIT_MESSAGE" value="hero adaptive" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
