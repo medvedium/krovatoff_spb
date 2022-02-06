@@ -176,6 +176,7 @@
 		display: flex;
 
 		@media (max-width: 1150px) {
+			position: relative;
 			background-color: $white;
 			width: 90%;
 			margin: 30px auto;
@@ -188,9 +189,11 @@
 			height: calc(100% - 60px);
 		}
 
-		@media (max-width: 450px) {
+		@media (max-width: 650px) {
 			padding: 10px;
 			margin: 10px auto;
+			height: calc(100% - 70px);
+
 		}
 
 	}

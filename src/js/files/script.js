@@ -182,9 +182,14 @@ if (paymentMenu) {
 
 const openCategory = document.querySelector('.jsOpenCategory')
 const catalogCategory = document.querySelector('.jsCatalogCategory')
+const catalogCategoryClose = document.querySelector('.jsCatalogCategoryClose')
 
 if (openCategory) {
 	openCategory.addEventListener('click', () => {
 		catalogCategory.classList.toggle('active')
+
+		catalogCategoryClose.addEventListener('click', () => {
+			catalogCategory.classList.remove('active')
+		})
 	})
 }
