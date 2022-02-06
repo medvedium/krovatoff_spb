@@ -19,12 +19,48 @@
 		height: 50px;
 		background-color: transparent;
 		transform: translateY(-100%);
+
 	}
 
 	&.active {
 		display: flex;
 	}
 
+	@media (max-width: 1150px) {
+		position: relative;
+		top: 0;
+
+		&::before {
+			content: none;
+		}
+	}
+
+	// .dropdown-catalog__wrap
+	&__wrap {
+		position: relative;
+		display: flex;
+		width: 100%;
+		max-width: $container;
+		height: 90%;
+		max-height: 800px;
+		margin: 50px 30px;
+		padding: 65px 145px;
+		background-color: $white;
+		-webkit-border-radius: 31px;
+		-moz-border-radius: 31px;
+		border-radius: 31px;
+
+		@media (max-width: 1350px) {
+			padding: 30px 50px;
+		}
+
+		@media (max-width: 1150px) {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	// .dropdown-catalog__close
 	&__close {
 		position: absolute;
 		top: 50px;
@@ -35,29 +71,23 @@
 		background-position: center;
 		background-size: contain;
 		cursor: pointer;
+
+		@media (max-width: 1350px) {
+			right: 30px;
+			top: 30px;
+		}
 	}
 
-	&__wrap {
-		position: relative;
-		display: flex;
-		width: 100%;
-		max-width: $container;
-		height: 90%;
-		max-height: 800px;
-		margin-top: 50px;
-		margin-bottom: 50px;
-		padding-top: 65px;
-		padding-left: 145px;
-		background-color: $white;
-		-webkit-border-radius: 31px;
-		-moz-border-radius: 31px;
-		border-radius: 31px;
-	}
-
+	// .dropdown-catalog__categories
 	&__categories {
 		padding-right: 30px;
 	}
 
+	// .dropdown-catalog__categories-list
+	&__categories-list {
+	}
+
+	// .dropdown-catalog__categories-item
 	&__categories-item {
 		width: 270px;
 		height: 40px;
@@ -75,8 +105,54 @@
 		&:hover,
 		&.active {
 			color: $white;
-			font-weight: 700;
+			//font-weight: 700;
 			background-color: $main;
+		}
+	}
+
+	// .dropdown-catalog__inner
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 30px;
+	}
+}
+
+.dropdown-item {
+	height: 220px;
+	//width: 26%;
+	// .dropdown-item__title
+	&__title {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 20px;
+
+		a {
+			transition: all .2s linear;
+
+			&:hover {
+				color: $main;
+			}
+
+		}
+	}
+
+	// .dropdown-item__list
+	&__list {
+	}
+
+	// .dropdown-item__item
+	&__item {
+		margin-bottom: 10px;
+	}
+
+	// .dropdown-item__link
+	&__link {
+		transition: all .2s linear;
+
+		&:hover {
+			color: $main;
 		}
 	}
 }

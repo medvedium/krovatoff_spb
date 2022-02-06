@@ -61,10 +61,14 @@ const dropdownCatalog = document.querySelector('.dropdown-catalog')
 
 if (catalogToggle) {
 	catalogToggle.addEventListener('click', () => {
-		dropdownCatalog.classList.add('active')
+		dropdownCatalog.classList.toggle('active')
 		document.body.style.overflow = 'hidden'
 		document.body.style.paddingRight = '14px'
+
+		if (window.innerWidth >1150) {
 		flsFunctions.menuClose()
+
+		}
 
 		dropdownCatalog.querySelector('.dropdown-catalog__close').addEventListener('click', () => {
 			dropdownCatalog.classList.remove('active')
