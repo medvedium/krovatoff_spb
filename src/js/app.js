@@ -74,17 +74,16 @@ flsFunctions.showMore();
 // ========================================================================================================================================================================================================================================================
 import * as flsForms from "./files/forms/forms.js";
 
-/* Работа с полями формы: добавление классов, работа с placeholder. */
-// flsForms.formFieldsInit();
+/* Работа с полями формы */
+/* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
+// flsForms.formFieldsInit({ viewPass: false });
 
-/* Oтправка формы со встроенной валидацией полей. false - отключит валидацию */
-// flsForms.formSubmit(true);
+/* Oтправка формы */
+/* Документация: https://template.fls.guru/template-docs/rabota-s-formami.html */
+// flsForms.formSubmit();
 
 /* Модуль формы "колличество" */
 // flsForms.formQuantity();
-
-/* Модуль формы "показать пароль" */
-// flsForms.formViewpass();
 
 /* Модуль звездного рейтинга */
 flsForms.formRating();
@@ -146,7 +145,7 @@ import "./files/sliders.js";
 // Документация по работе в шаблоне: В HTML добавляем img, video, audio, iframe но вместо src пишем data-src
 // Документация плагина: https://github.com/verlok/vanilla-lazyload
 // Сниппет(HTML):
-//import './files/scroll/lazyload.js';
+// import './files/scroll/lazyload.js';
 
 // Наблюдатель за объектами c атрибутом data-watch
 // Документация по работе в шаблоне: js/libs/watcher.js
