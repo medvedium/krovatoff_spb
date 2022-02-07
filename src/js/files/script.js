@@ -110,6 +110,9 @@ if (deliveryMenu) {
 						item.classList.add('active')
 					}
 				})
+				if (document.querySelector('.delivery__cards').classList.contains('active')) {
+					document.querySelector('.delivery__cards').classList.remove('active')
+				}
 			} else if (target.dataset.tab === 'refund') {
 				document.querySelectorAll('.delivery__tab').forEach((item) => {
 					if (item.classList.contains('active')) {
@@ -133,6 +136,9 @@ if (deliveryMenu) {
 						item.classList.add('active')
 					}
 				})
+				if (!document.querySelector('.delivery__cards').classList.contains('active')) {
+					document.querySelector('.delivery__cards').classList.add('active')
+				}
 			}
 		}
 

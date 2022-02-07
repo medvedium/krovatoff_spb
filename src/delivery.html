@@ -1,111 +1,177 @@
-@@include('html/_header.html', {
-"title": "Доставка"
-})
+@@include('html/_header.html', { "title": "Доставка" })
 
-<section class='delivery'>
-	<div class='container'>
-		<div class='top-row'>
-			<div class='breadcrumbs'>
-				<a href='/' class='breadcrumbs__item'>Главная</a>
-				<a href='#' class='breadcrumbs__item'>Доставка</a>
+<section class="delivery">
+	<div class="container">
+		<div class="top-row">
+			<div class="breadcrumbs">
+				<a href="/" class="breadcrumbs__item">Главная</a>
+				<a href="#" class="breadcrumbs__item">Доставка</a>
 			</div>
-			<div class='section__title'>Доставка</div>
+			<div class="section__title">Доставка</div>
 		</div>
 
-		<div class='delivery__wrap'>
-			<aside class='delivery__menu'>
-				<div class='delivery__tab active' data-tab='delivery' data-tabs="768" class="tabs">Доставка</div>
+		<div class="delivery__wrap">
+			<aside class="delivery__menu">
+				<div class="delivery__tab active" data-tab="delivery" data-tabs="768" class="tabs">Доставка</div>
 				<!--				<div class='delivery__tab' data-tab='self-take'>Самовывоз</div>-->
-				<div class='delivery__tab' data-tab='refund' data-tabs="768" class="tabs">Возврат и замена</div>
+				<div class="delivery__tab" data-tab="refund" data-tabs="768" class="tabs">Возврат и замена</div>
 			</aside>
-			<div class='delivery__inner'>
-				<div class='delivery__tab-content active' data-content='delivery' data-da="[data-tab='delivery'],768,2">
+			<div class="delivery__inner">
+				<div class="delivery__tab-content active" data-content="delivery" data-da="[data-tab='delivery'],768,2">
 					<b>Доставка осуществляется с 10 до 21 ч</b>
-					<br/>
+					<br />
 					По СПб ( внутри КАД + 5 км ) — бесплатно*
-					<br/>
+					<br />
 					при заказе от 7000 руб.
-					<br/>
+					<br />
 					при заказе до 7000 руб. — 500 руб.
-					<br/>
-					<br/>
+					<br />
+					<br />
 					По Ленинградской области — 30 руб./ км
-					<br/>
+					<br />
 					( считается в 1 сторону )
-					<br/>
-					<br/>
+					<br />
+					<br />
 					<b>Подъем мебели</b>
-					<br/>
+					<br />
 					На лифте ( до 200 кг ) — 200 руб.
-					<br/>
+					<br />
 					Без лифта ( до 200 кг ) — 150 руб. / этаж
-					<br/>
-					<br/>
+					<br />
+					<br />
 					<b>Обращаем ваше внимание!</b>
-					<br/>
+					<br />
 					Подъезд грузового транспорта к вашему дому должен быть свободным. Если подъезд к дому невозможен - ручной
 					пронос мебели (более 20 метров) нужно будет оплатить из расчета 100 рублей за каждые дополнительные 20 метров
 					за каждую единицу товара.
 				</div>
-				<div class='delivery__tab-content' data-content='refund' data-da="[data-tab='refund'],768,2">
+				<div class="delivery__tab-content" data-content="refund" data-da="[data-tab='refund'],768,2">
 					Прием рекламаций, для качественной работы по скорейшему устранению претензий, производится исключительно по
 					электронной почте в письменном виде, адрес электронной почты:
-					<b>bersen1982@mail.ru</b><br>
-					<br>
-					<b>Образец заявления <a href='#'>здесь</a></b><br>
-					<br>
-					<br>
-					<b>Обращаем ваше внимание!</b><br>
+					<b>bersen1982@mail.ru</b>
+					<br />
+					<br />
+					<b>
+						Образец заявления
+						<a href="#">здесь</a>
+					</b>
+					<br />
+					<br />
+					<br />
+					<b>Обращаем ваше внимание!</b>
+					<br />
 					Обязательно в теме письма указывать номер заказа или договора и ФИО. В течение 10 рабочих дней с момента
-					получения письма с Вами свяжется менеджер по работе с претензиями.<br>
+					получения письма с Вами свяжется менеджер по работе с претензиями.
+					<br />
 					Ниже перечень необходимых документов для правильного оформления рекламации и условия возврата и замены товара.
 				</div>
 			</div>
-			<div class='delivery__inner-img'>
-				<img src='img/delivery-bg.png' alt=''>
+			<div class="delivery__inner-img">
+				<img src="img/delivery-bg.png" alt="" />
 			</div>
 		</div>
 	</div>
-	<div class='delivery__description'>
-		<div class='container'>
-			<div class='delivery__description-content active' data-content='delivery'>
-				<div class='delivery__description-title'>Покупатель в течение назначенного интервала доставки обязан</div>
-				<div class='delivery__description-inner'>
-					<div class='delivery__description-item'>Находиться по указанному в заказе адресу</div>
-					<div class='delivery__description-item'>Занос в квартиру осуществляется до указанного места в квартире.</div>
-					<div class='delivery__description-item'>
+	<div class="delivery__cards">
+		<div class="container">
+			<div class="delivery__slider swiper">
+				<div class="delivery__wrapper swiper-wrapper">
+					<div class="delivery__slide swiper-slide">
+						<div class="delivery__slide-title">Производится в течение 7 рабочих дней</div>
+						<div class="delivery__slide-text">
+							товар не был в употреблении
+							<br />
+							<br />
+							не был собран
+							<br />
+							<br />
+							сохранен товарный вид, потребительские свойства, пломбы, фабричные ярлыки
+							<br />
+							<br />
+							имеется товарный и кассовый чек, или иной подтверждающий оплату товара документ.
+						</div>
+					</div>
+					<div class="delivery__slide swiper-slide">
+						<div class="delivery__slide-title">Стоимость услуги по обратной доставке</div>
+						<div class="delivery__slide-text">
+							При возврате товара надлежащего качества, мы возвращаем стоимость товара за вычетом стоимости услуг по
+							обратной доставке.
+							<br />
+							<br />
+							Стоимость услуги по обратной доставке составляет,
+							<span class="delivery__slide-text--accent">по Санкт-Петербургу 890 р. За пределы КАД 890 р. + 30 р. за каждый последующий км.</span>
+						</div>
+					</div>
+					<div class="delivery__slide swiper-slide">
+						<div class="delivery__slide-title">Возврат не производится если:</div>
+						<div class="delivery__slide-text">
+							Отсутствует оригинальная упаковка
+							<br />
+							<br />
+							Изделие, поставляемое в разобранном виде, уже собрано или имеет следы сборки
+							<br />
+							<br />
+							Изделие имеет следы эксплуатации
+							<br />
+							<br />
+							Отсутствует документ подтверждающий оплату данного товара
+						</div>
+					</div>
+					<div class="delivery__slide swiper-slide">
+						<div class="delivery__slide-title">Сроки рассмотрения рекламаций</div>
+						<div class="delivery__slide-text">
+							Все обоснованные рекламации будут устранены нами в установленные законом сроки.
+							<br />
+							<br />
+							Работа отдела по устранению рекламаций (брак, возврат, некомплект и т.д.), полностью регламентируется,
+							Законом о защите прав потребителей и утвержденными постановлением Правительства РФ от 27 сентября 2007 г.
+							N 612 Правилами продажи дистанционным способом.
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+	<div class="delivery__description">
+		<div class="container">
+			<div class="delivery__description-content active" data-content="delivery">
+				<div class="delivery__description-title">Покупатель в течение назначенного интервала доставки обязан</div>
+				<div class="delivery__description-inner">
+					<div class="delivery__description-item">Находиться по указанному в заказе адресу</div>
+					<div class="delivery__description-item">Занос в квартиру осуществляется до указанного места в квартире.</div>
+					<div class="delivery__description-item">
 						Доставленная мебель подлежит осмотру и проверке на наличие возможных дефектов, которые могли возникнуть во
 						время транспортировки
 					</div>
-					<div class='delivery__description-item'>
+					<div class="delivery__description-item">
 						Получатель обязан проверить комплектацию и целостность стеклянных и зеркальных элементов, до подписания
 						сопроводительных документов
 					</div>
-					<div class='delivery__description-item'>
+					<div class="delivery__description-item">
 						При доставке мебели через транспортные компании мебель по умолчанию дополнительно упаковывается в жесткую
 						упаковку (обрешетку), которую делают на транспортной компании за дополнительную плату
 					</div>
 				</div>
 			</div>
-			<div class='delivery__description-content refund' data-content='refund'>
-				<div class='delivery__description-title'>Документы для оформления рекламации</div>
-				<div class='delivery__description-inner'>
-					<div class='delivery__description-item'>
-						<div class='delivery__description-case'>Товар поврежден</div>
+			<div class="delivery__description-content refund" data-content="refund">
+				<div class="delivery__description-title">Документы для оформления рекламации</div>
+				<div class="delivery__description-inner">
+					<div class="delivery__description-item">
+						<div class="delivery__description-case">Товар поврежден</div>
 						<div>Фото маркировки, которые находятся на упаковке товара</div>
 						<div>Фото поврежденной детали</div>
 						<div>Копию чека</div>
 						<div>Копию товарной накладной</div>
 					</div>
-					<div class='delivery__description-item'>
-						<div class='delivery__description-case'>Некомплектность товара или нехватка деталей и фурнитуры</div>
+					<div class="delivery__description-item">
+						<div class="delivery__description-case">Некомплектность товара или нехватка деталей и фурнитуры</div>
 						<div>Копию схемы сборки с обозначением недостающей части товара в схеме сборки</div>
 						<div>Фото маркировки, которые находятся на упаковке товара</div>
 						<div>Копию чека</div>
 						<div>Копию товарной накладной</div>
 					</div>
-					<div class='delivery__description-item'>
-						<div class='delivery__description-case'>Не мой товар</div>
+					<div class="delivery__description-item">
+						<div class="delivery__description-case">Не мой товар</div>
 						<div>Фото привезенного товара и фото маркировки на коробке</div>
 						<div>Копию чека</div>
 						<div>Копию товарной накладной</div>

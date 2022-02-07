@@ -28,7 +28,6 @@ function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
 	if (document.querySelector('.hero-slider')) { // Указываем скласс нужного слайдера
-		// Создаем слайдер
 		new Swiper('.hero-slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
@@ -174,6 +173,29 @@ function initSliders() {
 					},
 				},
 			},
+		})
+	}
+
+	if (document.querySelector('.delivery__slider')) {
+		new Swiper('.delivery__slider', {
+			modules: [Pagination],
+			slidesPerView: 1,
+			spaceBetween: 20,
+			pagination: {
+				el: '.delivery__slider .swiper-pagination',
+				type: 'bullets'
+			},
+			breakpoints: {
+				700: {
+					slidesPerView: 2
+				},
+				1150: {
+					slidesPerView: 3
+				},
+				1500: {
+					slidesPerView: 4
+				}
+			}
 		})
 	}
 
