@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Project updates">
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="About page adaptive done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/delivery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header-search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header-search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/header.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <workItem from="1644174804082" duration="1249000" />
       <workItem from="1644180784636" duration="20000" />
       <workItem from="1644214133281" duration="71000" />
-      <workItem from="1644251451129" duration="804000" />
+      <workItem from="1644251451129" duration="1562000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -221,7 +220,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644180797927</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Header adaptive fix">
+      <created>1644252307612</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1644252307612</updated>
+    </task>
+    <task id="LOCAL-00020" summary="About page adaptive done">
+      <created>1644252477694</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1644252477694</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +263,9 @@
     <MESSAGE value="hero adaptive done" />
     <MESSAGE value="Menu adaptive in progress" />
     <MESSAGE value="Project updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project updates" />
+    <MESSAGE value="Header adaptive fix" />
+    <MESSAGE value="About page adaptive done" />
+    <option name="LAST_COMMIT_MESSAGE" value="About page adaptive done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
