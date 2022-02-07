@@ -85,54 +85,58 @@ if (deliveryMenu) {
 	deliveryMenu.addEventListener('click', (e) => {
 		const {target} = e
 
-		if (target.dataset.tab === 'delivery') {
-			document.querySelectorAll('.delivery__tab').forEach((item) => {
-				if (item.classList.contains('active')) {
-					item.classList.remove('active')
-				}
-				if (item.dataset.tab === 'delivery') {
-					item.classList.add('active')
-				}
-			})
+		if (!target.classList.contains('active')) {
+			if (target.dataset.tab === 'delivery') {
+				document.querySelectorAll('.delivery__tab').forEach((item) => {
+					if (item.classList.contains('active')) {
+						item.classList.remove('active')
+					}
+					if (item.dataset.tab === 'delivery') {
+						item.classList.add('active')
+					}
+				})
 
-			deliveryTabContent.forEach((item) => {
-				if (item.dataset.content !== 'delivery' && item.classList.contains('active')) {
-					item.classList.remove('active')
-				} else {
-					item.classList.add('active')
-				}
-			})
-			deliveryDescriptionItems.forEach((item) => {
-				if (item.dataset.content !== 'delivery' && item.classList.contains('active')) {
-					item.classList.remove('active')
-				} else {
-					item.classList.add('active')
-				}
-			})
-		} else if (target.dataset.tab === 'refund') {
-			document.querySelectorAll('.delivery__tab').forEach((item) => {
-				if (item.classList.contains('active')) {
-					item.classList.remove('active')
-				}
-				if (item.dataset.tab === 'refund') {
-					item.classList.add('active')
-				}
-			})
-			deliveryTabContent.forEach((item) => {
-				if (item.dataset.content !== 'refund' && item.classList.contains('active')) {
-					item.classList.remove('active')
-				} else {
-					item.classList.add('active')
-				}
-			})
-			deliveryDescriptionItems.forEach((item) => {
-				if (item.dataset.content !== 'refund' && item.classList.contains('active')) {
-					item.classList.remove('active')
-				} else {
-					item.classList.add('active')
-				}
-			})
+				deliveryTabContent.forEach((item) => {
+					if (item.dataset.content !== 'delivery' && item.classList.contains('active')) {
+						item.classList.remove('active')
+					} else {
+						item.classList.add('active')
+					}
+				})
+				deliveryDescriptionItems.forEach((item) => {
+					if (item.dataset.content !== 'delivery' && item.classList.contains('active')) {
+						item.classList.remove('active')
+					} else {
+						item.classList.add('active')
+					}
+				})
+			} else if (target.dataset.tab === 'refund') {
+				document.querySelectorAll('.delivery__tab').forEach((item) => {
+					if (item.classList.contains('active')) {
+						item.classList.remove('active')
+					}
+					if (item.dataset.tab === 'refund') {
+						item.classList.add('active')
+					}
+				})
+				deliveryTabContent.forEach((item) => {
+					if (item.dataset.content !== 'refund' && item.classList.contains('active')) {
+						item.classList.remove('active')
+					} else {
+						item.classList.add('active')
+					}
+				})
+				deliveryDescriptionItems.forEach((item) => {
+					if (item.dataset.content !== 'refund' && item.classList.contains('active')) {
+						item.classList.remove('active')
+					} else {
+						item.classList.add('active')
+					}
+				})
+			}
 		}
+
+
 	})
 }
 
