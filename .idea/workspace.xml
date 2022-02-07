@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Project updates">
-      <change afterPath="$PROJECT_DIR$/src/home.html" afterDir="false" />
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Adaptive in progress">
+      <change afterPath="$PROJECT_DIR$/.prettierrc.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/delivery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/delivery.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/payment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/payment.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +40,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -43,7 +51,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="extract.css.actions.ExtractCSSConfigurable" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -84,12 +93,8 @@
       <workItem from="1642935221598" duration="37000" />
       <workItem from="1642946318174" duration="4900000" />
       <workItem from="1642961750861" duration="128000" />
-      <workItem from="1643811436787" duration="7048000" />
-      <workItem from="1643830892826" duration="2131000" />
-      <workItem from="1643870826336" duration="42000" />
-      <workItem from="1644077870715" duration="3031000" />
-      <workItem from="1644134901292" duration="8692000" />
-      <workItem from="1644174804082" duration="1249000" />
+      <workItem from="1643811436787" duration="6890000" />
+      <workItem from="1644170477506" duration="5309000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -133,84 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642949593489</updated>
     </task>
-    <task id="LOCAL-00007" summary="Adaptive in progress&#10;Added favicons">
-      <created>1643825197159</created>
+    <task id="LOCAL-00007" summary="Adaptive in progress">
+      <created>1643830826003</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1643825197160</updated>
+      <updated>1643830826004</updated>
     </task>
     <task id="LOCAL-00008" summary="Adaptive in progress">
-      <created>1643833795016</created>
+      <created>1644174757530</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1643833795016</updated>
+      <updated>1644174757530</updated>
     </task>
-    <task id="LOCAL-00009" summary="Config update">
-      <created>1643833958577</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1643833958577</updated>
-    </task>
-    <task id="LOCAL-00010" summary="hero adaptive">
-      <created>1644083486889</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1644083486889</updated>
-    </task>
-    <task id="LOCAL-00011" summary="hero adaptive done">
-      <created>1644139255745</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1644139255745</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Menu adaptive in progress">
-      <created>1644170150896</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1644170150896</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Menu adaptive in progress">
-      <created>1644176673053</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1644176673053</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Menu adaptive in progress">
-      <created>1644176717098</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1644176717098</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Menu adaptive in progress">
-      <created>1644177299878</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1644177299878</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Project updates">
-      <created>1644179317270</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1644179317270</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Project updates">
-      <created>1644179514610</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1644179514610</updated>
-    </task>
-    <option name="localTasksCounter" value="18" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,16 +172,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="idk" />
+    <MESSAGE value="Config update" />
     <MESSAGE value="Config updatep" />
     <MESSAGE value="Callback block adaptive done" />
-    <MESSAGE value="Adaptive in progress&#10;Added favicons" />
     <MESSAGE value="Adaptive in progress" />
-    <MESSAGE value="Config update" />
-    <MESSAGE value="hero adaptive" />
-    <MESSAGE value="hero adaptive done" />
-    <MESSAGE value="Menu adaptive in progress" />
-    <MESSAGE value="Project updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptive in progress" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

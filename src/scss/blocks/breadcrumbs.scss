@@ -35,3 +35,11 @@
 		}
 	}
 }
+
+.top-row {
+	display: flex;
+	justify-content: flex-start;
+	.breadcrumbs {
+		width: 435px;
+	}
+}
