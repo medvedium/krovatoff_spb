@@ -243,7 +243,8 @@
 .icon-menu {
 	display: none;
 	//margin-left: 45px;
-	@include adaptiveValue("margin-left", 45, 30, 1150, 651);
+	margin-left: 0;
+	@include adaptiveValue("margin-left", 45, 30, 1150, 651, 1);
 	margin-right: 30px;
 	@media (max-width: 1150px) {
 		display: block;
@@ -287,5 +288,9 @@
 				bottom: calc(50% - 1px);
 			}
 		}
+	}
+
+	@media (max-width: 650px) {
+		margin-left: 0;
 	}
 }

@@ -7,14 +7,19 @@
 
 .search__input {
 	max-width: 300px;
-	@include adaptiveValue("width", 300, 160, 810, 651);
-	@include adaptiveValue("width", 300, 145, 480, 320);
+	@include adaptiveValue("width", 300, 160, 810, 651, 1);
+	//@include adaptiveValue("width", 300, 145, 480, 320, 1);
 	padding: 10px 20px;
 	border: 1px solid $accent;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 	flex-shrink: 1;
+
+	@media (max-width: 650px) {
+		flex-grow: 1;
+		width: 100%;
+	}
 }
 
 .search__submit {
