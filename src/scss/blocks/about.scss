@@ -23,10 +23,11 @@
 		width: 50%;
 		padding: 47px 20px 140px 140px;
 		@media (max-width: 1750px) {
-			padding: 20px;
+			padding: 0;
 		}
 		@media (max-width: 991px) {
 			width: 100%;
+			margin-bottom: 25px;
 		}
 	}
 
@@ -35,6 +36,10 @@
 		font-weight: 500;
 		font-size: 36px;
 		line-height: 44px;
+
+		@media (max-width: 650px) {
+			font-size: 28px;
+		}
 	}
 
 	// .about__desc
@@ -80,6 +85,7 @@
 			@media (max-width: 1450px) {
 				flex-direction: column;
 				align-items: center;
+				padding: 30px 15px;
 			}
 		}
 	}
