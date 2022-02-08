@@ -1,22 +1,106 @@
-@@include('html/_header.html', {
-"title": "Карточка товара"
-})
+@@include('html/_header.html', { "title": "Карточка товара" })
 
 <section class="product-page">
 	<div class="product-page__container">
+		<div class="top-row">
 			<div class="breadcrumbs">
 				<a href="/" class="breadcrumbs__item">Главная</a>
 				<a href="#" class="breadcrumbs__item">Кровати</a>
 				<a href="#" class="breadcrumbs__item">Кровать двуспальная Рафаэла</a>
 			</div>
-		<div class="section__title">Кровать двуспальная Рафаэла</div>
+			<div class="section__title">Кровать двуспальная Рафаэла</div>
+		</div>
 
 		<div class="product-page__inner">
-			<div class="product__hero"></div>
-			<div class="product__control"></div>
-			<div class="product__tabs"></div>
-			<div class="product__parts"></div>
-			<div class="product__accessories"></div>
+
+			<div class="product__hero hero">
+				<div class="hero-track__slider swiper">
+					<div class="hero-track__wrapper swiper-wrapper">
+						<div class="hero-track__slide swiper-slide"></div>
+						<div class="hero-track__slide swiper-slide"></div>
+						<div class="hero-track__slide swiper-slide"></div>
+						<div class="hero-track__slide swiper-slide"></div>
+					</div>
+				</div>
+				<div class="hero-main__slider swiper">
+					<div class="hero-main__wrapper swiper-wrapper">
+						<div class="hero-main__slide swiper-slide"></div>
+						<div class="hero-main__slide swiper-slide"></div>
+						<div class="hero-main__slide swiper-slide"></div>
+						<div class="hero-main__slide swiper-slide"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product__control product">
+				<div class="product__status">
+					<span>В наличии</span>
+				</div>
+				<div class="product__price">
+					<div class="product__actual-price">18 000 </div>
+					<div class="product__old-price">31 800</div>
+				</div>
+				<div class="product__size">
+					<div class="product__size-title">Размер спального места</div>
+					<select name="form" class="filter">
+						<option value="1" selected>90 &times; 200</option>
+						<option value="2">120 &times; 200</option>
+						<option value="3">140 &times; 200</option>
+						<option value="4">160 &times; 200</option>
+						<option value="5">180 &times; 200</option>
+						<option value="6">200 &times; 200</option>
+					</select>
+				</div>
+				<div class="product__quantity">
+					<div class="quantity">
+						<button type="button" class="quantity__button quantity__button_plus">+</button>
+						<div class="quantity__input">
+							<input autocomplete="off" type="text" name="" value="1">
+						</div>
+						<button type="button" class="quantity__button quantity__button_minus">-</button>
+					</div>
+				</div>
+				<div class="product__info">
+					<div class="product__collection">Коллекция: <b>Версаль</b></div>
+					<div class="product__code">Артикул 123456789</div>
+				</div>
+				<div class="product__colors">
+					
+				</div>
+				<div class="product__buttons"></div>
+			</div>
+
+			<div class="product__tabs product-tabs" data-tabs="">
+				<nav data-tabs-titles class="product-tabs__navigation">
+					<button type="button" class="product-tabs__title _tab-active">Таб №1</button>
+					<button type="button" class="product-tabs__title">Таб №2</button>
+					<button type="button" class="product-tabs__title">Таб №3</button>
+					<button type="button" class="product-tabs__title">Таб №3</button>
+				</nav>
+				<div data-tabs-body class="product-tabs__content">
+					<div class="product-tabs__body">Содержимое первого таба</div>
+					<div class="product-tabs__body">Содержимое второго таба</div>
+					<div class="product-tabs__body">Содержимое третьего таба</div>
+					<div class="product-tabs__body">Содержимое третьего таба</div>
+				</div>
+			</div>
+
+			<div class="product__parts product-parts">
+				<div class="product-parts__slider swiper">
+					<div class="product-parts__wrapper swiper-wrapper">
+						<div class="product-parts__slide swiper-slide"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="product__accessories">
+				<div class="accessories__slider swiper">
+					<div class="accessories__wrapper swiper-wrapper">
+						<div class="accessories__slide swiper-slide"></div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </section>
