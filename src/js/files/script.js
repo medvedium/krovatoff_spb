@@ -1,12 +1,10 @@
 // Подключение функционала "Чертогов Фрилансера"
-import { isMobile } from "./functions.js";
+import { isMobile } from './functions.js'
 // Подключение списка активных модулей
-import { flsModules } from "./modules.js";
-
-
+import { flsModules } from './modules.js'
 
 import noUiSlider from 'nouislider'
-import * as flsFunctions from "./functions.js";
+import * as flsFunctions from './functions.js'
 // flsFunctions.menuInit();
 
 if (document.querySelector('#slider')) {
@@ -46,15 +44,14 @@ if (document.querySelector('#slider-3')) {
 }
 
 const catalogForm = document.querySelector('#catalog-form')
-if(catalogForm) {
+if (catalogForm) {
 	catalogForm.addEventListener('click', (event) => {
-		const {target} = event
-		if(target.classList.contains('jsCloseCategory')) {
+		const { target } = event
+		if (target.classList.contains('jsCloseCategory')) {
 			target.parentNode.classList.toggle('is-open')
 		}
 	})
 }
-
 
 const catalogToggle = document.querySelector('.dropdown-catalog-activate')
 const dropdownCatalog = document.querySelector('.dropdown-catalog')
@@ -65,9 +62,8 @@ if (catalogToggle) {
 		// document.body.style.overflow = 'hidden'
 		document.body.style.paddingRight = '14px'
 
-		if (window.innerWidth >1150) {
-		flsFunctions.menuClose()
-
+		if (window.innerWidth > 1150) {
+			flsFunctions.menuClose()
 		}
 
 		dropdownCatalog.querySelector('.dropdown-catalog__close').addEventListener('click', () => {
@@ -83,7 +79,7 @@ const deliveryDescriptionItems = document.querySelectorAll('.delivery__descripti
 
 if (deliveryMenu) {
 	deliveryMenu.addEventListener('click', (e) => {
-		const {target} = e
+		const { target } = e
 
 		if (!target.classList.contains('active')) {
 			if (target.dataset.tab === 'delivery') {
@@ -145,8 +141,6 @@ if (deliveryMenu) {
 				document.querySelector('.callback--refund').style.display = 'block'
 			}
 		}
-
-
 	})
 }
 
@@ -155,41 +149,43 @@ const paymentTabContent = document.querySelectorAll('.payment__tab-content')
 
 if (paymentMenu) {
 	paymentMenu.addEventListener('click', (e) => {
-		const {target} = e
+		const { target } = e
 
-		if (target.dataset.tab === 'cash') {
-			document.querySelectorAll('.payment__tab').forEach((item) => {
-				if (item.classList.contains('active')) {
-					item.classList.remove('active')
-				}
-				if (item.dataset.tab === 'cash') {
-					item.classList.add('active')
-				}
-			})
+		if (!target.classList.contains('active')) {
+			if (target.dataset.tab === 'cash') {
+				document.querySelectorAll('.payment__tab').forEach((item) => {
+					if (item.classList.contains('active')) {
+						item.classList.remove('active')
+					}
+					if (item.dataset.tab === 'cash') {
+						item.classList.add('active')
+					}
+				})
 
-			paymentTabContent.forEach((item) => {
-				if (item.dataset.content !== 'cash' && item.classList.contains('active')) {
-					item.classList.remove('active')
-				} else {
-					item.classList.add('active')
-				}
-			})
-		} else if (target.dataset.tab === 'company') {
-			document.querySelectorAll('.payment__tab').forEach((item) => {
-				if (item.classList.contains('active')) {
-					item.classList.remove('active')
-				}
-				if (item.dataset.tab === 'company') {
-					item.classList.add('active')
-				}
-			})
-			paymentTabContent.forEach((item) => {
-				if (item.dataset.content !== 'company' && item.classList.contains('active')) {
-					item.classList.remove('active')
-				} else {
-					item.classList.add('active')
-				}
-			})
+				paymentTabContent.forEach((item) => {
+					if (item.dataset.content !== 'cash' && item.classList.contains('active')) {
+						item.classList.remove('active')
+					} else {
+						item.classList.add('active')
+					}
+				})
+			} else if (target.dataset.tab === 'company') {
+				document.querySelectorAll('.payment__tab').forEach((item) => {
+					if (item.classList.contains('active')) {
+						item.classList.remove('active')
+					}
+					if (item.dataset.tab === 'company') {
+						item.classList.add('active')
+					}
+				})
+				paymentTabContent.forEach((item) => {
+					if (item.dataset.content !== 'company' && item.classList.contains('active')) {
+						item.classList.remove('active')
+					} else {
+						item.classList.add('active')
+					}
+				})
+			}
 		}
 	})
 }
