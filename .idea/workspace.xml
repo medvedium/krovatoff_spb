@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Payment page adaptive done">
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Assembly page adaptive done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assembly.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/assembly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/payment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/blocks/assembly.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/assembly.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/delivery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/delivery.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/payment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/payment.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +89,7 @@
       <workItem from="1643811436787" duration="6890000" />
       <workItem from="1644170477506" duration="5602000" />
       <workItem from="1644256733728" duration="2892000" />
-      <workItem from="1644335442238" duration="7454000" />
+      <workItem from="1644335442238" duration="8284000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -180,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644347985521</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Assembly page adaptive done">
+      <created>1644348871822</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1644348871822</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Assembly page adaptive done">
+      <created>1644349020743</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1644349020743</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +224,8 @@
     <MESSAGE value="Delivery adaptive in progress" />
     <MESSAGE value="Delivery adaptive done (callback block changing)" />
     <MESSAGE value="Payment page adaptive done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Payment page adaptive done" />
+    <MESSAGE value="Assembly page adaptive done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assembly page adaptive done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
