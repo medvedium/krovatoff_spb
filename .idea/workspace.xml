@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Delivery adaptive in progress">
+    <list default="true" id="32ec2a23-a32f-4ecb-a546-17316a6041ee" name="Changes" comment="Delivery adaptive done (callback block changing)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/_callback.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/_callback.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/files/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/files/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/callback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/callback.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/blocks/incoming-call.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/incoming-call.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +84,7 @@
       <workItem from="1643811436787" duration="6890000" />
       <workItem from="1644170477506" duration="5602000" />
       <workItem from="1644256733728" duration="2892000" />
-      <workItem from="1644335442238" duration="3242000" />
+      <workItem from="1644335442238" duration="3908000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1640718680990</created>
@@ -161,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644262439569</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Delivery adaptive done (callback block changing)">
+      <created>1644339463046</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1644339463046</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +189,8 @@
     <MESSAGE value="Adaptive in progress" />
     <MESSAGE value="Adaptive in progress&#10;Product page start" />
     <MESSAGE value="Delivery adaptive in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delivery adaptive in progress" />
+    <MESSAGE value="Delivery adaptive done (callback block changing)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delivery adaptive done (callback block changing)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
