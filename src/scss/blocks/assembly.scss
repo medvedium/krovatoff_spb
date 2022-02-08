@@ -4,13 +4,17 @@
 	padding-top: 40px;
 	background-color: #fcfcfc;
 
+	@media (max-width: 768px) {
+		padding-top: 0;
+	}
+
 	// .assembly__inner
 	&__inner {
 		display: flex;
 		padding: 50px 140px 0 290px;
 
 		@media (max-width: 1600px) {
-			padding: 30px;
+			padding: 0;
 		}
 		@media (max-width: 1200px) {
 			align-items: center;
@@ -33,6 +37,7 @@
 		}
 		@media (max-width: 768px) {
 			width: 100%;
+			margin-top: 0;
 		}
 	}
 
@@ -68,6 +73,7 @@
 		@media (max-width: 768px) {
 			width: 100%;
 			margin-top: 30px;
+			margin-bottom: 30px;
 		}
 	}
 }
