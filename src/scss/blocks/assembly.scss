@@ -3,22 +3,71 @@
 .assembly {
 	padding-top: 40px;
 	background-color: #fcfcfc;
-}
 
-.assembly__inner {
-	display: flex;
-	padding: 50px 140px 0 290px;
-}
+	// .assembly__inner
+	&__inner {
+		display: flex;
+		padding: 50px 140px 0 290px;
 
-.assembly__text {
-	margin-top: 30px;
-
-	p {
-		margin-top: 20px;
+		@media (max-width: 1600px) {
+			padding: 30px;
+		}
+		@media (max-width: 1200px) {
+			align-items: center;
+		}
+		@media (max-width: 768px) {
+			display: block;
+		}
 	}
-}
 
-.assembly__img {
-	position: relative;
-	bottom: 110px;
+	// .assembly__text
+	&__text {
+		margin-top: 30px;
+
+		p {
+			margin-top: 20px;
+		}
+
+		@media (max-width: 1400px) {
+			width: 60%;
+		}
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+
+	// .assembly__title
+	&__title {
+	}
+
+	// .assembly__text-content
+	&__text-content {
+	}
+
+	// .assembly__img
+	&__img {
+		position: relative;
+		bottom: 110px;
+
+
+		@media (max-width: 1400px) {
+			display: flex;
+			align-items: center;
+			bottom: 50px;
+			width: 40%;
+
+			img {
+				display: block;
+				height: 100%;
+				width: 100%;
+			}
+		}
+		@media (max-width: 1200px) {
+			bottom: 0;
+		}
+		@media (max-width: 768px) {
+			width: 100%;
+			margin-top: 30px;
+		}
+	}
 }
