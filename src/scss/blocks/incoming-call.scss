@@ -62,11 +62,21 @@
 
 			@media (max-width: 1490px) {
 				transform: translate(-80%, -70%);
+
+				.callback--refund & {
+					transform: translate(-80%, -120%);
+
+				}
 			}
 
 			@media (max-width: 1290px) {
 				width: 250px;
 				transform: translate(-65%, -60%);
+
+				.callback--refund & {
+					transform: translate(-80%, -60%);
+					//width: 350px;
+				}
 			}
 		}
 	}

@@ -113,6 +113,8 @@ if (deliveryMenu) {
 				if (document.querySelector('.delivery__cards').classList.contains('active')) {
 					document.querySelector('.delivery__cards').classList.remove('active')
 				}
+				document.querySelector('.callback').style.display = 'block'
+				document.querySelector('.callback--refund').style.display = 'none'
 			} else if (target.dataset.tab === 'refund') {
 				document.querySelectorAll('.delivery__tab').forEach((item) => {
 					if (item.classList.contains('active')) {
@@ -139,6 +141,8 @@ if (deliveryMenu) {
 				if (!document.querySelector('.delivery__cards').classList.contains('active')) {
 					document.querySelector('.delivery__cards').classList.add('active')
 				}
+				document.querySelector('.callback').style.display = 'none'
+				document.querySelector('.callback--refund').style.display = 'block'
 			}
 		}
 
