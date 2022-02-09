@@ -12,36 +12,54 @@
 		</div>
 
 		<div class="product-page__inner">
-
-			<div class="product__hero hero">
-				<div class="hero-track__slider swiper">
-					<div class="hero-track__wrapper swiper-wrapper">
-						<div class="hero-track__slide swiper-slide"></div>
-						<div class="hero-track__slide swiper-slide"></div>
-						<div class="hero-track__slide swiper-slide"></div>
-						<div class="hero-track__slide swiper-slide"></div>
+			<div class="product__hero product-hero">
+				<div class="product-hero-track">
+					<div class="product-hero-track__slider swiper">
+						<div class="product-hero-track__wrapper swiper-wrapper">
+							<div class="product-hero-track__slide swiper-slide"><img src="img/product-page/1.jpg" alt="" /></div>
+							<div class="product-hero-track__slide swiper-slide"><img src="img/product-page/2.jpg" alt="" /></div>
+							<div class="product-hero-track__slide swiper-slide"><img src="img/product-page/3.jpg" alt="" /></div>
+							<div class="product-hero-track__slide swiper-slide"><img src="img/product-page/4.jpg" alt="" /></div>
+							<div class="product-hero-track__slide swiper-slide"><img src="img/product-page/5.jpg" alt="" /></div>
+						</div>
 					</div>
 				</div>
-				<div class="hero-main__slider swiper">
-					<div class="hero-main__wrapper swiper-wrapper">
-						<div class="hero-main__slide swiper-slide"></div>
-						<div class="hero-main__slide swiper-slide"></div>
-						<div class="hero-main__slide swiper-slide"></div>
-						<div class="hero-main__slide swiper-slide"></div>
+				<div class="product-hero-main">
+					<div class="product-hero-main__slider swiper">
+						<div class="product-hero-main__wrapper swiper-wrapper">
+							<div class="product-hero-main__slide swiper-slide"><img src="img/product-page/1.jpg" alt="" /></div>
+							<div class="product-hero-main__slide swiper-slide"><img src="img/product-page/2.jpg" alt="" /></div>
+							<div class="product-hero-main__slide swiper-slide"><img src="img/product-page/3.jpg" alt="" /></div>
+							<div class="product-hero-main__slide swiper-slide"><img src="img/product-page/4.jpg" alt="" /></div>
+							<div class="product-hero-main__slide swiper-slide"><img src="img/product-page/5.jpg" alt="" /></div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="product__control product">
-				<div class="product__status">
-					<span>В наличии</span>
+			<div class="product__info product-info">
+				<div class="product-info__price-wrap">
+					<div class="product-info__status available">
+						<span>В наличии</span>
+					</div>
+
+					<div class="product-info__price">
+						<div class="product-info__actual-price">
+							18 000
+							<svg>
+								<use xlink:href="img/icons/icons.svg#rouble"></use>
+							</svg>
+						</div>
+						<div class="product-info__old-price">
+							31 800
+							<svg>
+								<use xlink:href="img/icons/icons.svg#rouble"></use>
+							</svg>
+						</div>
+					</div>
 				</div>
-				<div class="product__price">
-					<div class="product__actual-price">18 000 </div>
-					<div class="product__old-price">31 800</div>
-				</div>
-				<div class="product__size">
-					<div class="product__size-title">Размер спального места</div>
+				<div class="product-info__size">
+					<div class="product-info__size-title">Размер спального места</div>
 					<select name="form" class="filter">
 						<option value="1" selected>90 &times; 200</option>
 						<option value="2">120 &times; 200</option>
@@ -51,31 +69,34 @@
 						<option value="6">200 &times; 200</option>
 					</select>
 				</div>
-				<div class="product__quantity">
+				<div class="product-info__quantity">
+					<div class="product-info__quantity-title">Количество</div>
 					<div class="quantity">
-						<button type="button" class="quantity__button quantity__button_plus">+</button>
+						<button type="button" class="quantity__button quantity__button_minus"></button>
 						<div class="quantity__input">
-							<input autocomplete="off" type="text" name="" value="1">
+							<input autocomplete="off" type="text" name="" value="1" />
 						</div>
-						<button type="button" class="quantity__button quantity__button_minus">-</button>
+						<button type="button" class="quantity__button quantity__button_plus"></button>
 					</div>
 				</div>
-				<div class="product__info">
-					<div class="product__collection">Коллекция: <b>Версаль</b></div>
-					<div class="product__code">Артикул 123456789</div>
+				<div class="product-info__info">
+					<div class="product-info__collection">
+						Коллекция:
+						<span>Версаль</span>
+					</div>
+					<div class="product-info__code">Артикул 123456789</div>
 				</div>
-				<div class="product__colors">
-					
-				</div>
-				<div class="product__buttons"></div>
+				<div class="product-info__colors"></div>
+				<div class="product-info__buy"></div>
+				<div class="product-info__order"></div>
 			</div>
 
 			<div class="product__tabs product-tabs" data-tabs="">
 				<nav data-tabs-titles class="product-tabs__navigation">
-					<button type="button" class="product-tabs__title _tab-active">Таб №1</button>
-					<button type="button" class="product-tabs__title">Таб №2</button>
-					<button type="button" class="product-tabs__title">Таб №3</button>
-					<button type="button" class="product-tabs__title">Таб №3</button>
+					<button type="button" class="product-tabs__title _tab-active">Описание</button>
+					<button type="button" class="product-tabs__title">Характеристики</button>
+					<button type="button" class="product-tabs__title">Документация</button>
+					<button type="button" class="product-tabs__title">Отзывы (12)</button>
 				</nav>
 				<div data-tabs-body class="product-tabs__content">
 					<div class="product-tabs__body">Содержимое первого таба</div>
@@ -93,16 +114,15 @@
 				</div>
 			</div>
 
-			<div class="product__accessories">
+			<div class="product__accessories accessories">
 				<div class="accessories__slider swiper">
 					<div class="accessories__wrapper swiper-wrapper">
 						<div class="accessories__slide swiper-slide"></div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </section>
 
-@@include('html/_callback.html') @@include('html/_footer.html')
+@@include('html/_footer.html')
