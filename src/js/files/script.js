@@ -59,7 +59,7 @@ const dropdownCatalog = document.querySelector('.dropdown-catalog')
 if (catalogToggle) {
 	catalogToggle.addEventListener('click', () => {
 		dropdownCatalog.classList.toggle('active')
-		// document.body.style.overflow = 'hidden'
+		document.body.style.overflow = 'hidden'
 		document.body.style.paddingRight = '14px'
 
 		if (window.innerWidth > 1150) {
@@ -68,7 +68,7 @@ if (catalogToggle) {
 
 		dropdownCatalog.querySelector('.dropdown-catalog__close').addEventListener('click', () => {
 			dropdownCatalog.classList.remove('active')
-			// document.body.style.overflow = 'auto'
+			document.body.style.overflow = 'auto'
 		})
 	})
 }
