@@ -203,3 +203,18 @@ if (openCategory) {
 		})
 	})
 }
+
+const openCatalog = document.querySelector('.jsCatalogToggle')
+const CloseCatalog = document.querySelector('.jsCloseCatalog')
+
+if (openCatalog) {
+	openCatalog.addEventListener('click', () => {
+		document.querySelector('.catalog__filter').classList.toggle('is-open')
+		document.documentElement.classList.toggle('lock')
+	})
+
+	CloseCatalog.addEventListener('click', () => {
+		document.querySelector('.catalog__filter').classList.toggle('is-open')
+		document.documentElement.classList.toggle('lock')
+	})
+}

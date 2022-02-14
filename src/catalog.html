@@ -1,6 +1,4 @@
-@@include('html/_header.html', {
-"title": "Каталог"
-})
+@@include('html/_header.html', { "title": "Каталог" })
 
 <section class="catalog">
 	<div class="container">
@@ -13,7 +11,7 @@
 		</div>
 		<div class="catalog__wrap">
 			@@include('html/_catalog-filter.html')
-<!--			<div class="catalog__inner">-->
+			<!--			<div class="catalog__inner">-->
 			<div class="filter__tags tags">
 				<div class="tags__item">
 					90x200
@@ -35,14 +33,23 @@
 					Выдвижной ящик
 					<div class="tags__remove"></div>
 				</div>
-
 			</div>
 			<div class="filter__controls">
-				<div class="filter__total"><span class='filter__value'>1583</span> товаров</div>
-				<button class="filter__reset" type='reset' form='catalog-form'>Сбросить фильтры</button>
-				<div class="filter__shows">Показать по: <span >12</span> <span class="active">24</span> <span >36</span></div>
+				<div class="filter__total">
+					<span class="filter__value">1583</span>
+					товаров
+				</div>
+				<button class="filter__reset" type="reset" form="catalog-form" data-da=".filter__reset-row,1000,1">
+					Сбросить фильтры
+				</button>
+				<div class="filter__shows">
+					<span>Показать по:</span>
+					<span>12</span>
+					<span class="active">24</span>
+					<span>36</span>
+				</div>
 				<div class="filter__sort select--catalog">
-					Сортировать
+					<div class="filter__sort-title">Сортировать</div>
 					<select name="form" class="catalog">
 						<option value="1" selected>по популярности</option>
 						<option value="2">по возрастанию цены</option>
@@ -51,43 +58,37 @@
 					</select>
 				</div>
 			</div>
+			<div class="filter__reset-row">
+				<div class="filter__toggler btn jsCatalogToggle">Открыть фильтр</div>
+			</div>
 			<div class="catalog__list">
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
-				@@include('html/_catalog-item.html')
+				@@include('html/_catalog-item.html') @@include('html/_catalog-item.html') @@include('html/_catalog-item.html')
+				@@include('html/_catalog-item.html') @@include('html/_catalog-item.html') @@include('html/_catalog-item.html')
+				@@include('html/_catalog-item.html') @@include('html/_catalog-item.html') @@include('html/_catalog-item.html')
+				@@include('html/_catalog-item.html') @@include('html/_catalog-item.html') @@include('html/_catalog-item.html')
+				@@include('html/_catalog-item.html') @@include('html/_catalog-item.html')
 			</div>
 			<div class="pagination">
-					<div class="pagination__prev">
-						<svg>
-							<use xlink:href="img/icons/icons.svg#select"></use>
-						</svg>
-					</div>
-					<ul class="pagination__list">
-						<li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
-						<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-						<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-						<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
-						<li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
-						<li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
-					</ul>
-					<div class="pagination__next">
-						<svg>
-							<use xlink:href="img/icons/icons.svg#select"></use>
-						</svg>
-					</div>
+				<div class="pagination__prev">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#select"></use>
+					</svg>
 				</div>
-<!--			</div>-->
+				<ul class="pagination__list">
+					<li class="pagination__item active"><a href="#" class="pagination__link">1</a></li>
+					<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+					<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+					<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+					<li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+					<li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+				</ul>
+				<div class="pagination__next">
+					<svg>
+						<use xlink:href="img/icons/icons.svg#select"></use>
+					</svg>
+				</div>
+			</div>
+			<!--			</div>-->
 		</div>
 	</div>
 </section>
