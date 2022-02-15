@@ -1,0 +1,84 @@
+@@include('html/_header.html', { "title": "Корзина" })
+<section class="cart">
+	<div class="container">
+		<div class="cart__inner">
+			<div class="cart__list">
+				<div class="cart__item cart-item">
+					<div class="cart-item__remove">
+						<svg>
+							<use xlink:href="@img/icons/icons.svg#trash"></use>
+						</svg>
+					</div>
+					<div class="cart-item__image"><img src="@img/product-page/1.jpg" alt="" /></div>
+					<div class="cart-item__price">36 000 &#x20bd;</div>
+					<div class="cart-item__desc">Кровать двуспальная</div>
+					<div class="cart-item__series">Рафаэла</div>
+					<div class="cart-item__code">Артикул 123456789</div>
+					<div class="cart-item__properties">
+						<div class="cart-item__size">
+							<div class="cart-item__size-title">Размер спального места:</div>
+							<div class="cart-item__size-value">90 &times; 200</div>
+						</div>
+						<div class="cart-item__color">
+							<div class="cart-item__color-title">Цвет:</div>
+							<div class="cart-item__color-value">Белый</div>
+						</div>
+					</div>
+					<div class="cart-item__total">
+						<div class="cart-item__quantity">
+							<div class="quantity">
+								<button type="button" class="quantity__button quantity__button_minus"></button>
+								<div class="quantity__input">
+									<input autocomplete="off" type="text" name="" value="1" />
+								</div>
+								<button type="button" class="quantity__button quantity__button_plus"></button>
+							</div>
+						</div>
+						<div class="cart-item__total-price">36 000 &#x20bd;</div>
+					</div>
+				</div>
+				<div class="cart__item cart-item">
+					<div class="cart-item__remove">
+						<svg>
+							<use xlink:href="@img/icons/icons.svg#trash"></use>
+						</svg>
+					</div>
+					<div class="cart-item__image"><img src="@img/product-page/1.jpg" alt="" /></div>
+					<div class="cart-item__price">36 000 &#x20bd;</div>
+					<div class="cart-item__desc">Кровать двуспальная</div>
+					<div class="cart-item__series">Рафаэла</div>
+					<div class="cart-item__code">Артикул 123456789</div>
+					<div class="cart-item__properties">
+						<div class="cart-item__size">
+							<div class="cart-item__size-title">Размер спального места:</div>
+							<div class="cart-item__size-value">90 &times; 200</div>
+						</div>
+						<div class="cart-item__color">
+							<div class="cart-item__color-title">Цвет:</div>
+							<div class="cart-item__color-value">Индивидуальный</div>
+						</div>
+					</div>
+					<div class="cart-item__total">
+						<div class="cart-item__quantity">
+							<div class="quantity">
+								<button type="button" class="quantity__button quantity__button_minus"></button>
+								<div class="quantity__input">
+									<input autocomplete="off" type="text" name="" value="1" />
+								</div>
+								<button type="button" class="quantity__button quantity__button_plus"></button>
+							</div>
+						</div>
+						<div class="cart-item__total-price">36 000 &#x20bd;</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart__total cart-total">
+				<div class="cart-total__title">Итого:</div>
+				<div class="cart-total__value">54 400 &#x20bd;</div>
+				<div class="cart-total__quantity">Количество товаров: 3</div>
+				<div class="cart-total__btn"><div class="btn btn--fill">Оформить заказ</div></div>
+			</div>
+		</div>
+	</div>
+</section>
+@@include('html/_footer.html')
