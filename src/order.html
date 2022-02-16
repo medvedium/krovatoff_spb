@@ -1,15 +1,15 @@
 @@include('html/_header.html', { "title": "Оформление заказа" })
 
-<section class="about__main">
+<section class="order">
 	<div class="container">
 		<div class="breadcrumbs">
 			<a href="/" class="breadcrumbs__item">Главная</a>
-			<a href="#" class="breadcrumbs__item">О нас</a>
+			<a href="#" class="breadcrumbs__item">Оформление заказа</a>
 		</div>
 
-		<h1 class="section__title">Оформление заказа</h1>
+		<h1 class="section__title order__title">Оформление заказа</h1>
 
-		<div class="oreder__desc">
+		<div class="order__desc">
 			Пожалуйста, заполните форму для оформления заказа. После заполнения Вам придет письмо на E-mail с информацией для
 			оплаты.
 		</div>
@@ -18,42 +18,43 @@
 			<div class="order__form form-order">
 				<form action="">
 					<label>
-						Ваше имя
+						<span>Ваше имя</span>
 						<input class="input" placeholder="Иван Иванов" type="text" />
 					</label>
 					<label>
-						Ваш телефон
+						<span>Ваш телефон</span>
 						<input class="input" placeholder="8 ( - - - ) ___ - __ - __" type="text" />
 					</label>
 					<label>
-						E-mail
+						<span>E-mail</span>
 						<input class="input" placeholder="ivanov@mail.com" type="text" />
 					</label>
 					<label>
-						Город
+						<span>Город</span>
 						<input class="input" type="text" />
 					</label>
-					<label>
-						Адрес
+					<label class="order-addres">
+						<span>Адрес</span>
 						<input class="input" placeholder="Улица" type="text" />
 						<input class="input" placeholder="Дом" type="text" />
 						<input class="input" placeholder="Квартира" type="text" />
-
-						<label class="checkbox-wrap">
-							<input type="checkbox" class="checkbox" />
-							<span class="checkbox-text">Включить в стоимость сборку</span>
-						</label>
 					</label>
-					<label>Выберите способ оплаты</label>
+					<label class="checkbox-wrap">
+						<input type="checkbox" class="checkbox" />
+						<span class="checkbox-text">Включить в стоимость сборку</span>
+					</label>
+					<label class="order-payment-label">
+						<span>Выберите способ оплаты</span>
+					</label>
 					<select name="" class="order-select">
 						<option value="1" selected>Наличными</option>
 						<option value="2">Перевод на карту</option>
 						<option value="3">Юридическое лицо</option>
 					</select>
 					<label>
-						<input type="text" placeholder="Промокод" />
+						<input type="text" class="input jsPromocode" placeholder="Промокод" />
 					</label>
-					<p>Есть промокод? Введите и получите скидку!</p>
+					<p class="order-promocode__desc">Есть промокод? Введите и получите скидку!</p>
 					<div class="form-order__total">
 						Итого:
 						<span>53 400 &#x20bd;</span>
@@ -62,16 +63,19 @@
 						Скидка по промокоду
 						<span>1000 &#x20bd;</span>
 					</div>
-					<label for="policy" class="checkbox-wrap">
-						<input type="checkbox" id="policy" class="checkbox" />
+					<label class="checkbox-wrap form-order__policy">
+						<input type="checkbox" class="checkbox" />
 						<span class="form__policy checkbox-text">
 							Соглашаюсь с
 							<a href="#" class="form__policy-link">Политикой конфиденциальности</a>
 						</span>
 					</label>
+					<button class="btn btn--fill">Отправить</button>
 				</form>
 			</div>
-			<div class="order__image"></div>
+			<div class="order__image">
+				<img src="@img/order/order-product.jpg" alt="" />
+			</div>
 		</div>
 	</div>
 </section>
