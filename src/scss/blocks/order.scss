@@ -1,0 +1,52 @@
+.oreder {
+	// .oreder__desc
+	&__desc {
+	}
+}
+.order {
+	// .order__inner
+	&__inner {
+	}
+	// .order__form
+	&__form {
+		form {
+			display: flex;
+			flex-direction: column;
+
+			label {
+				width: 100%;
+			}
+		}
+	}
+	// .order__image
+	&__image {
+	}
+}
+.form-order {
+	// .form-order__total
+	&__total {
+	}
+	// .form-order__sale
+	&__sale {
+	}
+	.input {
+		width: 100%;
+		outline: none;
+	}
+}
+.checkbox-wrap {
+}
+.checkbox {
+}
+.checkbox-text {
+}
+.order-select {
+}
+.form {
+	// .form__policy
+	&__policy {
+	}
+	// .form__policy-link
+	&__policy-link {
+	}
+}
