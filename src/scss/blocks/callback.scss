@@ -57,6 +57,9 @@
 
 			@media (max-width: 1290px) {
 				width: 482px;
+				.callback--refund & {
+					width: 450px;
+				}
 			}
 		}
 	}
@@ -79,9 +82,11 @@
 			}
 
 			@media (max-width: 1290px) {
-				position: relative;
-				right: auto;
-				top: 140px;
+				&:not(.callback--refund &) {
+					position: relative;
+					right: auto;
+					top: 140px;
+				}
 			}
 
 			@media (max-width: 950px) {
@@ -104,6 +109,41 @@
 			transform: translateX(0);
 		}
 	}
+
+	&--refund {
+		display: none;
+		height: 700px;
+		@include adaptiveValue("height", 700, 500, 1900, 1250, 1);
+
+		p + p {
+			margin-top: 30px;
+		}
+		@media (max-width: 950px) {
+			height: auto;
+		}
+	}
+		// .callback__social
+		&__social {
+			padding: 30px 40px;
+			background-color: $white;
+			border-radius: 8px;
+			width: fit-content;
+
+			margin: 30px auto 0;
+		}
+
+		// .callback__social-link
+		&__social-link {
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 29px;
+
+			color: $whatsapp-link;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 }
 
 .form__row {
@@ -181,3 +221,4 @@
 		background: $main-active;
 	}
 }
+

@@ -84,7 +84,6 @@
 
 	// .item__stars
 	&__stars {
-
 		svg {
 			height: 25px;
 			width: 25px;
@@ -102,5 +101,11 @@
 
 	// .item__reviews-value
 	&__reviews-value {
+	}
+}
+
+@media (max-width: 560px) {
+	.catalog__item {
+		margin-bottom: 30px;
 	}
 }

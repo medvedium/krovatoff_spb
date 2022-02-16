@@ -26,6 +26,60 @@
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+
+	&--border {
+		color: $main;
+		border: 2px solid $main;
+		border-radius: 4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 14px 18px;
+		height: 50px;
+		white-space: nowrap;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all .2s linear;
+
+		&:active, &:hover {
+			background-color: $main;
+			color: $white;
+		}
+	}
+
+	&--fill {
+		width: 250px;
+		padding: 10px 35px 10px 40px;
+		height: 50px;
+		color: $white;
+		background-color: $main;
+		border: 1px solid $main;
+		transition: all 0.2s linear;
+		cursor: pointer;
+
+		svg {
+			margin-right: 15px;
+			height: 26px;
+
+			path {
+				stroke: $white;
+
+			}
+		}
+		&:active {
+			background-color: $main;
+		}
+
+		&:hover {
+			color: $white;
+			background: linear-gradient(180deg, #ffe896 0%, #fecb4d 100%);
+
+			svg path {
+				stroke: $white;
+			}
+		}
+
+	}
 }
 
 .btn__buy {
