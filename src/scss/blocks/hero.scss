@@ -34,9 +34,9 @@
 	flex-direction: column;
 	justify-content: center;
 	padding-bottom: 140px;
-	@include adaptiveValue("padding-bottom", 140, 80, 1600, 1000, 1);
+	@include adaptiveValue('padding-bottom', 140, 80, 1600, 1000, 1);
 	padding-top: 100px;
-	@include adaptiveValue("padding-top", 100, 50, 880, 768);
+	@include adaptiveValue('padding-top', 100, 50, 880, 768);
 
 	@media (max-width: 768px) {
 		justify-content: flex-start;
@@ -51,10 +51,10 @@
 	color: $text;
 	font-weight: 700;
 	font-size: 72px;
-	@include adaptiveValue("font-size",72, 24, 1600, 768, 1);
+	@include adaptiveValue('font-size', 72, 24, 1600, 768, 1);
 	//@include adaptiveValue("font-size", 36, 24, 1024, 768, 1);
 	line-height: 70px;
-	@include adaptiveValue("line-height", 70, 35, 1600, 768, 1);
+	@include adaptiveValue('line-height', 70, 35, 1600, 768, 1);
 	//@include adaptiveValue("line-height", 36, 35, 1024, 768, 1);
 	margin-bottom: 45px;
 
@@ -66,8 +66,6 @@
 		order: 2;
 		margin-bottom: 20px;
 	}
-
-
 }
 
 .hero__link {
@@ -94,7 +92,6 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-
 }
 
 .hero__img {
@@ -124,12 +121,13 @@
 	overflow: hidden;
 	padding-top: 100px;
 	height: 500px;
+	z-index: 0 !important;
 }
 
 .hero__slider-text {
 	position: absolute;
 	right: 100px;
-	@include adaptiveValue("right", 100, 0, 1300, 830, 1);
+	@include adaptiveValue('right', 100, 0, 1300, 830, 1);
 	bottom: 10px;
 	display: flex;
 	flex-direction: column;
