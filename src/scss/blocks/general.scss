@@ -39,9 +39,10 @@
 		white-space: nowrap;
 		font-weight: 600;
 		cursor: pointer;
-		transition: all .2s linear;
+		transition: all 0.2s linear;
 
-		&:active, &:hover {
+		&:active,
+		&:hover {
 			background-color: $main;
 			color: $white;
 		}
@@ -63,7 +64,6 @@
 
 			path {
 				stroke: $white;
-
 			}
 		}
 		&:active {
@@ -78,7 +78,10 @@
 				stroke: $white;
 			}
 		}
+	}
 
+	&--wide {
+		width: 100%;
 	}
 }
 
