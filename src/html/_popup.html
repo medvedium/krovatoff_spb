@@ -1,12 +1,87 @@
-<!-- type="reset" form="catalog-form"  -->
+<!-- 
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+				</div>
+			</div>
+		</div>
+	</div>
+ -->
 
 <div id="jsResetFilter" aria-hidden="true" class="popup filter-reset-popup jsResetFilter">
 	<div class="popup__wrapper">
 		<div class="popup__content popup__content--sm">
 			<div class="popup__text">
 				<div class="confirm-filter-reset">Вы хотите сбросить фильтр?</div>
-				<button class="btn btn--fill btn--wide">Сбросить</button>
-				<button class="btn btn--border btn--wide">Сбросить</button>
+				<button class="btn btn--fill btn--wide" data-close>Сбросить</button>
+				<button class="btn btn--border btn--wide" data-close>Отмена</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="jsOrderSuccess" aria-hidden="true" class="popup order__popup jsOrderSuccess">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content--sm">
+			<div class="popup__text">
+				<div class="confirm-filter-reset">
+					<p><b>Спасибо, ваш заказ принят!</b></p>
+					<br />
+					<p>Ожидайте звонка от нашего менеджера в ближайщее время.</p>
+					<br />
+				</div>
+				<button class="btn btn--fill btn--wide" data-close>Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="jsChooseColor" aria-hidden="true" class="popup jsChooseColor color-choose__popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">&times;</button>
+			<div class="popup__text">
+				<div class="popup__title">Закажите свой размер, заполнив форму</div>
+				<form action="#" class="color-choose__form">
+					<div class="form__row">
+						<label class="form__label">
+							<span>Ваше имя...</span>
+							<input name="your-name" type="text" class="form__input" placeholder="Иван Иванов" />
+						</label>
+					</div>
+					<div class="form__row">
+						<label class="form__label">
+							<span>Ваш телефон</span>
+							<input name="phone" type="tel" class="form__input" placeholder="8 ( - - - ) ___ - __ - __" />
+						</label>
+					</div>
+					<div class="form__row">
+						<label class="form__label">
+							<span>E-mail</span>
+							<input type="email" class="form__input" placeholder="ivanov@mail.com" />
+						</label>
+					</div>
+					<div class="form__row">
+						<label class="form__label">
+							<span>Желаемый размер</span>
+							<input type="text" class="form__input" />
+						</label>
+					</div>
+					<div class="form__row">
+						<label for="policy" class="checkbox-wrap">
+							<input type="checkbox" id="policy" class="checkbox" />
+							<span class="form__policy checkbox-text">
+								Соглашаюсь с
+								<a href="#" class="form__policy-link">Политикой конфиденциальности</a>
+							</span>
+						</label>
+					</div>
+					<div class="form__row">
+						<input type="submit" class="form__submit" value="Отправить" />
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
