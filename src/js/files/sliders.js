@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation, Pagination, Thumbs } from "swiper";
+import Swiper, { Autoplay, Navigation, Pagination, Thumbs } from 'swiper'
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -30,9 +30,6 @@ function initSliders() {
 	if (document.querySelector('.hero-slider')) {
 		// Указываем скласс нужного слайдера
 		new Swiper('.hero-slider', {
-			// Указываем скласс нужного слайдера
-			// Подключаем модули слайдера
-			// для конкретного случая
 			modules: [Pagination],
 			effect: 'fade',
 			autoplay: {
@@ -43,73 +40,16 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 30,
-			// autoHeight: true,
 			speed: 800,
 			pagination: {
 				el: '.hero-slider .swiper-pagination',
 				type: 'bullets'
 			},
-			//touchRatio: 0,
-			//simulateTouch: false,
 			loop: true,
-			//preloadImages: false,
-			//lazy: true,
-
-			/*
-			// Эффекты
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			*/
-
-			// Пагинация
-			/*
-			pagination: {
-				pagination: {
-				el: '.hero-slider .swiper-pagination',
-				type: 'bullets'
-			},
-			*/
-
-			// Скроллбар
-			/*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
-
-			// Кнопки "влево/вправо"
 			navigation: {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next'
 			},
-
-			// Брейкпоинты
-			/*
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
-				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
-			},
-			*/
-			// События
 			on: {}
 		})
 	}
@@ -205,9 +145,14 @@ function initSliders() {
 
 	if (heroTrackSelector && heroMainSelector) {
 		let heroTrackSlider = new Swiper(heroTrackSelector, {
+			modules: [Autoplay],
 			slidesPerView: 4,
 			direction: 'horizontal',
 			spaceBetween: 10,
+			loop: true,
+			autoplay: {
+				delay: 5000
+			},
 			breakpoints: {
 				651: {
 					slidesPerView: 6
@@ -219,7 +164,7 @@ function initSliders() {
 				1201: {
 					direction: 'vertical',
 					slidesPerView: 4
-				},
+				}
 			}
 		})
 
