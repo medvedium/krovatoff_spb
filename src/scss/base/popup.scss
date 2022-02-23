@@ -80,6 +80,9 @@ body::after {
 	.btn {
 		width: 233px;
 		margin-bottom: 20px;
+		&:focus {
+			outline: none;
+		}
 	}
 	.popup__text {
 		display: flex;
