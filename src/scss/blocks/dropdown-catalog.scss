@@ -106,12 +106,18 @@
 		border-radius: 31px;
 		cursor: pointer;
 		transition: all 0.1s linear;
+		color: #000000;
 
 		&:hover,
 		&.active {
-			color: $white;
 			//font-weight: 700;
 			background-color: $main;
+			color: $white;
+
+			.dropdown-catalog__categories-link {
+			color: $white;
+
+			}
 		}
 
 		@media (max-width: 1150px) {
@@ -121,6 +127,11 @@
 			padding: 4px 10px 4px 40px;
 			//width: auto;
 		}
+	}
+
+	// .dropdown-catalog__categories-link
+	&__categories-link {
+		color: #000000;
 	}
 
 	// .dropdown-catalog__back

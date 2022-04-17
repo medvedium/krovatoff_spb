@@ -57,7 +57,8 @@ const catalogToggle = document.querySelector('.dropdown-catalog-activate')
 const dropdownCatalog = document.querySelector('.dropdown-catalog')
 
 if (catalogToggle) {
-	catalogToggle.addEventListener('click', () => {
+	catalogToggle.addEventListener('click', (event) => {
+		event.preventDefault()
 		dropdownCatalog.classList.toggle('active')
 		document.body.style.overflow = 'hidden'
 		document.body.style.paddingRight = '14px'
