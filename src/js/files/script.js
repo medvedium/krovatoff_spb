@@ -43,17 +43,7 @@ if (document.querySelector('#slider-3')) {
 	})
 }
 
-const catalogForm = document.querySelector('#catalog-form')
-if (catalogForm) {
-	catalogForm.addEventListener('click', (event) => {
-		const { target } = event
-		if (target.classList.contains('jsCloseCategory')) {
-			target.parentNode.classList.toggle('is-open')
-		}
-	})
-}
-
-const catalogToggle = document.querySelector('.dropdown-catalog-activate')
+const catalogToggle = document.querySelector('.dropdown-catalog-activate a')
 const dropdownCatalog = document.querySelector('.dropdown-catalog')
 
 if (catalogToggle) {
