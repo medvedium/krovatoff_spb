@@ -1,0 +1,220 @@
+<!-- layout -->
+<!-- 
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">&times;</button>
+				<div class="popup__text">
+				</div>
+			</div>
+		</div>
+	</div>
+ -->
+
+<div id="jsResetFilter" aria-hidden="true" class="popup filter-reset-popup jsResetFilter">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content--sm">
+			<div class="popup__text">
+				<div class="confirm-filter-reset">Вы хотите сбросить фильтр?</div>
+				<button class="btn btn--fill btn--wide" data-close>Сбросить</button>
+				<button class="btn btn--border btn--wide" data-close>Отмена</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="jsOrderSuccess" aria-hidden="true" class="popup order__popup jsOrderSuccess">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content--sm">
+			<div class="popup__text">
+				<div class="confirm-filter-reset">
+					<p><b>Спасибо, ваш заказ принят!</b></p>
+					<br />
+					<p>Ожидайте звонка от нашего менеджера в ближайщее время.</p>
+					<br />
+				</div>
+				<button class="btn btn--fill btn--wide" data-close>Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="size-choose" aria-hidden="true" class="popup size-choose size-choose__popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">&times;</button>
+			<div class="popup__text">
+				<div class="popup__title">Закажите свой размер, заполнив форму</div>
+				<form action="#" class="size-choose__form">
+					<div class="form__row">
+						<label class="form__label">
+							<span>Ваше имя...</span>
+							<input name="your-name" type="text" class="form__input" placeholder="Иван Иванов" />
+						</label>
+					</div>
+					<div class="form__row">
+						<label class="form__label">
+							<span>Ваш телефон</span>
+							<input name="phone" type="tel" class="form__input" placeholder="8 ( - - - ) ___ - __ - __" />
+						</label>
+					</div>
+					<div class="form__row">
+						<label class="form__label">
+							<span>E-mail</span>
+							<input type="email" class="form__input" placeholder="ivanov@mail.com" />
+						</label>
+					</div>
+					<div class="form__row">
+						<label class="form__label">
+							<span>Желаемый размер</span>
+							<input type="text" class="form__input" />
+						</label>
+					</div>
+					<div class="form__row">
+						<label for="policy" class="checkbox-wrap">
+							<input type="checkbox" id="policy" class="checkbox" />
+							<span class="form__policy checkbox-text">
+								Соглашаюсь с
+								<a href="#" class="form__policy-link">Политикой конфиденциальности</a>
+							</span>
+						</label>
+					</div>
+					<div class="form__row">
+						<input type="submit" class="form__submit" value="Отправить" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="order-confirm" aria-hidden="true" class="popup order-confirm">
+	<div class="popup__wrapper">
+		<div class="popup__content popup__content--sm">
+			<div class="popup__text">
+				<div class="popup__title">Товар добавлен в корзину</div>
+				<button class="btn btn--fill btn--wide" data-close>Перейти в корзину</button>
+				<button class="btn btn--border btn--wide" data-close>Продолжить покупки</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="hero-popup" aria-hidden="true" class="popup hero-popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">&times;</button>
+			<div class="popup__text">
+				<div class="hero-popup__slider swiper">
+					<div class="hero-popup__wrapper swiper-wrapper"></div>
+				</div>
+				<div class="hero-popup__nav">
+					<div class="hero-popup-prev"><img src="img/prev-slide.svg" alt="" /></div>
+					<div class="hero-popup-next"><img src="img/next-slide.svg" alt="" /></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="color-choose" aria-hidden="true" class="popup color-choose">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">&times;</button>
+			<div class="popup__text">
+				<div class="color-choose__title">Другие цвета</div>
+				<div class="color-choose__desc">Выберите один или несколько цветов и нажмите кнопку “готово”</div>
+				<div class="color-choose__inner">
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-01.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-03.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-04.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-06.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-09.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-11.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-14.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-01.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-03.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-04.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-06.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-09.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-11.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-14.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-01.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-03.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-04.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-06.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-09.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-11.jpg" alt="" />
+					</label>
+					<label>
+						<input type="checkbox" />
+						<img src="img/color-choose/maseratti-14.jpg" alt="" />
+					</label>
+				</div>
+				<div class="color-choose__btn">
+					<button class="btn btn--fill btn--wide" data-close>Готово</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
